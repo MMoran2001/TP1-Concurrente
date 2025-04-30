@@ -1,2 +1,2 @@
-public class Preparacion {
+public class Preparacion extends Thread{
 }

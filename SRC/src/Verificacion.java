@@ -1,2 +1,2 @@
-public class Verificacion {
+public class Verificacion extends Thread{
 }

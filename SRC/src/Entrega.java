@@ -1,2 +1,2 @@
-public class Entrega {
+public class Entrega extends Thread{
 }
