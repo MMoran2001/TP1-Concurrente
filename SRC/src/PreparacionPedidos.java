@@ -3,8 +3,8 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class PreparacionPedidos implements Runnable {
-    private static int contadorPedidos = 0;
+public class PreparacionPedidos extends GestorDePedidos implements Runnable {
+    private static int Contador = 0;
     private final GestorDePedidos almacen; //TENEMOS QUE VER COMO LO IMPLEMENTAN EN LA CLASE PRINCIPAL
     private final List<RegistroDePedido> PedidosEnPreparacion; //TENDRIAMOS QUE VER COMO LO HACEN EN LA CLASE REGISTRODEPEDIDO
     private Random random = new Random();
@@ -26,13 +26,14 @@ public class PreparacionPedidos implements Runnable {
             try {
                 int id;
                 synchronized (PreparacionPedidos.class){ //protejo para evitar concurrencia de dos hilos
-                    if(contadorPedidos >= maxPedidos)break; //si el contador de pedidos supera o es igual al meximo de pedidor freno la sentencia
-                    id=++contadorPedidos;                   //sino incremeento el contador en 1
+                    if(Contador >= maxPedidos)break; //si el contador de pedidos supera o es igual al meximo de pedidor freno la sentencia
+                    id=++Contador;                   //sino incremeento el contador en 1
                 }
-                Casillero casillero = almacen.obtenerCasilleroLibre();//Creamos un objeto tipo Casillero (Vemos como se llama cuando tengamos la clase gestor de pedidos)
+                Casillero casillero = almacen.getCasilleroLibre();//Creamos un objeto tipo Casillero (Vemos como se llama cuando tengamos la clase gestor de pedidos)
                 if (casillero != null) { //pregunto si esta vacio
                     Thread.sleep(50);   //si no esta vacio espero 50 milisegundos hasta buscas de nuevo
                     continue;
+
                 }
                 RegistroDePedido registro = new RegistroDePedido(id, casillero); //creo un nuevo registro (vemos como se llama cuando tengamos la clase)
                 synchronized (pedidosEnPreparacion) { //protejer a pedidosEnPreparacion para que no trabajen los dos hilos
