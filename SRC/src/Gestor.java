@@ -9,6 +9,7 @@ public final class Gestor{
     private static Registro pedEntregado;
     private static Registro pedVerificado;
     private static Registro pedFallido;
+    private int contador;
 
 
 public static synchronized Gestor getMiGestor(){
@@ -31,6 +32,8 @@ private Gestor(){
     pedVerificado = new Registro(Estado_Pedidos.VERIFICADO);
     pedFallido = new Registro(Estado_Pedidos.FALLIDO);
 
+    contador = 0;
+
 }
 
 
@@ -44,7 +47,8 @@ public boolean TomarPedido(int i, int j){
                 return true;
             }
         }
-    }
+
+    return false;
 }
 
 
@@ -64,6 +68,19 @@ public static void modificarRegistro(Registro registro, String operacion){
     }
 }
 
+public Casillero[][] getAlmacen(){
+    return almacen;
+}
+
+
+
+public int getContador(){
+    return contador;
+}
+
+public void aumentarContador(){
+    contador++;
+}
 
 }
 

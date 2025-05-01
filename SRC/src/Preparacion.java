@@ -65,3 +65,14 @@ public class Preparacion extends Thread {
         }
     }
 }
+
+// Registro registro = new Registro(Estado_Pedidos.EN_PREPARACION); //creo un nuevo registro (vemos como se llama cuando tengamos la clase)
+//                synchronized (pedidosEnPreparacion) { //protejer a pedidosEnPreparacion para que no trabajen los dos hilos
+//                    PedidosEnPreparacion.add(registro); //Agrego el pedido a la lista
+//                }
+
+// if (Casillero != null) { //pregunto si esta vacio
+//                    Thread.sleep(50);   //si no esta vacio espero 50 milisegundos hasta buscas de nuevo
+//                    continue;
+//
+//                }
