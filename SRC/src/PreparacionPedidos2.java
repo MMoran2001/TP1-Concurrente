@@ -39,7 +39,7 @@ public class PreparacionPedidos2 extends GestorDePedidos implements Runnable {
                 synchronized (pedidosEnPreparacion) { //protejer a pedidosEnPreparacion para que no trabajen los dos hilos
                     PedidosEnPreparacion.add(registro); //Agrego el pedido a la lista
                 }
-                DormirProceso(); //Simulo el tiempo de procesamiento de predido, podemos sacarlo si no llega a hacer falta
+                DormirProceso();
             } catch (InterruptedException e) { //Que pasa si el hilo es interrumpido, lanzo excepcion
                 Thread.currentThread().interrupt(); //Si se da la excepcion salgo del bucle
                 break;
