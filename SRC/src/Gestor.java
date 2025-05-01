@@ -20,6 +20,11 @@ public static synchronized Gestor getMiGestor(){
 
 private Gestor(){
     almacen = new Casillero[10][20];
+    for(int i = 0; i < 10; i++){
+        for(int j = 0; j < 20; j++){
+            almacen[i][j] = new Casillero();
+        }
+    }
     pedEnPrep = new Registro(Estado_Pedidos.EN_PREPARACION);
     pedEnTran = new Registro(Estado_Pedidos.EN_TRANSITO);
     pedEntregado = new Registro(Estado_Pedidos.ENTREGADO);
@@ -28,25 +33,15 @@ private Gestor(){
 
 }
 
-private static int[] randomPos(){
-        Random random = new Random();
-        int i = random.nextInt(10);
-        int j = random.nextInt(20);
-        return new int[]{i, j};
-}
 
+public boolean TomarPedido(int i, int j){
 
-
-public static void TomarPedido(){
-    boolean pedidoTomado = false;
-    while(!pedidoTomado){
-        int[] pos = randomPos();
-        synchronized (almacen[pos[0]][pos[1]]) {
-            if (almacen[pos[0]][pos[1]].getEstado() == Estado_Casilleros.VACIO) {
-                almacen[pos[0]][pos[1]].cambiarEstado(Estado_Casilleros.OCUPADO);
-                almacen[pos[0]][pos[1]].aumentarContador();
+        synchronized (almacen[i][j]) {
+            if (almacen[i][j].getEstado() == Estado_Casilleros.VACIO) {
+                almacen[i][j].cambiarEstado(Estado_Casilleros.OCUPADO);
+                almacen[j][j].aumentarContador();
                 pedEnPrep.agregarPedido();
-                pedidoTomado = true;
+                return true;
             }
         }
     }
