@@ -7,7 +7,7 @@ public class Despacho extends Thread {
     private final Gestor gestor;
     private final int tiempoMin;
     private final int tiempoMax;
-    private final Random random = new Random();
+    private final Random RandoM = new Random();
     private final Semaphore semaforo;
 
     public Despacho(int tiempoMin, int tiempoMax, Semaphore semaforo) {
@@ -34,7 +34,7 @@ public class Despacho extends Thread {
                     int i = pos[0];
                     int j = pos[1];
 
-                boolean verificacionExitosa = random.nextInt(100) < 85; // 85% de probabilidad
+                boolean verificacionExitosa = RandoM.nextInt(100) < 85; // 85% de probabilidad
 
                 synchronized (gestor.getAlmacen()[i][j]) {
                     if (verificacionExitosa) {
