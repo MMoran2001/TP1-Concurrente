@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Gestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Gestor.java" afterDir="false" />
     </list>
-    <list id="8c2c0b72-7fa0-4579-aa59-53e0aa39742e" name="Changes by 54353" comment="" />
     <list id="54abfa9b-e5ca-438c-989f-d7d470d06e09" name="Changes by Maria Pilar" comment="">
       <change beforePath="$PROJECT_DIR$/SRC/src/Gestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Gestor.java" afterDir="false" />
     </list>
@@ -33,12 +32,12 @@
     &quot;assignee&quot;: &quot;MMoran2001&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MMoran2001/TP1-Concurrente.git",
-    "accountId": "e28a1f9d-5a5e-448e-9624-813a8ca379f0"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MMoran2001/TP1-Concurrente.git&quot;,
+    &quot;accountId&quot;: &quot;e28a1f9d-5a5e-448e-9624-813a8ca379f0&quot;
   }
-}]]></component>
+}</component>
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/SRC/src/Gestor.java">
       <ranges>
@@ -54,9 +53,8 @@
         <range start1="67" end1="69" start2="66" end2="68" changelist="54abfa9b-e5ca-438c-989f-d7d470d06e09" />
         <range start1="70" end1="73" start2="69" end2="72" changelist="54abfa9b-e5ca-438c-989f-d7d470d06e09" />
         <range start1="75" end1="79" start2="74" end2="77" changelist="54abfa9b-e5ca-438c-989f-d7d470d06e09" />
-        <range start1="80" end1="83" start2="78" end2="81" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="84" end1="85" start2="82" end2="88" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="86" end1="86" start2="89" end2="93" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="87" end1="91" start2="85" end2="86" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="94" end1="94" start2="89" end2="91" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
       </ranges>
     </file>
   </component>
@@ -68,23 +66,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "branch-develop-2",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Marcos/TP1 Concurrente",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;branch-develop-2&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Marcos/TP1 Concurrente&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -105,7 +103,9 @@
       <workItem from="1745968729439" duration="35000" />
       <workItem from="1745968774934" duration="2216000" />
       <workItem from="1746126695319" duration="7074000" />
-      <workItem from="1746141443408" duration="3300000" />
+      <workItem from="1746141443408" duration="3370000" />
+      <workItem from="1746153185299" duration="26000" />
+      <workItem from="1746188757309" duration="2543000" />
     </task>
     <task id="LOCAL-00001" summary="Rama main">
       <option name="closed" value="true" />
@@ -139,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746127236084</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit nueva rama">
+      <option name="closed" value="true" />
+      <created>1746144798296</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746144798296</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

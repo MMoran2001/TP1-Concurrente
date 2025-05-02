@@ -85,13 +85,12 @@ public int getContador(){
     public static Registro getPedEnTran() {
         return pedEnTran;
     }
-    public static Registro getPedEnPrep() {
-        return pedEnPrep;
-    }
-
+    public static Registro getPedEnPrep() {return pedEnPrep;}
     public static Registro getPedFallido() {
         return pedFallido;
     }
+    public static Registro getPedEntregado() {return pedEntregado;}
+    public static Registro getPedVerificado() {return pedVerificado;}
 }
 
 
