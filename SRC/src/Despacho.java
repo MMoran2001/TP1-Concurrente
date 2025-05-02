@@ -47,7 +47,6 @@ public class Despacho extends Thread {
                         Gestor.modificarRegistro(Gestor.getPedFallido(), "AGREGAR");
                     }
                 }
-
                 DormirHilo();
             } catch (Exception e) {
                 Thread.currentThread().interrupt();                                     //Si se da la excepcion salgo del bucle

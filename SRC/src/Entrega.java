@@ -11,7 +11,7 @@ public class Entrega extends Thread{
     public Entrega(Gestor gestor, int tiempoMin, int tiempoMax, Semaphore semaforo) {
         this.tiempoMin = tiempoMin;
         this.tiempoMax = tiempoMax;
-        this.semaforo = semaforo;
+        this.semaforo = new Semaphore(500);
     }
     @Override
     public void run(){

@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" name="Changes" comment="agregue un semaphore, y la clase buscarCasilleroOcupado la recorri con un for anidado que es mas facil de leer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Entrega.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Entrega.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Verificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Verificacion.java" afterDir="false" />
     </list>
-    <list id="54abfa9b-e5ca-438c-989f-d7d470d06e09" name="Changes by Maria Pilar" comment="">
+    <list id="54abfa9b-e5ca-438c-989f-d7d470d06e09" name="Changes by Maria Pilar" comment="Changes by Maria Pilar">
       <change beforePath="$PROJECT_DIR$/SRC/src/Gestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Gestor.java" afterDir="false" />
     </list>
     <list id="49c0edc5-28fa-48e3-8246-79a36ec3bc55" name="Changes by Yo" comment="" />
@@ -48,23 +50,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;branch-develop-2&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Marcos/TP1 Concurrente&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "branch-develop-2",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Marcos/TP1 Concurrente",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -87,7 +90,7 @@
       <workItem from="1746126695319" duration="7074000" />
       <workItem from="1746141443408" duration="3370000" />
       <workItem from="1746153185299" duration="26000" />
-      <workItem from="1746188757309" duration="8692000" />
+      <workItem from="1746188757309" duration="11327000" />
     </task>
     <task id="LOCAL-00001" summary="Rama main">
       <option name="closed" value="true" />
@@ -145,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746192571386</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="agregue un semaphore, y la clase buscarCasilleroOcupado la recorri con un for anidado que es mas facil de leer">
+      <option name="closed" value="true" />
+      <created>1746204891724</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746204891724</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
