@@ -78,11 +78,20 @@ public int getContador(){
     return contador;
 }
 
-public void aumentarContador(){
-    contador++;
-}
+    public void aumentarContador() {
+        contador++;
+    }
 
-}
+    public static Registro getPedEnTran() {
+        return pedEnTran;
+    }
+    public static Registro getPedEnPrep() {
+        return pedEnPrep;
+    }
 
+    public static Registro getPedFallido() {
+        return pedFallido;
+    }
+}
 
 
