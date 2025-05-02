@@ -4,16 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" name="Changes" comment="agregue un semaphore, y la clase buscarCasilleroOcupado la recorri con un for anidado que es mas facil de leer">
+    <list default="true" id="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Entrega.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Entrega.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Gestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Gestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Preparacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Preparacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Verificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Verificacion.java" afterDir="false" />
+    </list>
+    <list id="e0bd94e5-1cfd-4dc5-aa41-a0522b133f8d" name="Changes by 54353" comment="" />
+    <list id="c215d738-1ab5-4b7b-9635-b305a4c4b498" name="Changes by leand" comment="">
+      <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Entrega.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Entrega.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Gestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Gestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Verificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Verificacion.java" afterDir="false" />
+    </list>
+    <list id="516c4607-d9e3-4271-9257-608f042844a4" name="Changes by Maria Pilar" comment="" />
+    <list id="49c0edc5-28fa-48e3-8246-79a36ec3bc55" name="Changes by Yo" comment="">
       <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Entrega.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Entrega.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Verificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Verificacion.java" afterDir="false" />
     </list>
-    <list id="54abfa9b-e5ca-438c-989f-d7d470d06e09" name="Changes by Maria Pilar" comment="Changes by Maria Pilar">
-      <change beforePath="$PROJECT_DIR$/SRC/src/Gestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Gestor.java" afterDir="false" />
-    </list>
-    <list id="49c0edc5-28fa-48e3-8246-79a36ec3bc55" name="Changes by Yo" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,9 +47,75 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/MMoran2001/TP1-Concurrente.git&quot;,
-    &quot;accountId&quot;: &quot;e28a1f9d-5a5e-448e-9624-813a8ca379f0&quot;
+    &quot;accountId&quot;: &quot;32d0cd98-8ab5-4dbc-8b98-4be0efe1c610&quot;
   }
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/SRC/src/Gestor.java">
+      <ranges>
+        <range start1="1" end1="1" start2="1" end2="3" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="11" end1="12" start2="13" end2="17" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="13" end1="14" start2="18" end2="18" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+        <range start1="34" end1="36" start2="38" end2="39" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="37" end1="38" start2="40" end2="40" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+        <range start1="44" end1="45" start2="46" end2="47" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="53" end1="56" start2="55" end2="56" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="69" end1="69" start2="69" end2="92" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="70" end1="71" start2="93" end2="94" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+        <range start1="74" end1="76" start2="97" end2="97" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+        <range start1="77" end1="78" start2="98" end2="99" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="80" end1="83" start2="101" end2="104" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+        <range start1="84" end1="93" start2="105" end2="126" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="94" end1="94" start2="127" end2="128" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/SRC/src/Entrega.java">
+      <ranges>
+        <range start1="3" end1="3" start2="3" end2="4" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="5" end1="5" start2="6" end2="7" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="7" end1="11" start2="9" end2="13" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="13" end1="14" start2="15" end2="16" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+        <range start1="15" end1="15" start2="17" end2="18" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="16" end1="22" start2="19" end2="28" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="23" end1="37" start2="29" end2="42" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="38" end1="41" start2="43" end2="47" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="42" end1="43" start2="48" end2="49" changelist="49c0edc5-28fa-48e3-8246-79a36ec3bc55" />
+        <range start1="53" end1="55" start2="59" end2="61" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="57" end1="58" start2="63" end2="64" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="60" end1="60" start2="66" end2="70" changelist="49c0edc5-28fa-48e3-8246-79a36ec3bc55" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/SRC/src/Verificacion.java">
+      <ranges>
+        <range start1="5" end1="5" start2="5" end2="6" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="7" end1="9" start2="8" end2="9" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="10" end1="11" start2="10" end2="12" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="13" end1="14" start2="14" end2="14" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+        <range start1="19" end1="20" start2="19" end2="20" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="22" end1="25" start2="22" end2="24" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="26" end1="28" start2="25" end2="27" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="31" end1="33" start2="30" end2="32" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="35" end1="35" start2="34" end2="35" changelist="49c0edc5-28fa-48e3-8246-79a36ec3bc55" />
+        <range start1="43" end1="45" start2="43" end2="45" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="47" end1="48" start2="47" end2="48" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/SRC/src/Despacho.java">
+      <ranges>
+        <range start1="9" end1="11" start2="9" end2="11" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="12" end1="14" start2="12" end2="13" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+        <range start1="23" end1="25" start2="22" end2="24" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+        <range start1="27" end1="28" start2="26" end2="26" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+        <range start1="36" end1="37" start2="34" end2="35" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="41" end1="43" start2="39" end2="42" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="45" end1="47" start2="44" end2="46" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="49" end1="49" start2="48" end2="50" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+        <range start1="50" end1="50" start2="51" end2="53" changelist="49c0edc5-28fa-48e3-8246-79a36ec3bc55" />
+        <range start1="68" end1="75" start2="71" end2="78" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="76" end1="78" start2="79" end2="94" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -64,7 +141,6 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -88,9 +164,6 @@
       <workItem from="1745968729439" duration="35000" />
       <workItem from="1745968774934" duration="2216000" />
       <workItem from="1746126695319" duration="7074000" />
-      <workItem from="1746141443408" duration="3370000" />
-      <workItem from="1746153185299" duration="26000" />
-      <workItem from="1746188757309" duration="11327000" />
     </task>
     <task id="LOCAL-00001" summary="Rama main">
       <option name="closed" value="true" />
@@ -124,39 +197,7 @@
       <option name="project" value="LOCAL" />
       <updated>1746127236084</updated>
     </task>
-    <task id="LOCAL-00005" summary="commit nueva rama">
-      <option name="closed" value="true" />
-      <created>1746144798296</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1746144798296</updated>
-    </task>
-    <task id="LOCAL-00006" summary="agregue un semaphore, y la clase buscarCasilleroOcupado la recorri con un for anidado que es mas facil de leer">
-      <option name="closed" value="true" />
-      <created>1746191615723</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1746191615723</updated>
-    </task>
-    <task id="LOCAL-00007" summary="agregue un semaphore, y la clase buscarCasilleroOcupado la recorri con un for anidado que es mas facil de leer">
-      <option name="closed" value="true" />
-      <created>1746192571386</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1746192571386</updated>
-    </task>
-    <task id="LOCAL-00008" summary="agregue un semaphore, y la clase buscarCasilleroOcupado la recorri con un for anidado que es mas facil de leer">
-      <option name="closed" value="true" />
-      <created>1746204891724</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1746204891724</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +208,6 @@
     <MESSAGE value="creo mi rama" />
     <MESSAGE value="commit2" />
     <MESSAGE value="commit nueva rama" />
-    <MESSAGE value="agregue un semaphore, y la clase buscarCasilleroOcupado la recorri con un for anidado que es mas facil de leer" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregue un semaphore, y la clase buscarCasilleroOcupado la recorri con un for anidado que es mas facil de leer" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit nueva rama" />
   </component>
 </project>

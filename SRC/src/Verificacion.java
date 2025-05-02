@@ -3,36 +3,36 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Verificacion extends Thread{
+    private final Gestor gestor;
     private final int tiempoMin;
     private final int tiempoMax;
-    private final Random RandoM = new Random();
-    private final Semaphore semaforo;
+    private final Random random = new Random();
 
-    public Verificacion(int tiempoMin, int tiempoMax, Semaphore semaforo) {
+    public Verificacion(int tiempoMin, int tiempoMax) {
+        this.gestor = Gestor.getMiGestor();
         this.tiempoMin = tiempoMin;
         this.tiempoMax = tiempoMax;
-        this.semaforo = semaforo;
     }
     @Override
     public void run(){
         while (true) {
             try{
-                    if(!semaforo.tryAcquire()){
+                    if(gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() >= 500) {
                         break;
                     }
-                    int indice = PedidoRandomEntregado();
-                    if(indice==-1){semaforo.release();break;}
-                        boolean verificacionExitosa = RandoM.nextInt(100) < 95;
+                    if(gestor.getPedEntregado().getContador() > 0){
+                        boolean verificacionExitosa = random.nextInt(100) < 95;
                             if(verificacionExitosa){
-                                Gestor.modificarRegistro(Gestor.getPedEntregado(),"ELIMINAR");
-                                Gestor.modificarRegistro(Gestor.getPedVerificado(),"AGREGAR");
+                                gestor.modificarRegistro(gestor.getPedEntregado(),"ELIMINAR");
+                                gestor.modificarRegistro(gestor.getPedVerificado(),"AGREGAR");
                                 System.out.println("Pedido Verificado");
                             }
                             else{
-                                Gestor.modificarRegistro(Gestor.getPedEntregado(),"ELIMINAR");
-                                Gestor.modificarRegistro(Gestor.getPedFallido(),"AGREGAR");
+                                gestor.modificarRegistro(gestor.getPedEntregado(),"ELIMINAR");
+                                gestor.modificarRegistro(gestor.getPedFallido(),"AGREGAR");
                                 System.out.println("Pedido No Verificado");
                             }
+                    }
                DormirHilo();
             } catch (Exception e) {
                 Thread.currentThread().interrupt();
@@ -41,11 +41,11 @@ public class Verificacion extends Thread{
         }
     }
     private int PedidoRandomEntregado() {
-        synchronized (Gestor.getPedEntregado()) {                                          //Accedo a la lista de pedidos en transito
-            if (Gestor.getPedEntregado().getContador() <= 0) {                             //si el contador es menor a 0.
+        synchronized (gestor.getPedEntregado()) {                                          //Accedo a la lista de pedidos en transito
+            if (gestor.getPedEntregado().getContador() <= 0) {                             //si el contador es menor a 0.
                 return -1;                                                              // No hay pedidos en tránsito
             }
-            return RandoM.nextInt(Gestor.getPedEntregado().getContador());
+            return random.nextInt(gestor.getPedEntregado().getContador());
         }
     }
 

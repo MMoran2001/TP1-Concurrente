@@ -7,11 +7,10 @@ public class Despacho extends Thread {
     private final Gestor gestor;
     private final int tiempoMin;
     private final int tiempoMax;
-    private final Random RandoM = new Random();
-    private final Semaphore semaforo;
+    private final Random Random = new Random();
 
-    public Despacho(int tiempoMin, int tiempoMax, Semaphore semaforo) {
-        this.semaforo = semaforo;
+
+    public Despacho(int tiempoMin, int tiempoMax) {
         this.gestor = Gestor.getMiGestor();
         this.tiempoMin = tiempoMin;
         this.tiempoMax = tiempoMax;
@@ -21,11 +20,10 @@ public class Despacho extends Thread {
     public void run() {
         while (true) {
             try{
-                if (!semaforo.tryAcquire()) {
-                    break; // ya no hay más permisos → se prepararon todos los pedidos
+                if (gestor.addDespachado() >= 500) {
+                    break; //Una vez que se prepararon 500 pedidos termina el hilo
                 }
                 int[] pos = buscarCasilleroOcupado();
-
                 if (pos == null) {
                     DormirHilo();
                     continue; // no hay casilleros ocupados, vuelvo a intentar
@@ -34,20 +32,25 @@ public class Despacho extends Thread {
                     int i = pos[0];
                     int j = pos[1];
 
-                boolean verificacionExitosa = RandoM.nextInt(100) < 85; // 85% de probabilidad
+                boolean verificacionExitosa = Random.nextInt(100) <= 85; // 85% de probabilidad
 
                 synchronized (gestor.getAlmacen()[i][j]) {
                     if (verificacionExitosa) {
                         gestor.getAlmacen()[i][j].cambiarEstado(Estado_Casilleros.VACIO);
-                        Gestor.modificarRegistro(Gestor.getPedEnPrep(), "ELIMINAR");
-                        Gestor.modificarRegistro(Gestor.getPedEnTran(), "AGREGAR");
+                        gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");
+                        gestor.modificarRegistro(gestor.getPedEnTran(), "AGREGAR");
+                        gestor.aumentarContador();
                     } else {
                         gestor.getAlmacen()[i][j].cambiarEstado(Estado_Casilleros.FUERA_DE_SERVICIO);
-                        Gestor.modificarRegistro(Gestor.getPedEnPrep(), "ELIMINAR");
-                        Gestor.modificarRegistro(Gestor.getPedFallido(), "AGREGAR");
+                        gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");
+                        gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
                     }
                 }
+                int total = gestor.addDespachado();
+                if (total >= 500) {break;}
                 DormirHilo();
+
+
             } catch (Exception e) {
                 Thread.currentThread().interrupt();                                     //Si se da la excepcion salgo del bucle
                 break;
@@ -66,15 +69,28 @@ public class Despacho extends Thread {
 
     // Busca un casillero que esté ocupado para simular que tiene un pedido en preparación
     private int[] buscarCasilleroOcupado() {
-        Casillero[][] almacen = gestor.getAlmacen();    //cremos un almacen
-
-        for (int i=0; i<almacen.length; i++) {
-            for (int j=0; j<almacen[i].length; j++) {
-                if (almacen[i][j].getEstado() == Estado_Casilleros.OCUPADO) {   //Pregunto si esta ocupado
-                    return new int[]{i, j};                     //si esta ocupado busco un nuevo lugar en la matriz
-                }
-            }
+        if(gestor.getPedEnPrep().getContador() == 0){
+            return null;// no encontró ninguno
         }
-        return null; // no encontró ninguno
+        Casillero[][] almacen = gestor.getAlmacen();    //Obtenemos el almacen
+        int[] pos = gestor.randomPos();
+        while (almacen[pos[0]][pos[1]].getEstado() != Estado_Casilleros.OCUPADO) {
+                pos = gestor.randomPos();
+            }
+            return pos;
+
+
+//        else{
+//            for (int i=0; i<almacen.length; i++) {
+//                for (int j=0; j<almacen[i].length; j++) {
+//                    if (almacen[i][j].getEstado() == Estado_Casilleros.OCUPADO) {   //Pregunto si esta ocupado
+//                        return new int[]{i, j};                     //si esta ocupado busco un nuevo lugar en la matriz
+//                    }
+//                }
+//            }
+//        }
+//        return null;
+
+
     }
 }

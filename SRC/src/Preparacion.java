@@ -3,29 +3,27 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Preparacion extends Thread {
 
     private final Gestor gestor;
     private final int tiempoMin;
     private final int tiempoMax;
-    private final Semaphore semaforo;
-
     public Preparacion(int tiempoMin, int tiempoMax) {
         this.gestor = Gestor.getMiGestor();
         this.tiempoMin = tiempoMin;
         this.tiempoMax = tiempoMax;
-        this.semaforo = new Semaphore(500);
+
     }
 
     @Override
     public void run() {
         while (true) {                                                                  //Ejecuto mientras que no se llegue al maximo de pedidos
             try {
-                if (!semaforo.tryAcquire()) {
-                    break; // ya no hay más permisos → se prepararon todos los pedidos
+                if (gestor.addPreparados() >= 500) {
+                    break; //Una vez que se prepararon 500 pedidos termina el hilo
                 }
-
                 PrepararPedido(); // hace lo necesario para preparar
                 DormirProceso();  // simula la demora
                 gestor.aumentarContador();
@@ -42,18 +40,18 @@ public class Preparacion extends Thread {
         Thread.sleep(demora);                                                          //y una superior como nos pide el problema
     }
 
-    private static int[] randomPos(){
-        Random random = new Random();
-        int i = random.nextInt(10);
-        int j = random.nextInt(20);
-        return new int[]{i, j};
-    }
+//    private static int[] randomPos(){
+//        Random random = new Random();
+//        int i = random.nextInt(10);
+//        int j = random.nextInt(20);
+//        return new int[]{i, j};
+//    }
     public void PrepararPedido() {
                                                                 //si el contador de pedidos supera o es igual al meximo de pedidor freno la sentencia
 
         boolean pedidoTomado = false;
         while (!pedidoTomado) {
-            int[] pos = randomPos();
+            int[] pos = gestor.randomPos();
             pedidoTomado = gestor.TomarPedido(pos[0], pos[1]);
             if (pedidoTomado) {
                 try {
