@@ -11,7 +11,7 @@ public class Despacho extends Thread {
     private final Semaphore semaforo;
 
     public Despacho(int tiempoMin, int tiempoMax, Semaphore semaforo) {
-        this.semaforo = new Semaphore(500);
+        this.semaforo = semaforo;
         this.gestor = Gestor.getMiGestor();
         this.tiempoMin = tiempoMin;
         this.tiempoMax = tiempoMax;

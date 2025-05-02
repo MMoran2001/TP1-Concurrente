@@ -11,7 +11,7 @@ public class Verificacion extends Thread{
     public Verificacion(int tiempoMin, int tiempoMax, Semaphore semaforo) {
         this.tiempoMin = tiempoMin;
         this.tiempoMax = tiempoMax;
-        this.semaforo = new Semaphore(500);
+        this.semaforo = semaforo;
     }
     @Override
     public void run(){
