@@ -22,7 +22,7 @@ public class Entrega extends Thread{
             while (true) {
 
                 try {
-                    wait();
+
                     if(contador.get() >= gestor.getContador() ){
                         break;
                     }
@@ -31,15 +31,17 @@ public class Entrega extends Thread{
                         boolean EntregaExitosa = random.nextInt(100) < 90;                                    //Probabilidad del 90%
                         if (EntregaExitosa) {
                             gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");                //Elimino al registro de pedidos en Transito
-                            gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");              //Agrego al registro de pedidos entregados
+                            gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");
+                            contador.incrementAndGet();                                                          //Agrego al registro de pedidos entregados
                             System.out.println("Entregado");                                                     //Para ver que ande
                         } else {
                             gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");               //Elimino al registro de pedidos en transito
-                            gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");               //Agrego al registro de pedidos fallidos
+                            gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
+                            contador.incrementAndGet();                                                         //Agrego al registro de pedidos fallidos
                             System.out.println("Fallido");                                                      //Para ver que ande
                         }
                     }
-                    contador.incrementAndGet();
+
                     DormirHilo();
                 } catch (Exception e) {
                     Thread.currentThread().interrupt();                                                        //Si se da la excepcion salgo del bucle
