@@ -1,4 +1,6 @@
 import java.util.Random;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public final class Gestor{
 
@@ -9,8 +11,10 @@ public final class Gestor{
     private static Registro pedEntregado;
     private static Registro pedVerificado;
     private static Registro pedFallido;
-    private int contador;
-
+    private final AtomicInteger contador;
+    private final AtomicInteger pedidosDespachados= new AtomicInteger(0);
+    private final AtomicInteger pedidosPreparados= new AtomicInteger(0);
+    private final AtomicInteger pedidosEntregados= new AtomicInteger(0);
 
 public static synchronized Gestor getMiGestor(){
     if(miGestor == null){
@@ -32,17 +36,15 @@ private Gestor(){
     pedVerificado = new Registro(Estado_Pedidos.VERIFICADO);
     pedFallido = new Registro(Estado_Pedidos.FALLIDO);
 
-    contador = 0;
-
+    contador = new AtomicInteger(0);
 }
-
 
 public boolean TomarPedido(int i, int j){
 
         synchronized (almacen[i][j]) {
             if (almacen[i][j].getEstado() == Estado_Casilleros.VACIO) {
                 almacen[i][j].cambiarEstado(Estado_Casilleros.OCUPADO);
-                almacen[j][j].aumentarContador();
+                almacen[i][j].aumentarContador();
                 pedEnPrep.agregarPedido();
                 return true;
             }
@@ -51,9 +53,7 @@ public boolean TomarPedido(int i, int j){
     return false;
 }
 
-
-
-public static void modificarRegistro(Registro registro, String operacion){
+public void modificarRegistro(Registro registro, String operacion){
     switch (operacion){
         case "AGREGAR":
             registro.agregarPedido();
@@ -68,19 +68,61 @@ public static void modificarRegistro(Registro registro, String operacion){
     }
 }
 
-public Casillero[][] getAlmacen(){
+public int addDespachado(){
+
+    return pedidosDespachados.incrementAndGet();
+
+}
+public int addPreparados(){
+
+    return pedidosPreparados.incrementAndGet();
+
+}
+public int addEntregados(){
+
+    return pedidosEntregados.incrementAndGet();
+
+}
+
+public int[] randomPos(){
+        Random random = new Random();
+        int i = random.nextInt(10);
+        int j = random.nextInt(20);
+        return new int[]{i, j};
+}
+
+public Casillero[][] getAlmacen() {
     return almacen;
 }
 
-
-
 public int getContador(){
-    return contador;
+    return contador.get();
 }
 
 public void aumentarContador(){
-    contador++;
+    contador.incrementAndGet();
 }
+
+public  Registro getPedEnTran(){
+    return pedEnTran;
+}
+
+public  Registro getPedEnPrep(){
+    return pedEnPrep;
+}
+
+public  Registro getPedFallido(){
+    return pedFallido;
+}
+
+public  Registro getPedEntregado(){
+    return pedEntregado;
+}
+
+public  Registro getPedVerificado(){
+    return pedVerificado;
+}
+
 
 }
 
