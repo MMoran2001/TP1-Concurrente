@@ -6,6 +6,7 @@ public class Preparacion extends Thread {
     private final Gestor gestor;
     private final int tiempoMin;
     private final int tiempoMax;
+
     public Preparacion(int tiempoMin, int tiempoMax) {
         this.gestor = Gestor.getMiGestor();
         this.tiempoMin = tiempoMin;
@@ -15,7 +16,7 @@ public class Preparacion extends Thread {
 
     @Override
     public void run() {
-        while (true) {                                                                  //Ejecuto mientras que no se llegue al maximo de pedidos
+        while (true) {        //Ejecuto mientras que no se llegue al maximo de pedidos
             try {
                 if (gestor.addPreparados() >= 500) {
                     break; //Una vez que se prepararon 500 pedidos termina el hilo
@@ -39,12 +40,6 @@ public class Preparacion extends Thread {
         Thread.sleep(demora);                                                          //y una superior como nos pide el problema
     }
 
-//    private static int[] randomPos(){
-//        Random random = new Random();
-//        int i = random.nextInt(10);
-//        int j = random.nextInt(20);
-//        return new int[]{i, j};
-//    }
     public void PrepararPedido() {
                                                                 //si el contador de pedidos supera o es igual al meximo de pedidor freno la sentencia
 
@@ -74,3 +69,9 @@ public class Preparacion extends Thread {
 //                    continue;
 //
 //                }
+//    private static int[] randomPos(){
+//        Random random = new Random();
+//        int i = random.nextInt(10);
+//        int j = random.nextInt(20);
+//        return new int[]{i, j};
+//    }

@@ -24,6 +24,7 @@ public final class Gestor {
     private final String documentosPath; // O "Documentos" en español, depende del SO
     private final File carpeta;
     private final File archivo;
+
     public static synchronized Gestor getMiGestor() {
         if (miGestor == null) {
             miGestor = new Gestor();
@@ -110,15 +111,15 @@ public final class Gestor {
         return new int[]{i, j};
     }
 
-    public void escribirLog() {
-        try (FileWriter writer = new FileWriter(archivo)) {
-            writer.write("Cantidad de pedidos verificados: " + pedVerificado.getContador() + "\n"
-                        + "Cantidad de pedidos fallidos: " + pedFallido.getContador() + "\n");
-            System.out.println("Archivo creado en: " + archivo.getAbsolutePath());
-        } catch (IOException e) {
-            System.out.println("Error al escribir el archivo: " + e.getMessage());
-        }
-    }
+    //public void escribirLog() {
+    //    try (FileWriter writer = new FileWriter(archivo)) {
+    //        writer.write("Cantidad de pedidos verificados: " + pedVerificado.getContador() + "\n"
+    //                 + "Cantidad de pedidos fallidos: " + pedFallido.getContador() + "\n");
+    //   System.out.println("Archivo creado en: " + archivo.getAbsolutePath());
+    //} catch (IOException e) {
+    //  System.out.println("Error al escribir el archivo: " + e.getMessage());
+    //}
+    //}
 
     public Casillero[][] getAlmacen() {
         return almacen;
@@ -163,7 +164,28 @@ public final class Gestor {
     public Object getMonitorVerificacion() {
         return monitorVerificacion;
     }
+
+    public String getCasilleroMasUsado() {
+        int maxUso = -1;
+        int fila = -1;
+        int columna = -1;
+
+        for (int i = 0; i < almacen.length; i++) {
+            for (int j = 0; j < almacen[i].length; j++) {
+                int usos = almacen[i][j].getContador();
+                if (usos > maxUso) {
+                    maxUso = usos;
+                    fila = i;
+                    columna = j;
+                }
+            }
+        }
+
+        return "Casillero más usado: [" + fila + "][" + columna + "] con " + maxUso + " usos.";
+    }
 }
+
+
 
 
 
