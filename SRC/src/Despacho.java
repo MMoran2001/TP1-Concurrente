@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Despacho extends Thread {
@@ -20,6 +19,9 @@ public class Despacho extends Thread {
     public void run() {
         while (true) {
             try{
+                synchronized (gestor.getMonitorDespacho()){
+                    gestor.getMonitorDespacho().wait();
+                }
                 if (gestor.addDespachado() >= 500) {
                     break; //Una vez que se prepararon 500 pedidos termina el hilo
                 }
@@ -40,6 +42,8 @@ public class Despacho extends Thread {
                         gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");
                         gestor.modificarRegistro(gestor.getPedEnTran(), "AGREGAR");
                         gestor.aumentarContador();
+                        gestor.getMonitorEntrega().notifyAll();
+
                     } else {
                         gestor.getAlmacen()[i][j].cambiarEstado(Estado_Casilleros.FUERA_DE_SERVICIO);
                         gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");

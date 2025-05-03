@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -22,7 +21,9 @@ public class Entrega extends Thread{
             while (true) {
 
                 try {
-
+                    synchronized (gestor.getMonitorEntrega()){
+                        gestor.getMonitorEntrega().wait();
+                    }
                     if(contador.get() >= gestor.getContador() ){
                         break;
                     }
@@ -34,6 +35,7 @@ public class Entrega extends Thread{
                             gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");
                             contador.incrementAndGet();                                                          //Agrego al registro de pedidos entregados
                             System.out.println("Entregado");                                                     //Para ver que ande
+                            gestor.getMonitorVerificacion().notifyAll();
                         } else {
                             gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");               //Elimino al registro de pedidos en transito
                             gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
@@ -67,7 +69,4 @@ public class Entrega extends Thread{
         }
     }
 
-    public void despertarHilos(){
-        notifyAll();
-    }
 }

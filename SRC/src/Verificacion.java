@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Verificacion extends Thread{
@@ -17,6 +16,9 @@ public class Verificacion extends Thread{
     public void run(){
         while (true) {
             try{
+                    synchronized (gestor.getMonitorVerificacion()){
+                        gestor.getMonitorVerificacion().wait();
+                    }
                     if(gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() >= 500) {
                         break;
                     }
@@ -40,15 +42,6 @@ public class Verificacion extends Thread{
             }
         }
     }
-    private int PedidoRandomEntregado() {
-        synchronized (gestor.getPedEntregado()) {                                          //Accedo a la lista de pedidos en transito
-            if (gestor.getPedEntregado().getContador() <= 0) {                             //si el contador es menor a 0.
-                return -1;                                                              // No hay pedidos en tránsito
-            }
-            return random.nextInt(gestor.getPedEntregado().getContador());
-        }
-    }
-
     private void DormirHilo() {
         try {
              int demora = ThreadLocalRandom.current().nextInt(tiempoMin, tiempoMax + 1);

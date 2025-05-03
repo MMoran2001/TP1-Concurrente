@@ -1,9 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.atomic.AtomicInteger;
+
 
 public class Preparacion extends Thread {
 
@@ -27,6 +23,9 @@ public class Preparacion extends Thread {
                 PrepararPedido(); // hace lo necesario para preparar
                 DormirProceso();  // simula la demora
                 gestor.aumentarContador();
+                synchronized (gestor.getMonitorDespacho()){
+                    gestor.getMonitorDespacho().notifyAll();
+                }
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();                                     //Si se da la excepcion salgo del bucle
                 break;//Simulo el tiempo de procesamiento de pedido, podemos sacarlo si no llega a hacer falta
@@ -56,6 +55,7 @@ public class Preparacion extends Thread {
             if (pedidoTomado) {
                 try {
                     DormirProceso();
+                    Despacho.currentThread().notifyAll();
                 } catch (InterruptedException e) {
                     System.out.println("Me interrumpieron!");
                 }

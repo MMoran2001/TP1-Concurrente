@@ -1,8 +1,37 @@
 public class Main {
     public static void main(String[] args) {
         Gestor gestor = Gestor.getMiGestor();
+        int tiempoMin = 30;
+        int tiempoMax = 90;
+        Hilo_Escritor hiloLogger = new Hilo_Escritor();
 
+        for (int i = 0; i < 3; i++) {
+            Preparacion preparacion = new Preparacion(tiempoMin, tiempoMax);
+            preparacion.start();
+        }
+        for (int i = 0; i < 2; i++) {
+            Despacho despacho = new Despacho(tiempoMin, tiempoMax);
+            despacho.start();
+        }
+        for (int i = 0; i < 3; i++) {
+            Entrega entrega = new Entrega(tiempoMin, tiempoMax);
+            entrega.start();
+        }
+        for (int i = 0; i < 2; i++) {
+            Verificacion verificacion = new Verificacion(tiempoMin, tiempoMax);
+            verificacion.start();
+        }
+        hiloLogger.start();
 
+        while (gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() < 500) {
+            try {
+                Thread.sleep(20);
+            } catch (InterruptedException e) {
+                System.out.println("Me interrumpieron!");
+            }
+        }
+        hiloLogger.detener();
+        System.out.println("Fin del programa");
     }
 }
 

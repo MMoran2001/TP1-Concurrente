@@ -15,9 +15,8 @@ public class Casillero {
         return contador;
     }
 
-    public Estado_Casilleros cambiarEstado(Estado_Casilleros estado){
-        estado = this.estado;
-        return estado;
+    public void cambiarEstado(Estado_Casilleros estado){
+        this.estado= estado;
     }
 
     public Estado_Casilleros getEstado() {
