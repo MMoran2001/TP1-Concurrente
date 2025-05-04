@@ -5,7 +5,7 @@ public class Main {
         Gestor gestor = Gestor.getMiGestor();
         int tiempoMin = 30;
         int tiempoMax = 90;
-        Hilo_Escritor hiloLogger = new Hilo_Escritor();
+        HiloEscritor hiloLogger = new HiloEscritor();
         hiloLogger.start();
 
         for (int i = 0; i < 3; i++) {
@@ -31,7 +31,7 @@ public class Main {
         }
 
 
-        while (gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() < 500) {
+        while (!gestor.isDespachoDone() && !gestor.isPreparacionDone() && !gestor.isEntregaDone() && gestor.isVerificacionDone()) {
             try {
                 Thread.sleep(20);
             } catch (InterruptedException e) {

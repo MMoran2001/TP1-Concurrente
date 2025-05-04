@@ -16,27 +16,34 @@ public class Verificacion extends Thread{
     public void run(){
         while (true) {
             try{
-                    synchronized (gestor.getMonitorVerificacion()){
+                synchronized (gestor.getMonitorVerificacion()) {
+                    while (gestor.getPedEntregado().getContador() == 0 && !gestor.isEntregaDone()) {
                         gestor.getMonitorVerificacion().wait();
                     }
-                    if(gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() >= 500) {
+                    if (gestor.getPedEntregado().getContador() == 0 && gestor.isEntregaDone()) {
+                        System.out.println("FIN DE VERIFICACION");
                         break;
                     }
-                    if(gestor.getPedEntregado().getContador() > 0){
-                        boolean verificacionExitosa = random.nextInt(100) < 95;
-                            if(verificacionExitosa){
-                                gestor.modificarRegistro(gestor.getPedEntregado(),"ELIMINAR");
-                                gestor.modificarRegistro(gestor.getPedVerificado(),"AGREGAR");
-                                System.out.println("Pedido Verificado");
-                            }
-                            else{
-                                gestor.modificarRegistro(gestor.getPedEntregado(),"ELIMINAR");
-                                gestor.modificarRegistro(gestor.getPedFallido(),"AGREGAR");
-                                System.out.println("Pedido No Verificado");
-                            }
+                }
+
+                if (gestor.getPedEntregado().getContador() > 0) {
+                    boolean verificacionExitosa = random.nextInt(100) < 95;
+                    if (verificacionExitosa) {
+                        gestor.modificarRegistro(gestor.getPedEntregado(), "ELIMINAR");
+                        gestor.modificarRegistro(gestor.getPedVerificado(), "AGREGAR");
+                        System.out.println("Pedido Verificado");
+                    } else {
+                        gestor.modificarRegistro(gestor.getPedEntregado(), "ELIMINAR");
+                        gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
+                        System.out.println("Pedido No Verificado");
                     }
-               DormirHilo();
-            } catch (Exception e) {
+                }
+                if (gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() >= 500) {
+                    System.out.println("FIN DE VERIFICACION");
+                    break;
+                }
+                DormirHilo();
+            } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 break;
             }

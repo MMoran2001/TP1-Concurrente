@@ -2,13 +2,13 @@ import java.io.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Hilo_Escritor extends Thread {
+public class HiloEscritor extends Thread {
     private final File archivoLog;
     private volatile boolean activo = true; // para detener el hilo más adelante si querés
     private final Gestor gestor;
     private long tiempoFinal = -1;
 
-    public Hilo_Escritor() {
+    public HiloEscritor() {
         gestor = Gestor.getMiGestor();
         String userHome = System.getProperty("user.home");
         String documentosPath = userHome + File.separator + "Documents"; // o "Documentos"
@@ -17,7 +17,7 @@ public class Hilo_Escritor extends Thread {
             carpeta.mkdirs();
         }
 
-        archivoLog = new File(carpeta, "log.txt");
+        archivoLog = new File(carpeta, "Registro de ejecucion.txt");
     }
 
     @Override

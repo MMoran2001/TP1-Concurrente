@@ -24,6 +24,10 @@ public final class Gestor {
     private final String documentosPath; // O "Documentos" en español, depende del SO
     private final File carpeta;
     private final File archivo;
+    private boolean preparacionDone;
+    private boolean despachoDone;
+    private boolean entregaDone;
+    private boolean verificacionDone;
 
     public static synchronized Gestor getMiGestor() {
         if (miGestor == null) {
@@ -54,6 +58,11 @@ public final class Gestor {
         documentosPath = userHome + File.separator + "Documents";
         carpeta = new File(documentosPath);
         archivo = new File(carpeta, "Informe de ejecucion TP1");
+
+        preparacionDone = false;
+        despachoDone = false;
+        entregaDone = false;
+        verificacionDone = false;
     }
 
     public boolean TomarPedido(int i, int j) {
@@ -86,22 +95,43 @@ public final class Gestor {
         }
     }
 
-    public int addDespachado() {
+    public int addDespachados() {
 
         return pedidosDespachados.incrementAndGet();
 
     }
 
-    public int addPreparados() {
+    public int getDespachados(){
+        return pedidosDespachados.get();
+    }
 
-        return pedidosPreparados.incrementAndGet();
 
+    public void addPreparados() {
+
+        pedidosPreparados.incrementAndGet();
+
+    }
+
+    public int getPreparados(){
+        return pedidosPreparados.get();
     }
 
     public int addEntregados() {
 
         return pedidosEntregados.incrementAndGet();
 
+    }
+
+    public void markPreparacionDone(){
+        preparacionDone = true;
+    }
+
+    public void markDespachoDone(){
+        despachoDone = true;
+    }
+
+    public void markEntregaDone(){
+        entregaDone = true;
     }
 
     public int[] randomPos() {
@@ -164,6 +194,13 @@ public final class Gestor {
     public Object getMonitorVerificacion() {
         return monitorVerificacion;
     }
+
+    public boolean isPreparacionDone() {return preparacionDone;}
+
+    public boolean isDespachoDone() {return despachoDone;}
+
+    public boolean isEntregaDone() {return entregaDone;}
+    public boolean isVerificacionDone() {return verificacionDone;}
 
     public String getCasilleroMasUsado() {
         int maxUso = -1;

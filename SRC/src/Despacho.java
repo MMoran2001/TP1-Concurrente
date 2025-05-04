@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Despacho extends Thread {
 
@@ -7,23 +8,24 @@ public class Despacho extends Thread {
     private final int tiempoMin;
     private final int tiempoMax;
     private final Random Random = new Random();
+    private final AtomicInteger contador;
 
 
     public Despacho(int tiempoMin, int tiempoMax) {
         this.gestor = Gestor.getMiGestor();
         this.tiempoMin = tiempoMin;
         this.tiempoMax = tiempoMax;
+        this.contador = new AtomicInteger(0);
     }
 
     @Override
     public void run() {
         while (true) {
             try{
-                synchronized (gestor.getMonitorDespacho()){
-                    gestor.getMonitorDespacho().wait();
-                }
-                if (gestor.addDespachado() >= 500) {
-                    break; //Una vez que se prepararon 500 pedidos termina el hilo
+                synchronized (gestor.getMonitorDespacho()) {
+                    while (gestor.getPreparados() == 0 && !gestor.isPreparacionDone()) {
+                        gestor.getMonitorDespacho().wait();
+                    }
                 }
                 int[] pos = buscarCasilleroOcupado();
                 if (pos == null) {
@@ -42,6 +44,8 @@ public class Despacho extends Thread {
                         gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");
                         gestor.modificarRegistro(gestor.getPedEnTran(), "AGREGAR");
                         gestor.aumentarContador();
+                        gestor.addDespachados();
+                        contador.incrementAndGet();
                         synchronized (gestor.getMonitorEntrega()){
                             gestor.getMonitorEntrega().notifyAll();
                         }
@@ -52,11 +56,15 @@ public class Despacho extends Thread {
                         gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
                     }
                 }
-                int total = gestor.addDespachado();
-                if (total >= 500) {break;}
+                if (gestor.getPreparados() == 0 && gestor.isPreparacionDone()) {
+                    gestor.markDespachoDone();
+                    synchronized (gestor.getMonitorEntrega()){
+                        gestor.getMonitorEntrega().notifyAll();
+                    }
+                    System.out.println("FIN DE DESPACHO");
+                    break; //Una vez que se prepararon 500 pedidos termina el hilo
+                }
                 DormirHilo();
-
-
             } catch (Exception e) {
                 Thread.currentThread().interrupt();                                     //Si se da la excepcion salgo del bucle
                 break;
@@ -83,6 +91,9 @@ public class Despacho extends Thread {
         while (almacen[pos[0]][pos[1]].getEstado() != Estado_Casilleros.OCUPADO) {
                 pos = gestor.randomPos();
             }
+        synchronized (gestor.getMonitorEntrega()) {
+            gestor.getMonitorEntrega().notifyAll();
+        }
             return pos;
 
 

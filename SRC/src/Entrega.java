@@ -21,10 +21,17 @@ public class Entrega extends Thread{
             while (true) {
 
                 try {
-                    synchronized (gestor.getMonitorEntrega()){
-                        gestor.getMonitorEntrega().wait();
+                    synchronized (gestor.getMonitorEntrega()) {
+                        while (gestor.getPedEnTran().getContador() == 0 && !gestor.isDespachoDone()) {
+                            gestor.getMonitorEntrega().wait();
+                        }
                     }
-                    if(contador.get() >= gestor.getContador() ){
+                    if (gestor.getPedEnTran().getContador() == 0 && gestor.isDespachoDone()) {
+                        gestor.markEntregaDone();
+                        synchronized (gestor.getMonitorVerificacion()) {
+                            gestor.getMonitorVerificacion().notifyAll();
+                        }
+                        System.out.println("FIN DE ENTREGA");
                         break;
                     }
                     int indice = pedidoAleatorio();                                                           //Tomo el pedido aleatorio
@@ -46,7 +53,6 @@ public class Entrega extends Thread{
                             System.out.println("Fallido");                                                      //Para ver que ande
                         }
                     }
-
                     DormirHilo();
                 } catch (Exception e) {
                     Thread.currentThread().interrupt();                                                        //Si se da la excepcion salgo del bucle
