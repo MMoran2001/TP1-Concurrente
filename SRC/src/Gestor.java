@@ -1,8 +1,6 @@
 import java.io.File;
-import java.io.FileWriter;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.io.IOException;
 
 public final class Gestor {
 
@@ -17,8 +15,8 @@ public final class Gestor {
     private final AtomicInteger pedidosDespachados = new AtomicInteger(0);
     private final AtomicInteger pedidosPreparados = new AtomicInteger(0);
     private final AtomicInteger pedidosEntregados = new AtomicInteger(0);
-    private final Object MonitorEntrega;
-    private final Object MonitorDespacho;
+    private final Object monitorEntrega;
+    private final Object monitorDespacho;
     private final Object monitorVerificacion;
     private final String userHome;
     private final String documentosPath; // O "Documentos" en español, depende del SO
@@ -50,9 +48,9 @@ public final class Gestor {
         pedFallido = new Registro(Estado_Pedidos.FALLIDO);
 
         contador = new AtomicInteger(0);
-        MonitorEntrega = new Object();
+        monitorEntrega = new Object();
         monitorVerificacion = new Object();
-        MonitorDespacho = new Object();
+        monitorDespacho = new Object();
 
         userHome = System.getProperty("user.home");
         documentosPath = userHome + File.separator + "Documents";
@@ -122,16 +120,38 @@ public final class Gestor {
 
     }
 
+    public int getEntregados(){
+        return pedidosEntregados.get();
+    }
+
     public void markPreparacionDone(){
-        preparacionDone = true;
+        synchronized (monitorDespacho){
+            preparacionDone = true;
+            monitorDespacho.notifyAll();
+        }
+
     }
 
     public void markDespachoDone(){
-        despachoDone = true;
+        synchronized (monitorEntrega){
+            despachoDone = true;
+            monitorEntrega.notifyAll();
+        }
+
     }
 
     public void markEntregaDone(){
-        entregaDone = true;
+        synchronized (monitorVerificacion){
+            entregaDone = true;
+            monitorVerificacion.notifyAll();
+        }
+
+    }
+
+    public void markVerificacionDone(){
+
+            verificacionDone = true;
+
     }
 
     public int[] randomPos() {
@@ -184,11 +204,11 @@ public final class Gestor {
     }
 
     public Object getMonitorEntrega() {
-        return MonitorEntrega;
+        return monitorEntrega;
     }
 
     public Object getMonitorDespacho() {
-        return MonitorDespacho;
+        return monitorDespacho;
     }
 
     public Object getMonitorVerificacion() {

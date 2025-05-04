@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" name="Changes" comment="Correcciones en el main, hay que arreglar un problema con los waits, ya que cuando termina preparacion los hilos no se despiertan nunca mas">
+    <list default="true" id="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" name="Changes" comment="casi anda">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Entrega.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Entrega.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Gestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Gestor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SRC/src/Hilo_Escritor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/HiloEscritor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Preparacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Preparacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Verificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Verificacion.java" afterDir="false" />
@@ -93,7 +92,7 @@
       <workItem from="1745968729439" duration="35000" />
       <workItem from="1745968774934" duration="2216000" />
       <workItem from="1746126695319" duration="7074000" />
-      <workItem from="1746384436691" duration="7875000" />
+      <workItem from="1746384436691" duration="12456000" />
     </task>
     <task id="LOCAL-00001" summary="Rama main">
       <option name="closed" value="true" />
@@ -135,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746368153621</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="casi anda">
+      <option name="closed" value="true" />
+      <created>1746393674018</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746393674018</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +154,7 @@
     <MESSAGE value="commit2" />
     <MESSAGE value="commit nueva rama" />
     <MESSAGE value="Correcciones en el main, hay que arreglar un problema con los waits, ya que cuando termina preparacion los hilos no se despiertan nunca mas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correcciones en el main, hay que arreglar un problema con los waits, ya que cuando termina preparacion los hilos no se despiertan nunca mas" />
+    <MESSAGE value="casi anda" />
+    <option name="LAST_COMMIT_MESSAGE" value="casi anda" />
   </component>
 </project>

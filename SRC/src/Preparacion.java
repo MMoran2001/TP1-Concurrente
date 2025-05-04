@@ -19,16 +19,16 @@ public class Preparacion extends Thread {
         while (true) {        //Ejecuto mientras que no se llegue al maximo de pedidos
             try {
                 if (gestor.getPreparados() >= 500) {
-                    synchronized (gestor.getMonitorDespacho()){
-                        gestor.markPreparacionDone();
-                        gestor.getMonitorDespacho().notifyAll();
-                    }
+                    gestor.markPreparacionDone();
                     System.out.println("FIN DE PREPARACION");
                     break; //Una vez que se prepararon 500 pedidos termina el hilo
                 }
+
                 PrepararPedido(); // hace lo necesario para preparar
                 DormirProceso();  // simula la demora
+
                 gestor.addPreparados();
+
                 synchronized (gestor.getMonitorDespacho()){
                     gestor.getMonitorDespacho().notifyAll();
                 }

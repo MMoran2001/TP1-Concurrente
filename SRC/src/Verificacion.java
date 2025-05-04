@@ -21,8 +21,7 @@ public class Verificacion extends Thread{
                         gestor.getMonitorVerificacion().wait();
                     }
                     if (gestor.getPedEntregado().getContador() == 0 && gestor.isEntregaDone()) {
-                        System.out.println("FIN DE VERIFICACION");
-                        break;
+                        gestor.markVerificacionDone();
                     }
                 }
 
@@ -38,7 +37,7 @@ public class Verificacion extends Thread{
                         System.out.println("Pedido No Verificado");
                     }
                 }
-                if (gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() >= 500) {
+                if ((gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() >= 500) && gestor.isVerificacionDone()) {
                     System.out.println("FIN DE VERIFICACION");
                     break;
                 }

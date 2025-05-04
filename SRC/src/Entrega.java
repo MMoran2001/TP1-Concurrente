@@ -28,10 +28,10 @@ public class Entrega extends Thread{
                     }
                     if (gestor.getPedEnTran().getContador() == 0 && gestor.isDespachoDone()) {
                         gestor.markEntregaDone();
+                        System.out.println("FIN DE ENTREGA");
                         synchronized (gestor.getMonitorVerificacion()) {
                             gestor.getMonitorVerificacion().notifyAll();
                         }
-                        System.out.println("FIN DE ENTREGA");
                         break;
                     }
                     int indice = pedidoAleatorio();                                                           //Tomo el pedido aleatorio
@@ -40,17 +40,17 @@ public class Entrega extends Thread{
                         if (EntregaExitosa) {
                             gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");                //Elimino al registro de pedidos en Transito
                             gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");
-                            contador.incrementAndGet();                                                          //Agrego al registro de pedidos entregados
+                            gestor.addEntregados();                                                          //Agrego al registro de pedidos entregados
                             System.out.println("Entregado");                                                     //Para ver que ande
-                            synchronized (gestor.getMonitorVerificacion()){
-                                gestor.getMonitorVerificacion().notifyAll();
-                            }
 
                         } else {
                             gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");               //Elimino al registro de pedidos en transito
                             gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
                             contador.incrementAndGet();                                                         //Agrego al registro de pedidos fallidos
                             System.out.println("Fallido");                                                      //Para ver que ande
+                        }
+                        synchronized (gestor.getMonitorVerificacion()){
+                            gestor.getMonitorVerificacion().notifyAll();
                         }
                     }
                     DormirHilo();

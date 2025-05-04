@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         long inicio = System.currentTimeMillis();
-
+        boolean activo = true;
         Gestor gestor = Gestor.getMiGestor();
         int tiempoMin = 30;
         int tiempoMax = 90;
@@ -31,12 +31,15 @@ public class Main {
         }
 
 
-        while (!gestor.isDespachoDone() && !gestor.isPreparacionDone() && !gestor.isEntregaDone() && gestor.isVerificacionDone()) {
-            try {
-                Thread.sleep(20);
-            } catch (InterruptedException e) {
-                System.out.println("Me interrumpieron!");
+        while (!(gestor.isPreparacionDone()
+                && gestor.isDespachoDone()
+                && gestor.isEntregaDone()
+                && gestor.isVerificacionDone())) {
+
+            try { Thread.sleep(50);
             }
+            catch (InterruptedException e) {
+                System.out.println("Me interrumpieron!"); }
         }
 
         long fin = System.currentTimeMillis();

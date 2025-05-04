@@ -23,10 +23,21 @@ public class Despacho extends Thread {
         while (true) {
             try{
                 synchronized (gestor.getMonitorDespacho()) {
-                    while (gestor.getPreparados() == 0 && !gestor.isPreparacionDone()) {
+                    while (gestor.getPedEnPrep().getContador() == 0 && !gestor.isPreparacionDone()) {
                         gestor.getMonitorDespacho().wait();
                     }
                 }
+                if (gestor.getDespachados() >= 500 && gestor.isPreparacionDone()) {
+                    gestor.markDespachoDone();
+                    System.out.println("FIN DE DESPACHO");
+                    synchronized (gestor.getMonitorEntrega()){
+                        gestor.getMonitorEntrega().notifyAll();
+                    }
+                    break; //Una vez que se prepararon 500 pedidos termina el hilo
+                }
+
+
+
                 int[] pos = buscarCasilleroOcupado();
                 if (pos == null) {
                     DormirHilo();
@@ -44,8 +55,6 @@ public class Despacho extends Thread {
                         gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");
                         gestor.modificarRegistro(gestor.getPedEnTran(), "AGREGAR");
                         gestor.aumentarContador();
-                        gestor.addDespachados();
-                        contador.incrementAndGet();
                         synchronized (gestor.getMonitorEntrega()){
                             gestor.getMonitorEntrega().notifyAll();
                         }
@@ -56,15 +65,9 @@ public class Despacho extends Thread {
                         gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
                     }
                 }
-                if (gestor.getPreparados() == 0 && gestor.isPreparacionDone()) {
-                    gestor.markDespachoDone();
-                    synchronized (gestor.getMonitorEntrega()){
-                        gestor.getMonitorEntrega().notifyAll();
-                    }
-                    System.out.println("FIN DE DESPACHO");
-                    break; //Una vez que se prepararon 500 pedidos termina el hilo
-                }
+                gestor.addDespachados();
                 DormirHilo();
+
             } catch (Exception e) {
                 Thread.currentThread().interrupt();                                     //Si se da la excepcion salgo del bucle
                 break;
