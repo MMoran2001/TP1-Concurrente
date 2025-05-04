@@ -35,7 +35,10 @@ public class Entrega extends Thread{
                             gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");
                             contador.incrementAndGet();                                                          //Agrego al registro de pedidos entregados
                             System.out.println("Entregado");                                                     //Para ver que ande
-                            gestor.getMonitorVerificacion().notifyAll();
+                            synchronized (gestor.getMonitorVerificacion()){
+                                gestor.getMonitorVerificacion().notifyAll();
+                            }
+
                         } else {
                             gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");               //Elimino al registro de pedidos en transito
                             gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");

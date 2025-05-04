@@ -42,7 +42,9 @@ public class Despacho extends Thread {
                         gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");
                         gestor.modificarRegistro(gestor.getPedEnTran(), "AGREGAR");
                         gestor.aumentarContador();
-                        gestor.getMonitorEntrega().notifyAll();
+                        synchronized (gestor.getMonitorEntrega()){
+                            gestor.getMonitorEntrega().notifyAll();
+                        }
 
                     } else {
                         gestor.getAlmacen()[i][j].cambiarEstado(Estado_Casilleros.FUERA_DE_SERVICIO);

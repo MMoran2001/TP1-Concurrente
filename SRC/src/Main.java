@@ -8,10 +8,28 @@ public class Main {
         Hilo_Escritor hiloLogger = new Hilo_Escritor();
         hiloLogger.start();
 
-        for (int i = 0; i < 3; i++) {new Preparacion(tiempoMin, tiempoMax).start();}
-        for (int i = 0; i < 2; i++) {new Despacho(tiempoMin, tiempoMax).start();}
-        for (int i = 0; i < 3; i++) {new Entrega(tiempoMin, tiempoMax).start();}
-        for (int i = 0; i < 2; i++) {new Verificacion(tiempoMin, tiempoMax).start();}
+        for (int i = 0; i < 3; i++) {
+            Preparacion preparacion = new Preparacion(tiempoMin, tiempoMax);
+            Thread hiloPreparacion = new Thread(preparacion);
+            hiloPreparacion.start();
+        }
+        for (int i = 0; i < 2; i++) {
+            Despacho despacho = new Despacho(tiempoMin, tiempoMax);
+            Thread hiloDespacho = new Thread(despacho);
+            hiloDespacho.start();
+        }
+        for (int i = 0; i < 3; i++) {
+            Entrega entrega = new Entrega(tiempoMin, tiempoMax);
+            Thread hiloEntrega = new Thread(entrega);
+            hiloEntrega.start();
+        }
+
+        for (int i = 0; i < 2; i++) {
+            Verificacion verificacion = new Verificacion(tiempoMin, tiempoMax);
+            Thread hiloVerificacion = new Thread(verificacion);
+            hiloVerificacion.start();
+        }
+
 
         while (gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() < 500) {
             try {
@@ -26,6 +44,8 @@ public class Main {
         hiloLogger.registrarTiempoEjecucion(duracion);
         hiloLogger.registrarCasilleroMasUsado(gestor.getCasilleroMasUsado());
         hiloLogger.detener();
+
+        System.out.println("Fin del programa");
     }
 
 }

@@ -50,7 +50,6 @@ public class Preparacion extends Thread {
             if (pedidoTomado) {
                 try {
                     DormirProceso();
-                    Despacho.currentThread().notifyAll();
                 } catch (InterruptedException e) {
                     System.out.println("Me interrumpieron!");
                 }
