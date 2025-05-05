@@ -20,14 +20,15 @@ public class Despacho extends Thread {
 
     @Override
     public void run() {
-        while (true) {
+        while (gestor.getDespachados() <= 500) {
             try{
+                System.out.println("Despachando pedido " + gestor.getDespachados());
                 synchronized (gestor.getMonitorDespacho()) {
                     while (gestor.getPedEnPrep().getContador() == 0 && !gestor.isPreparacionDone()) {
                         gestor.getMonitorDespacho().wait();
                     }
                 }
-                if (gestor.getDespachados() >= 500 && gestor.isPreparacionDone()) {
+                if (gestor.getDespachados() == 500 && gestor.isPreparacionDone()) {
                     gestor.markDespachoDone();
                     System.out.println("FIN DE DESPACHO");
                     synchronized (gestor.getMonitorEntrega()){
@@ -35,8 +36,6 @@ public class Despacho extends Thread {
                     }
                     break; //Una vez que se prepararon 500 pedidos termina el hilo
                 }
-
-
 
                 int[] pos = buscarCasilleroOcupado();
                 if (pos == null) {
@@ -56,7 +55,7 @@ public class Despacho extends Thread {
                         gestor.modificarRegistro(gestor.getPedEnTran(), "AGREGAR");
                         gestor.aumentarContador();
                         synchronized (gestor.getMonitorEntrega()){
-                            gestor.getMonitorEntrega().notifyAll();
+                            gestor.getMonitorEntrega().notify();
                         }
 
                     } else {
@@ -73,6 +72,8 @@ public class Despacho extends Thread {
                 break;
             }
         }
+        gestor.markDespachoDone();
+        System.out.println("FIN DE DESPACHO");
     }
 
     private void DormirHilo() {
@@ -86,16 +87,12 @@ public class Despacho extends Thread {
 
     // Busca un casillero que esté ocupado para simular que tiene un pedido en preparación
     private int[] buscarCasilleroOcupado() {
-        if(gestor.getPedEnPrep().getContador() == 0){
-            return null;// no encontró ninguno
-        }
         Casillero[][] almacen = gestor.getAlmacen();    //Obtenemos el almacen
         int[] pos = gestor.randomPos();
         while (almacen[pos[0]][pos[1]].getEstado() != Estado_Casilleros.OCUPADO) {
+        synchronized (almacen[pos[0]][pos[1]]) {
                 pos = gestor.randomPos();
             }
-        synchronized (gestor.getMonitorEntrega()) {
-            gestor.getMonitorEntrega().notifyAll();
         }
             return pos;
 

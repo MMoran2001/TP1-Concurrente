@@ -16,21 +16,15 @@ public class Preparacion extends Thread {
 
     @Override
     public void run() {
-        while (true) {        //Ejecuto mientras que no se llegue al maximo de pedidos
+        while (gestor.getPreparados() <= 500) {        //Ejecuto mientras que no se llegue al maximo de pedidos
             try {
-                if (gestor.getPreparados() >= 500) {
-                    gestor.markPreparacionDone();
-                    System.out.println("FIN DE PREPARACION");
-                    break; //Una vez que se prepararon 500 pedidos termina el hilo
-                }
-
+                System.out.println("Preparando pedido " + gestor.getPreparados());
                 PrepararPedido(); // hace lo necesario para preparar
                 DormirProceso();  // simula la demora
-
                 gestor.addPreparados();
 
                 synchronized (gestor.getMonitorDespacho()){
-                    gestor.getMonitorDespacho().notifyAll();
+                    gestor.getMonitorDespacho().notify();
                 }
 
             } catch (InterruptedException e) {
@@ -39,6 +33,12 @@ public class Preparacion extends Thread {
             }
             //Que pasa si el hilo es interrumpido, lanzo excepcion
         }
+        gestor.markPreparacionDone();
+        synchronized (gestor.getMonitorDespacho()){
+            gestor.getMonitorDespacho().notifyAll();
+        }
+
+        System.out.println("FIN DE PREPARACION");
 
     }
 

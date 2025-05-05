@@ -18,49 +18,53 @@ public class Entrega extends Thread{
     @Override
     public void run() {
 
-            while (true) {
-
-                try {
-                    synchronized (gestor.getMonitorEntrega()) {
-                        while (gestor.getPedEnTran().getContador() == 0 && !gestor.isDespachoDone()) {
-                            gestor.getMonitorEntrega().wait();
-                        }
+        while (true) {
+            try {
+                System.out.println("Quedan despachar " + (500-gestor.getDespachados()));
+                synchronized (gestor.getMonitorEntrega()) {
+                    while (gestor.getPedEnTran().getContador() == 0 && !gestor.isDespachoDone()) {
+                        gestor.getMonitorEntrega().wait();
                     }
-                    if (gestor.getPedEnTran().getContador() == 0 && gestor.isDespachoDone()) {
-                        gestor.markEntregaDone();
-                        System.out.println("FIN DE ENTREGA");
-                        synchronized (gestor.getMonitorVerificacion()) {
-                            gestor.getMonitorVerificacion().notifyAll();
-                        }
-                        break;
+                }
+                if (gestor.getPedEnTran().getContador() == 0 && gestor.isDespachoDone()) {
+                    gestor.markEntregaDone();
+                    System.out.println("FIN DE ENTREGA");
+                    synchronized (gestor.getMonitorVerificacion()) {
+                        gestor.getMonitorVerificacion().notify();
                     }
-                    int indice = pedidoAleatorio();                                                           //Tomo el pedido aleatorio
-                    if (indice != -1) {                                                                   //si el indice es menor a 0
-                        boolean EntregaExitosa = random.nextInt(100) < 90;                                    //Probabilidad del 90%
-                        if (EntregaExitosa) {
-                            gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");                //Elimino al registro de pedidos en Transito
-                            gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");
-                            gestor.addEntregados();                                                          //Agrego al registro de pedidos entregados
-                            System.out.println("Entregado");                                                     //Para ver que ande
-
-                        } else {
-                            gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");               //Elimino al registro de pedidos en transito
-                            gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
-                            contador.incrementAndGet();                                                         //Agrego al registro de pedidos fallidos
-                            System.out.println("Fallido");                                                      //Para ver que ande
-                        }
-                        synchronized (gestor.getMonitorVerificacion()){
-                            gestor.getMonitorVerificacion().notifyAll();
-                        }
-                    }
-                    DormirHilo();
-                } catch (Exception e) {
-                    Thread.currentThread().interrupt();                                                        //Si se da la excepcion salgo del bucle
                     break;
                 }
+//                    int indice = pedidoAleatorio();                                                           //Tomo el pedido aleatorio
+//                    if (indice != -1) {                                                                   //si el indice es menor a 0
+                boolean EntregaExitosa = random.nextInt(100) < 90;                                    //Probabilidad del 90%
+
+                synchronized (gestor.getPedEnTran()){
+                    gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");
+                    if (EntregaExitosa) {
+                        gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");
+                        gestor.addEntregados();                                                          //Agrego al registro de pedidos entregados
+                        //System.out.println("Entregado");                                                     //Para ver que ande
+
+                    } else {
+                        gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
+                        contador.incrementAndGet();                                                         //Agrego al registro de pedidos fallidos
+                        //System.out.println("Fallido");                                                      //Para ver que ande
+                    }
+                }
+                            //Elimino al registro de pedidos en Transito
+                synchronized (gestor.getMonitorVerificacion()) {
+                    gestor.getMonitorVerificacion().notify();
+                }
+                //}
+                DormirHilo();
+            } catch (Exception e) {
+                Thread.currentThread().interrupt();                                                        //Si se da la excepcion salgo del bucle
+                break;
             }
+        }
 
     }
+
     private void DormirHilo() {                                                                           //Metodo que usamos para simular que el hilo de duerma
         try {
             int demora = ThreadLocalRandom.current().nextInt(tiempoMin, tiempoMax + 1);
@@ -69,6 +73,7 @@ public class Entrega extends Thread{
             Thread.currentThread().interrupt();
         }
     }
+
     private int pedidoAleatorio() {
         synchronized (gestor.getPedEnTran()) {                                          //Accedo a la lista de pedidos en transito
             if (gestor.getPedEnTran().getContador() <= 0) {                             //si el contador es menor a 0.

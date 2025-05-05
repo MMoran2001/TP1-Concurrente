@@ -15,7 +15,9 @@ public class Verificacion extends Thread{
     @Override
     public void run(){
         while (true) {
+
             try{
+                System.out.println("Verificando pedido " + gestor.getPedVerificado().getContador() + " quedan verificar " + (500-(gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador())));
                 synchronized (gestor.getMonitorVerificacion()) {
                     while (gestor.getPedEntregado().getContador() == 0 && !gestor.isEntregaDone()) {
                         gestor.getMonitorVerificacion().wait();
@@ -27,14 +29,13 @@ public class Verificacion extends Thread{
 
                 if (gestor.getPedEntregado().getContador() > 0) {
                     boolean verificacionExitosa = random.nextInt(100) < 95;
+                    gestor.modificarRegistro(gestor.getPedEntregado(), "ELIMINAR");
                     if (verificacionExitosa) {
-                        gestor.modificarRegistro(gestor.getPedEntregado(), "ELIMINAR");
                         gestor.modificarRegistro(gestor.getPedVerificado(), "AGREGAR");
-                        System.out.println("Pedido Verificado");
+                        //System.out.println("Pedido Verificado");
                     } else {
-                        gestor.modificarRegistro(gestor.getPedEntregado(), "ELIMINAR");
                         gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
-                        System.out.println("Pedido No Verificado");
+                        //System.out.println("Pedido No Verificado");
                     }
                 }
                 if ((gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() >= 500) && gestor.isVerificacionDone()) {
