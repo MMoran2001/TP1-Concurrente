@@ -8,6 +8,7 @@ public class Main {
         HiloEscritor hiloLogger = new HiloEscritor();
         hiloLogger.start();
 
+
         for (int i = 0; i < 3; i++) {
             Preparacion preparacion = new Preparacion(tiempoMin, tiempoMax);
             Thread hiloPreparacion = new Thread(preparacion);
@@ -28,13 +29,12 @@ public class Main {
             Verificacion verificacion = new Verificacion(tiempoMin, tiempoMax);
             Thread hiloVerificacion = new Thread(verificacion);
             hiloVerificacion.start();
+
         }
 
 
-        while (!(gestor.isPreparacionDone()
-                && gestor.isDespachoDone()
-                && gestor.isEntregaDone()
-                && gestor.isVerificacionDone())) {
+
+        while (!gestor.isVerificacionDone()) {
 
             try { Thread.sleep(50);
             }
@@ -45,9 +45,7 @@ public class Main {
         long fin = System.currentTimeMillis();
         long duracion = fin - inicio;
         hiloLogger.registrarTiempoEjecucion(duracion);
-        hiloLogger.registrarCasilleroMasUsado(gestor.getCasilleroMasUsado());
         hiloLogger.detener();
-
         System.out.println("Fin del programa");
     }
 

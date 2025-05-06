@@ -18,10 +18,6 @@ public final class Gestor {
     private final Object monitorEntrega;
     private final Object monitorDespacho;
     private final Object monitorVerificacion;
-    private final String userHome;
-    private final String documentosPath; // O "Documentos" en español, depende del SO
-    private final File carpeta;
-    private final File archivo;
     private boolean preparacionDone;
     private boolean despachoDone;
     private boolean entregaDone;
@@ -51,11 +47,6 @@ public final class Gestor {
         monitorEntrega = new Object();
         monitorVerificacion = new Object();
         monitorDespacho = new Object();
-
-        userHome = System.getProperty("user.home");
-        documentosPath = userHome + File.separator + "Documents";
-        carpeta = new File(documentosPath);
-        archivo = new File(carpeta, "Informe de ejecucion TP1");
 
         preparacionDone = false;
         despachoDone = false;
@@ -99,7 +90,7 @@ public final class Gestor {
 
     }
 
-    public int getDespachados(){
+    public int getDespachados() {
         return pedidosDespachados.get();
     }
 
@@ -110,7 +101,7 @@ public final class Gestor {
 
     }
 
-    public int getPreparados(){
+    public int getPreparados() {
         return pedidosPreparados.get();
     }
 
@@ -120,37 +111,37 @@ public final class Gestor {
 
     }
 
-    public int getEntregados(){
+    public int getEntregados() {
         return pedidosEntregados.get();
     }
 
-    public void markPreparacionDone(){
-        synchronized (monitorDespacho){
+    public void markPreparacionDone() {
+        synchronized (monitorDespacho) {
             preparacionDone = true;
             monitorDespacho.notifyAll();
         }
 
     }
 
-    public void markDespachoDone(){
-        synchronized (monitorEntrega){
+    public void markDespachoDone() {
+        synchronized (monitorEntrega) {
             despachoDone = true;
             monitorEntrega.notifyAll();
         }
 
     }
 
-    public void markEntregaDone(){
-        synchronized (monitorVerificacion){
+    public void markEntregaDone() {
+        synchronized (monitorVerificacion) {
             entregaDone = true;
             monitorVerificacion.notifyAll();
         }
 
     }
 
-    public void markVerificacionDone(){
+    public void markVerificacionDone() {
 
-            verificacionDone = true;
+        verificacionDone = true;
 
     }
 
@@ -161,22 +152,8 @@ public final class Gestor {
         return new int[]{i, j};
     }
 
-    //public void escribirLog() {
-    //    try (FileWriter writer = new FileWriter(archivo)) {
-    //        writer.write("Cantidad de pedidos verificados: " + pedVerificado.getContador() + "\n"
-    //                 + "Cantidad de pedidos fallidos: " + pedFallido.getContador() + "\n");
-    //   System.out.println("Archivo creado en: " + archivo.getAbsolutePath());
-    //} catch (IOException e) {
-    //  System.out.println("Error al escribir el archivo: " + e.getMessage());
-    //}
-    //}
-
     public Casillero[][] getAlmacen() {
         return almacen;
-    }
-
-    public int getContador() {
-        return contador.get();
     }
 
     public void aumentarContador() {
@@ -215,12 +192,21 @@ public final class Gestor {
         return monitorVerificacion;
     }
 
-    public boolean isPreparacionDone() {return preparacionDone;}
+    public boolean isPreparacionDone() {
+        return preparacionDone;
+    }
 
-    public boolean isDespachoDone() {return despachoDone;}
+    public boolean isDespachoDone() {
+        return despachoDone;
+    }
 
-    public boolean isEntregaDone() {return entregaDone;}
-    public boolean isVerificacionDone() {return verificacionDone;}
+    public boolean isEntregaDone() {
+        return entregaDone;
+    }
+
+    public boolean isVerificacionDone() {
+        return verificacionDone;
+    }
 
     public String getCasilleroMasUsado() {
         int maxUso = -1;
@@ -238,7 +224,7 @@ public final class Gestor {
             }
         }
 
-        return "Casillero más usado: [" + fila + "][" + columna + "] con " + maxUso + " usos.";
+        return "\nCasillero más usado: [" + fila + "][" + columna + "] con " + maxUso + " usos.";
     }
 }
 
