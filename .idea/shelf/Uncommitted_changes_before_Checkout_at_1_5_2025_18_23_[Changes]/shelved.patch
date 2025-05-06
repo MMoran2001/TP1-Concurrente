@@ -1,0 +1,21 @@
+Index: SRC/src/PreparacionPedidos2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.ArrayList;\r\nimport java.util.List;\r\nimport java.util.Random;\r\nimport java.util.concurrent.ThreadLocalRandom;\r\n\r\npublic class PreparacionPedidos2 extends GestorDePedidos implements Runnable {\r\n    private static int Contador = 0;\r\n    private final GestorDePedidos pedidos; //TENEMOS QUE VER COMO LO IMPLEMENTAN EN LA CLASE PRINCIPAL\r\n    private final List<RegistroDePedido> PedidosEnPreparacion; //TENDRIAMOS QUE VER COMO LO HACEN EN LA CLASE REGISTRODEPEDIDO\r\n    private Random random = new Random();\r\n    private final int maxPedidos;\r\n    private final int tiempoMin;\r\n    private final int tiempoMax;\r\n    public PreparacionPedidos2(GestorDePedidos almacen, List<RegistroDePedido> pedidosEnPreparacion, int maxPedidos, int tiempoMin, int tiempoMax){\r\n        this.almacen = almacen;\r\n        this.PedidosEnPreparacion = pedidosEnPreparacion;\r\n        this.maxPedidos = maxPedidos;\r\n        this.tiempoMin = tiempoMin;\r\n        this.tiempoMax = tiempoMax;\r\n        List<RegistroDePedidos> PedidosEnPreparacion = new ArrayList<RegistroDePedidos>();\r\n    }\r\n\r\n    @Override\r\n    public void run() {\r\n        while (true) { //Ejecuto mientras que no se llegue al maximo de pedidos\r\n            try {\r\n                int id;\r\n                synchronized (PreparacionPedidos.class){ //protejo para evitar concurrencia de dos hilos\r\n                    if(Contador >= maxPedidos)break; //si el contador de pedidos supera o es igual al meximo de pedidor freno la sentencia\r\n                    id=++Contador;                   //sino incremeento el contador en 1\r\n                }\r\n                Casillero casillero = almacen.getCasilleroLibre();//Creamos un objeto tipo Casillero (Vemos como se llama cuando tengamos la clase gestor de pedidos)\r\n                if (casillero != null) { //pregunto si esta vacio\r\n                    Thread.sleep(50);   //si no esta vacio espero 50 milisegundos hasta buscas de nuevo\r\n                    continue;\r\n\r\n                }\r\n                RegistroDePedido registro = new RegistroDePedido(id, casillero); //creo un nuevo registro (vemos como se llama cuando tengamos la clase)\r\n                synchronized (pedidosEnPreparacion) { //protejer a pedidosEnPreparacion para que no trabajen los dos hilos\r\n                    PedidosEnPreparacion.add(registro); //Agrego el pedido a la lista\r\n                }\r\n                DormirProceso();\r\n            } catch (InterruptedException e) { //Que pasa si el hilo es interrumpido, lanzo excepcion\r\n                Thread.currentThread().interrupt(); //Si se da la excepcion salgo del bucle\r\n                break;\r\n            }\r\n        }\r\n    }\r\n    private void DormirProceso() throws InterruptedException{\r\n        int demora = ThreadLocalRandom.current().nextInt(tiempoMin,tiempoMax+1); //Aca lo que hacemos es generar un numero random entre una cota inferior\r\n        Thread.sleep(demora);                                                          //y una superior como nos pide el problema\r\n\r\n    }\r\n\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/SRC/src/PreparacionPedidos2.java b/SRC/src/PreparacionPedidos2.java
+--- a/SRC/src/PreparacionPedidos2.java	(revision 21e703c05f64f2fee5d67d045754b2a4deb21e57)
++++ b/SRC/src/PreparacionPedidos2.java	(date 1746134624427)
+@@ -11,8 +11,8 @@
+     private final int maxPedidos;
+     private final int tiempoMin;
+     private final int tiempoMax;
+-    public PreparacionPedidos2(GestorDePedidos almacen, List<RegistroDePedido> pedidosEnPreparacion, int maxPedidos, int tiempoMin, int tiempoMax){
+-        this.almacen = almacen;
++    public PreparacionPedidos2(GestorDePedidos pedidos, List<RegistroDePedido> pedidosEnPreparacion, int maxPedidos, int tiempoMin, int tiempoMax){
++        this.pedidos = pedidos;
+         this.PedidosEnPreparacion = pedidosEnPreparacion;
+         this.maxPedidos = maxPedidos;
+         this.tiempoMin = tiempoMin;
