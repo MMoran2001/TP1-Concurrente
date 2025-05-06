@@ -34,10 +34,8 @@ public class Verificacion extends Thread{
                         gestor.modificarRegistro(gestor.getPedEntregado(), "ELIMINAR");
                         if (verificacionExitosa) {
                             gestor.modificarRegistro(gestor.getPedVerificado(), "AGREGAR");
-                            //System.out.println("Pedido Verificado");
                         } else {
                             gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
-                            //System.out.println("Pedido No Verificado");
                         }
                     }
                 }

@@ -1,4 +1,4 @@
-import java.io.File;
+
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -11,7 +11,6 @@ public final class Gestor {
     private static Registro pedEntregado;
     private static Registro pedVerificado;
     private static Registro pedFallido;
-    private final AtomicInteger contador;
     private final AtomicInteger pedidosDespachados = new AtomicInteger(0);
     private final AtomicInteger pedidosPreparados = new AtomicInteger(0);
     private final AtomicInteger pedidosEntregados = new AtomicInteger(0);
@@ -43,7 +42,6 @@ public final class Gestor {
         pedVerificado = new Registro(Estado_Pedidos.VERIFICADO);
         pedFallido = new Registro(Estado_Pedidos.FALLIDO);
 
-        contador = new AtomicInteger(0);
         monitorEntrega = new Object();
         monitorVerificacion = new Object();
         monitorDespacho = new Object();
@@ -154,10 +152,6 @@ public final class Gestor {
 
     public Casillero[][] getAlmacen() {
         return almacen;
-    }
-
-    public void aumentarContador() {
-        contador.incrementAndGet();
     }
 
     public Registro getPedEnTran() {

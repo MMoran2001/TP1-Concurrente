@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" name="Changes" comment="Actualizacion de hilos">
+    <list default="true" id="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Entrega.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Entrega.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Gestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Gestor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SRC/src/HiloEscritor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/HiloEscritor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Preparacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Preparacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Verificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Verificacion.java" afterDir="false" />
@@ -18,13 +17,7 @@
     <list id="66ac9d21-1b35-4b99-9bc6-ae007f9761bb" name="Changes by Fede" comment="" />
     <list id="c215d738-1ab5-4b7b-9635-b305a4c4b498" name="Changes by leand" comment="" />
     <list id="516c4607-d9e3-4271-9257-608f042844a4" name="Changes by Maria Pilar" comment="" />
-    <list id="49c0edc5-28fa-48e3-8246-79a36ec3bc55" name="Changes by Yo" comment="">
-      <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SRC/src/Entrega.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Entrega.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SRC/src/HiloEscritor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/HiloEscritor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SRC/src/Preparacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Preparacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SRC/src/Verificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Verificacion.java" afterDir="false" />
-    </list>
+    <list id="49c0edc5-28fa-48e3-8246-79a36ec3bc55" name="Changes by Yo" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,67 +43,6 @@
     &quot;accountId&quot;: &quot;32d0cd98-8ab5-4dbc-8b98-4be0efe1c610&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/SRC/src/Verificacion.java">
-      <ranges>
-        <range start1="14" end1="14" start2="14" end2="15" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="15" end1="16" start2="16" end2="17" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="18" end1="20" start2="19" end2="21" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="29" end1="38" start2="30" end2="41" changelist="49c0edc5-28fa-48e3-8246-79a36ec3bc55" />
-        <range start1="51" end1="51" start2="54" end2="55" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="53" end1="58" start2="57" end2="62" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/SRC/src/HiloEscritor.java">
-      <ranges>
-        <range start1="24" end1="41" start2="24" end2="42" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="42" end1="42" start2="43" end2="44" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="43" end1="45" start2="45" end2="46" changelist="49c0edc5-28fa-48e3-8246-79a36ec3bc55" />
-        <range start1="46" end1="46" start2="47" end2="48" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="58" end1="62" start2="60" end2="60" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="64" end1="65" start2="62" end2="63" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/SRC/src/Preparacion.java">
-      <ranges>
-        <range start1="18" end1="19" start2="18" end2="19" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="21" end1="23" start2="21" end2="23" changelist="49c0edc5-28fa-48e3-8246-79a36ec3bc55" />
-        <range start1="25" end1="26" start2="25" end2="26" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="36" end1="37" start2="36" end2="37" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="44" end1="46" start2="44" end2="46" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="50" end1="51" start2="50" end2="51" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="67" end1="83" start2="67" end2="67" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/SRC/src/Despacho.java">
-      <ranges>
-        <range start1="22" end1="24" start2="22" end2="24" changelist="49c0edc5-28fa-48e3-8246-79a36ec3bc55" />
-        <range start1="30" end1="39" start2="30" end2="30" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="40" end1="47" start2="31" end2="33" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="56" end1="60" start2="42" end2="42" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="66" end1="66" start2="48" end2="51" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="74" end1="74" start2="59" end2="60" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="75" end1="76" start2="61" end2="65" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="92" end1="93" start2="81" end2="82" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="96" end1="111" start2="85" end2="86" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/SRC/src/Entrega.java">
-      <ranges>
-        <range start1="4" end1="5" start2="4" end2="5" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="10" end1="10" start2="10" end2="11" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="20" end1="21" start2="21" end2="22" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="22" end1="23" start2="23" end2="24" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="28" end1="29" start2="29" end2="30" changelist="49c0edc5-28fa-48e3-8246-79a36ec3bc55" />
-        <range start1="34" end1="35" start2="35" end2="36" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="36" end1="38" start2="37" end2="38" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="40" end1="46" start2="40" end2="50" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="47" end1="52" start2="51" end2="58" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="53" end1="58" start2="59" end2="62" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-        <range start1="76" end1="85" start2="80" end2="80" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -128,7 +60,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;branch-develop-3-tiempos-ejecucion&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Marcos/TP1 Concurrente&quot;,
@@ -162,6 +94,7 @@
       <workItem from="1746126695319" duration="7074000" />
       <workItem from="1746384436691" duration="12761000" />
       <workItem from="1746479407926" duration="10479000" />
+      <workItem from="1746535363137" duration="3283000" />
     </task>
     <task id="LOCAL-00001" summary="Rama main">
       <option name="closed" value="true" />

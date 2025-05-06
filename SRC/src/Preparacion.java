@@ -28,18 +28,16 @@ public class Preparacion extends Thread {
                 }
 
             } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();                                     //Si se da la excepcion salgo del bucle
-                break;//Simulo el tiempo de procesamiento de pedido, podemos sacarlo si no llega a hacer falta
+                Thread.currentThread().interrupt();
+                break;
             }
-            //Que pasa si el hilo es interrumpido, lanzo excepcion
+
         }
         gestor.markPreparacionDone();
         synchronized (gestor.getMonitorDespacho()) {
             gestor.getMonitorDespacho().notifyAll();
         }
-
         System.out.println("FIN DE PREPARACION");
-
     }
 
     private void DormirProceso() throws InterruptedException {
@@ -48,8 +46,6 @@ public class Preparacion extends Thread {
     }
 
     public void PrepararPedido() {
-        //si el contador de pedidos supera o es igual al meximo de pedidor freno la sentencia
-
         boolean pedidoTomado = false;
         while (!pedidoTomado) {
             int[] pos = gestor.randomPos();

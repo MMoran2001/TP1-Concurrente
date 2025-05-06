@@ -1,6 +1,5 @@
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class Despacho extends Thread {
 
@@ -8,14 +7,13 @@ public class Despacho extends Thread {
     private final int tiempoMin;
     private final int tiempoMax;
     private final Random Random = new Random();
-    private final AtomicInteger contador;
+
 
 
     public Despacho(int tiempoMin, int tiempoMax) {
         this.gestor = Gestor.getMiGestor();
         this.tiempoMin = tiempoMin;
         this.tiempoMax = tiempoMax;
-        this.contador = new AtomicInteger(0);
     }
 
     @Override
@@ -39,7 +37,7 @@ public class Despacho extends Thread {
                         gestor.getAlmacen()[i][j].cambiarEstado(Estado_Casilleros.VACIO);
                         gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");
                         gestor.modificarRegistro(gestor.getPedEnTran(), "AGREGAR");
-                        gestor.aumentarContador();
+
                     } else {
                         gestor.getAlmacen()[i][j].cambiarEstado(Estado_Casilleros.FUERA_DE_SERVICIO);
                         gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");
@@ -53,7 +51,7 @@ public class Despacho extends Thread {
                 DormirHilo();
 
             } catch (Exception e) {
-                Thread.currentThread().interrupt();                                     //Si se da la excepcion salgo del bucle
+                Thread.currentThread().interrupt();
                 break;
             }
         }

@@ -44,7 +44,6 @@ public class Entrega extends Thread {
                         if (EntregaExitosa) {
                             gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");
                             gestor.addEntregados();                                                          //Agrego al registro de pedidos entregados
-                            //System.out.println("Entregado");
                             synchronized (gestor.getMonitorVerificacion()) {
                                 gestor.getMonitorVerificacion().notify();
                             }
@@ -52,14 +51,10 @@ public class Entrega extends Thread {
                         } else {
                             gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
                             contador.incrementAndGet();                                                         //Agrego al registro de pedidos fallidos
-                            //System.out.println("Fallido");                                                      //Para ver que ande
+
                         }
 
-
                 }
-                //Elimino al registro de pedidos en Transito
-
-
                 DormirHilo();
             } catch (Exception e) {
                 Thread.currentThread().interrupt();                                                        //Si se da la excepcion salgo del bucle
