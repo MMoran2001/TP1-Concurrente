@@ -33,7 +33,6 @@ public class Main {
         }
 
 
-
         while (!gestor.isVerificacionDone()) {
 
             try { Thread.sleep(50);

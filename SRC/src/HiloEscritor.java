@@ -10,9 +10,10 @@ public class HiloEscritor extends Thread {
 
     public HiloEscritor() {
         gestor = Gestor.getMiGestor();
-        String userHome = System.getProperty("user.home");
-        String documentosPath = userHome + File.separator + "Documents"; // o "Documentos"
-        File carpeta = new File(documentosPath);
+        //String userHome = System.getProperty("user.home");
+       // String documentosPath = userHome + File.separator + "Documents"; // o "Documentos"
+       // File carpeta = new File(documentosPath);
+        File carpeta = new File("logs");
         if (!carpeta.exists()) {
             carpeta.mkdirs();
         }

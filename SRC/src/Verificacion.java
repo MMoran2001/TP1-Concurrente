@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Verificacion extends Thread{
+public class Verificacion extends Thread {
     private final Gestor gestor;
     private final int tiempoMin;
     private final int tiempoMax;
