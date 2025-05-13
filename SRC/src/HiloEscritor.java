@@ -23,24 +23,11 @@ public class HiloEscritor extends Thread {
 
     @Override
     public void run() {
-        try (FileWriter writer = new FileWriter(archivoLog, true)) {
-            while (activo) {
-                String Resultados = LocalDateTime.now()
-                        .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"));
-                writer.write("Cantidad de pedidos verificados: " + gestor.getPedVerificado().getContador() + "\n"
-                        + "Cantidad de pedidos fallidos: " + gestor.getPedFallido().getContador() + "\n");
-                System.out.println("Archivo creado en: " + archivoLog.getAbsolutePath());
-                Thread.sleep(200);
-            }
-            if (tiempoFinal != -1) {
-                writer.write("\nFIN DE EJECUCIÓN \n");
-                writer.write("Tiempo total de ejecución: " + tiempoFinal + " ms\n");
-                writer.flush();
-            }
-            registrarCasilleroMasUsado(gestor.getCasilleroMasUsado());
-        } catch (IOException | InterruptedException e) {
-            System.err.println("Error en el LoggerHilo: " + e.getMessage());
+        while (activo){
+            escribirLog();
         }
+        escribirLog();
+        System.out.println("Fin del hilo de escritura");
     }
 
     public void detener() {
@@ -56,6 +43,26 @@ public class HiloEscritor extends Thread {
             writer.write(info + "\n");
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void escribirLog(){
+        try (FileWriter writer = new FileWriter(archivoLog)) {
+
+
+                writer.write( "Cantidad de pedidos verificados: " + gestor.getPedVerificado().getContador() + "\n"
+                        + "Cantidad de pedidos fallidos: " + gestor.getPedFallido().getContador() + "\n");
+                System.out.println("Archivo creado en: " + archivoLog.getAbsolutePath());
+                Thread.sleep(200);
+
+            if (tiempoFinal != -1) {
+                writer.write("\nFIN DE EJECUCIÓN \n");
+                writer.write("Tiempo total de ejecución: " + tiempoFinal + " ms\n");
+                writer.flush();
+            }
+            registrarCasilleroMasUsado(gestor.getCasilleroMasUsado());
+        } catch (IOException | InterruptedException e) {
+            System.err.println("Error en el LoggerHilo: " + e.getMessage());
         }
     }
 

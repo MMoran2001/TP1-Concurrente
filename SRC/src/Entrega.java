@@ -39,23 +39,21 @@ public class Entrega extends Thread {
                 boolean EntregaExitosa = random.nextInt(100) < 90;                                    //Probabilidad del 90%
 
                 synchronized (gestor.getPedEnTran()) {
-
                         gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");
                         if (EntregaExitosa) {
                             gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");
-                            gestor.addEntregados();                                                          //Agrego al registro de pedidos entregados
-                            //System.out.println("Entregado");
                             synchronized (gestor.getMonitorVerificacion()) {
                                 gestor.getMonitorVerificacion().notify();
                             }
+                            gestor.addEntregados();                                                          //Agrego al registro de pedidos entregados
+                            //System.out.println("Entregado");
+
 
                         } else {
                             gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
                             contador.incrementAndGet();                                                         //Agrego al registro de pedidos fallidos
                             //System.out.println("Fallido");                                                      //Para ver que ande
                         }
-
-
                 }
                 //Elimino al registro de pedidos en Transito
 

@@ -56,8 +56,11 @@ public class Despacho extends Thread {
                 Thread.currentThread().interrupt();                                     //Si se da la excepcion salgo del bucle
                 break;
             }
+            if(gestor.getDespachados() == 500){
+                System.out.println("FIN DE PREPARACION");
+            }
         }
-        System.out.println("FIN DE DESPACHO");
+        //System.out.println("FIN DE DESPACHO");
         gestor.markDespachoDone();
         synchronized (gestor.getMonitorEntrega()) {
             gestor.getMonitorEntrega().notifyAll();

@@ -1,18 +1,20 @@
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Casillero {
     private Estado_Casilleros estado;
-    private int contador;
+    private AtomicInteger contador;
 
     public Casillero(){
         estado = Estado_Casilleros.VACIO;
-        contador = 0;
+        contador = new AtomicInteger(0);
     }
 
     public void aumentarContador(){
-        contador++;
+        contador.incrementAndGet();
     }
 
     public int getContador(){
-        return contador;
+        return contador.get();
     }
 
     public void cambiarEstado(Estado_Casilleros estado){

@@ -54,9 +54,9 @@ public final class Gestor {
         verificacionDone = false;
     }
 
-    public boolean TomarPedido(int i, int j) {
+    public synchronized boolean TomarPedido(int i, int j) {
 
-        synchronized (almacen[i][j]) {
+//        synchronized (almacen[i][j]) {
             if (almacen[i][j].getEstado() == Estado_Casilleros.VACIO) {
                 almacen[i][j].cambiarEstado(Estado_Casilleros.OCUPADO);
                 almacen[i][j].aumentarContador();
@@ -64,12 +64,12 @@ public final class Gestor {
 
                 return true;
             }
-        }
+       // }
 
         return false;
     }
 
-    public void modificarRegistro(Registro registro, String operacion) {
+    public synchronized void modificarRegistro(Registro registro, String operacion) {
         switch (operacion) {
             case "AGREGAR":
                 registro.agregarPedido();
@@ -84,28 +84,28 @@ public final class Gestor {
         }
     }
 
-    public int addDespachados() {
+    public synchronized int addDespachados() {
 
         return pedidosDespachados.incrementAndGet();
 
     }
 
-    public int getDespachados() {
+    public synchronized int getDespachados() {
         return pedidosDespachados.get();
     }
 
 
-    public void addPreparados() {
+    public synchronized void addPreparados() {
 
         pedidosPreparados.incrementAndGet();
 
     }
 
-    public int getPreparados() {
+    public synchronized int getPreparados() {
         return pedidosPreparados.get();
     }
 
-    public int addEntregados() {
+    public synchronized int addEntregados() {
 
         return pedidosEntregados.incrementAndGet();
 
@@ -145,14 +145,14 @@ public final class Gestor {
 
     }
 
-    public int[] randomPos() {
+    public synchronized int[] randomPos() {
         Random random = new Random();
         int i = random.nextInt(10);
         int j = random.nextInt(20);
         return new int[]{i, j};
     }
 
-    public Casillero[][] getAlmacen() {
+    public synchronized Casillero[][] getAlmacen() {
         return almacen;
     }
 

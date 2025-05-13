@@ -21,24 +21,26 @@ public class Preparacion extends Thread {
                 System.out.println("Preparando pedido " + gestor.getPreparados());
                 PrepararPedido();                                                                                                       // hace lo necesario para preparar
                 DormirProceso();                                                                                                        // simula la demora
-                gestor.addPreparados();
-
                 synchronized (gestor.getMonitorDespacho()) {
                     gestor.getMonitorDespacho().notify();
                 }
+                gestor.addPreparados();
 
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();                                     //Si se da la excepcion salgo del bucle
                 break;//Simulo el tiempo de procesamiento de pedido, podemos sacarlo si no llega a hacer falta
             }
             //Que pasa si el hilo es interrumpido, lanzo excepcion
+            if(gestor.getPreparados() == 500){
+                System.out.println("FIN DE PREPARACION");
+            }
         }
         gestor.markPreparacionDone();
         synchronized (gestor.getMonitorDespacho()) {
             gestor.getMonitorDespacho().notifyAll();
         }
 
-        System.out.println("FIN DE PREPARACION");
+
 
     }
 

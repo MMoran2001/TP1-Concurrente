@@ -5,24 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" name="Changes" comment="casi anda">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2025_15_29_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2025_15_29__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2025_18_23_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2025_18_23__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_5_2025_20_19_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_5_2025_20_19__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2025_17_39_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2025_17_39__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2025_19_22_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2025_19_22__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Casillero.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Casillero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Entrega.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Entrega.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Gestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Gestor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/HiloEscritor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/HiloEscritor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SRC/src/Verificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Verificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Preparacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Preparacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Registro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Registro de ejecucion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Registro de ejecucion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SRC/Casillero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SRC/Casillero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SRC/Despacho.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SRC/Despacho.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SRC/Entrega.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SRC/Entrega.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SRC/Gestor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SRC/Gestor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SRC/HiloEscritor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SRC/HiloEscritor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SRC/Preparacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SRC/Preparacion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SRC/Registro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SRC/Registro.class" afterDir="false" />
     </list>
     <list id="e0bd94e5-1cfd-4dc5-aa41-a0522b133f8d" name="Changes by 54353" comment="" />
     <list id="66ac9d21-1b35-4b99-9bc6-ae007f9761bb" name="Changes by Fede" comment="" />
-    <list id="c215d738-1ab5-4b7b-9635-b305a4c4b498" name="Changes by leand" comment="" />
+    <list id="c215d738-1ab5-4b7b-9635-b305a4c4b498" name="Changes by leand" comment="">
+      <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
+    </list>
     <list id="516c4607-d9e3-4271-9257-608f042844a4" name="Changes by Maria Pilar" comment="" />
     <list id="49c0edc5-28fa-48e3-8246-79a36ec3bc55" name="Changes by Yo" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +55,14 @@
     &quot;accountId&quot;: &quot;e28a1f9d-5a5e-448e-9624-813a8ca379f0&quot;
   }
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/SRC/src/Despacho.java">
+      <ranges>
+        <range start1="58" end1="58" start2="58" end2="61" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+        <range start1="59" end1="60" start2="62" end2="63" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
