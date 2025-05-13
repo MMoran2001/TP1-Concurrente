@@ -11,7 +11,6 @@ public class Preparacion extends Thread {
         this.gestor = Gestor.getMiGestor();
         this.tiempoMin = tiempoMin;
         this.tiempoMax = tiempoMax;
-
     }
 
     @Override
