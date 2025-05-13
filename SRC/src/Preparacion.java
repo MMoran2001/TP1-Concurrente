@@ -1,8 +1,6 @@
 import java.util.concurrent.ThreadLocalRandom;
 
-
 public class Preparacion extends Thread {
-
     private final Gestor gestor;
     private final int tiempoMin;
     private final int tiempoMax;
@@ -15,22 +13,23 @@ public class Preparacion extends Thread {
 
     @Override
     public void run() {
-        while (gestor.getPreparados() < 500) {                                                                                          //Ejecuto mientras que no se llegue al maximo de pedidos
+        while (gestor.getPreparados() < 500) {
             try {
+                if (gestor.getPreparados() >= 500) {
+                    break;
+                }
                 System.out.println("Preparando pedido " + gestor.getPreparados());
-                PrepararPedido();                                                                                                       // hace lo necesario para preparar
-                DormirProceso();                                                                                                        // simula la demora
+                PrepararPedido();
+                DormirProceso();
                 gestor.addPreparados();
 
                 synchronized (gestor.getMonitorDespacho()) {
                     gestor.getMonitorDespacho().notify();
                 }
-
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 break;
             }
-
         }
         gestor.markPreparacionDone();
         synchronized (gestor.getMonitorDespacho()) {
@@ -40,8 +39,8 @@ public class Preparacion extends Thread {
     }
 
     private void DormirProceso() throws InterruptedException {
-        int demora = ThreadLocalRandom.current().nextInt(tiempoMin, tiempoMax + 1); //Aca lo que hacemos es generar un numero random entre una cota inferior
-        Thread.sleep(demora);                                                          //y una superior como nos pide el problema
+        int demora = ThreadLocalRandom.current().nextInt(tiempoMin, tiempoMax + 1);
+        Thread.sleep(demora);
     }
 
     public void PrepararPedido() {
@@ -59,3 +58,4 @@ public class Preparacion extends Thread {
         }
     }
 }
+

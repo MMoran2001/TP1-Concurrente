@@ -10,30 +10,35 @@ public class HiloEscritor extends Thread {
 
     public HiloEscritor() {
         gestor = Gestor.getMiGestor();
-        String userHome = System.getProperty("user.home");
-        String documentosPath = userHome + File.separator + "Documents"; // o "Documentos"
-        File carpeta = new File(documentosPath);
-        if (!carpeta.exists()) {
-            carpeta.mkdirs();
+        archivoLog = new File("Registro de ejecucion.txt");
+        // Limpiar el archivo al inicio
+        try {
+            new FileWriter(archivoLog, false).close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
-        archivoLog = new File(carpeta, "Registro de ejecucion.txt");
     }
 
     @Override
     public void run() {
-        try (FileWriter writer = new FileWriter(archivoLog, true)) {
+        try (FileWriter writer = new FileWriter(archivoLog)) {
             while (activo) {
                 String Resultados = LocalDateTime.now()
                         .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"));
+                writer.write(Resultados + "\n");
                 writer.write("Cantidad de pedidos verificados: " + gestor.getPedVerificado().getContador() + "\n"
-                        + "Cantidad de pedidos fallidos: " + gestor.getPedFallido().getContador() + "\n");
+                        + "Cantidad de pedidos fallidos: " + gestor.getPedFallido().getContador() + "\n"
+                        + "Total de pedidos procesados: " + (gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador()) + "\n\n");
+                writer.flush();
                 System.out.println("Archivo creado en: " + archivoLog.getAbsolutePath());
                 Thread.sleep(200);
             }
             if (tiempoFinal != -1) {
                 writer.write("\nFIN DE EJECUCIÓN \n");
                 writer.write("Tiempo total de ejecución: " + tiempoFinal + " ms\n");
+                writer.write("Total final de pedidos verificados: " + gestor.getPedVerificado().getContador() + "\n");
+                writer.write("Total final de pedidos fallidos: " + gestor.getPedFallido().getContador() + "\n");
+                writer.write("Total final de pedidos procesados: " + (gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador()) + "\n");
                 writer.flush();
             }
             registrarCasilleroMasUsado(gestor.getCasilleroMasUsado());
@@ -59,4 +64,6 @@ public class HiloEscritor extends Thread {
     }
 
 }
+
+
 

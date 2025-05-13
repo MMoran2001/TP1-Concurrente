@@ -30,20 +30,20 @@ public class Despacho extends Thread {
                 int i = pos[0];
                 int j = pos[1];
 
-                boolean verificacionExitosa = Random.nextInt(100) <= 85; // 85% de probabilidad
+                boolean verificacionExitosa = Random.nextInt(100) <= 85;
 
                 synchronized (gestor.getAlmacen()[i][j]) {
                     if (verificacionExitosa) {
                         gestor.getAlmacen()[i][j].cambiarEstado(Estado_Casilleros.VACIO);
                         gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");
                         gestor.modificarRegistro(gestor.getPedEnTran(), "AGREGAR");
-
                     } else {
                         gestor.getAlmacen()[i][j].cambiarEstado(Estado_Casilleros.FUERA_DE_SERVICIO);
                         gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");
                         gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
                     }
                 }
+
                 synchronized (gestor.getMonitorEntrega()) {
                     gestor.getMonitorEntrega().notify();
                 }
@@ -60,7 +60,6 @@ public class Despacho extends Thread {
         synchronized (gestor.getMonitorEntrega()) {
             gestor.getMonitorEntrega().notifyAll();
         }
-
     }
 
     private void DormirHilo() {

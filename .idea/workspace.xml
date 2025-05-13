@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Casillero.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Casillero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Entrega.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Entrega.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Gestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Gestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/HiloEscritor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/HiloEscritor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SRC/src/Preparacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Preparacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SRC/src/Verificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Verificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SRC/src/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Registro.java" afterDir="false" />
     </list>
     <list id="e0bd94e5-1cfd-4dc5-aa41-a0522b133f8d" name="Changes by 54353" comment="" />
     <list id="66ac9d21-1b35-4b99-9bc6-ae007f9761bb" name="Changes by Fede" comment="" />

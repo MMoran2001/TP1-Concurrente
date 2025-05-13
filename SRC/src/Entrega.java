@@ -18,53 +18,50 @@ public class Entrega extends Thread {
 
     @Override
     public void run() {
-
         while (!gestor.isEntregaDone()) {
             try {
-                System.out.println("Quedan despachar " + (500 - gestor.getDespachados()));
                 synchronized (gestor.getMonitorEntrega()) {
                     while (gestor.getPedEnTran().getContador() == 0 && !gestor.isDespachoDone()) {
                         gestor.getMonitorEntrega().wait();
                     }
                 }
+
                 if (gestor.getPedEnTran().getContador() <= 0 && gestor.isDespachoDone()) {
                     gestor.markEntregaDone();
                     System.out.println("FIN DE ENTREGA");
                     synchronized (gestor.getMonitorVerificacion()) {
                         gestor.getMonitorVerificacion().notify();
                     }
-                    continue;
+                    break;
                 }
-                //si el indice es menor a 0
-                boolean EntregaExitosa = random.nextInt(100) < 90;                                    //Probabilidad del 90%
+
+                System.out.println("Quedan despachar " + (500 - gestor.getDespachados()));
+                boolean EntregaExitosa = random.nextInt(100) < 90;
 
                 synchronized (gestor.getPedEnTran()) {
-
+                    if (gestor.getPedEnTran().getContador() > 0) {
                         gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");
                         if (EntregaExitosa) {
                             gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");
-                            gestor.addEntregados();                                                          //Agrego al registro de pedidos entregados
+                            gestor.addEntregados();
                             synchronized (gestor.getMonitorVerificacion()) {
                                 gestor.getMonitorVerificacion().notify();
                             }
-
                         } else {
                             gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
-                            contador.incrementAndGet();                                                         //Agrego al registro de pedidos fallidos
-
+                            contador.incrementAndGet();
                         }
-
+                    }
                 }
                 DormirHilo();
             } catch (Exception e) {
-                Thread.currentThread().interrupt();                                                        //Si se da la excepcion salgo del bucle
+                Thread.currentThread().interrupt();
                 break;
             }
         }
-
     }
 
-    private void DormirHilo() {                                                                           //Metodo que usamos para simular que el hilo de duerma
+    private void DormirHilo() {
         try {
             int demora = ThreadLocalRandom.current().nextInt(tiempoMin, tiempoMax + 1);
             Thread.sleep(demora);
@@ -72,5 +69,6 @@ public class Entrega extends Thread {
             Thread.currentThread().interrupt();
         }
     }
-
 }
+
+

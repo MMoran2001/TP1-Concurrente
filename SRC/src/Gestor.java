@@ -1,4 +1,5 @@
 
+
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -82,34 +83,34 @@ public final class Gestor {
         }
     }
 
-    public int addDespachados() {
+    public synchronized int addDespachados() {
 
         return pedidosDespachados.incrementAndGet();
 
     }
 
-    public int getDespachados() {
+    public synchronized int getDespachados() {
         return pedidosDespachados.get();
     }
 
 
-    public void addPreparados() {
+    public synchronized void addPreparados() {
 
         pedidosPreparados.incrementAndGet();
 
     }
 
-    public int getPreparados() {
+    public synchronized int getPreparados() {
         return pedidosPreparados.get();
     }
 
-    public int addEntregados() {
+    public synchronized int addEntregados() {
 
         return pedidosEntregados.incrementAndGet();
 
     }
 
-    public int getEntregados() {
+    public synchronized int getEntregados() {
         return pedidosEntregados.get();
     }
 
@@ -221,6 +222,7 @@ public final class Gestor {
         return "\nCasillero más usado: [" + fila + "][" + columna + "] con " + maxUso + " usos.";
     }
 }
+
 
 
 
