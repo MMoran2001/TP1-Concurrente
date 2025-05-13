@@ -1,0 +1,164 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/SRC/src/Hilo_Escritor.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SRC/src/Casillero.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SRC/src/Casillero.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SRC/src/Despacho.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SRC/src/Despacho.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SRC/src/Entrega.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SRC/src/Entrega.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SRC/src/Gestor.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SRC/src/Gestor.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SRC/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SRC/src/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SRC/src/Preparacion.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SRC/src/Preparacion.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SRC/src/Verificacion.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SRC/src/Verificacion.java\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"e0bd94e5-1cfd-4dc5-aa41-a0522b133f8d\" name=\"Changes by 54353\" comment=\"\" />\r\n    <list id=\"baf49792-07d3-4184-8a85-de48f31817d4\" name=\"Changes by Fede\" comment=\"\" />\r\n    <list id=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" name=\"Changes by leand\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/SRC/src/Despacho.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SRC/src/Despacho.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SRC/src/Entrega.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SRC/src/Entrega.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SRC/src/Gestor.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SRC/src/Gestor.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SRC/src/Preparacion.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SRC/src/Preparacion.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SRC/src/Verificacion.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SRC/src/Verificacion.java\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"516c4607-d9e3-4271-9257-608f042844a4\" name=\"Changes by Maria Pilar\" comment=\"\" />\r\n    <list id=\"49c0edc5-28fa-48e3-8246-79a36ec3bc55\" name=\"Changes by Yo\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"branch-develop-2\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;MMoran2001&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/MMoran2001/TP1-Concurrente.git&quot;,\r\n    &quot;accountId&quot;: &quot;32d0cd98-8ab5-4dbc-8b98-4be0efe1c610&quot;\r\n  }\r\n}</component>\r\n  <component name=\"LineStatusTrackerManager\">\r\n    <file path=\"$PROJECT_DIR$/SRC/src/Despacho.java\">\r\n      <ranges>\r\n        <range start1=\"1\" end1=\"2\" start2=\"1\" end2=\"1\" changelist=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" />\r\n        <range start1=\"22\" end1=\"22\" start2=\"21\" end2=\"24\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"42\" end1=\"42\" start2=\"44\" end2=\"46\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n      </ranges>\r\n    </file>\r\n    <file path=\"$PROJECT_DIR$/SRC/src/Verificacion.java\">\r\n      <ranges>\r\n        <range start1=\"1\" end1=\"2\" start2=\"1\" end2=\"1\" changelist=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" />\r\n        <range start1=\"19\" end1=\"19\" start2=\"18\" end2=\"21\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"42\" end1=\"51\" start2=\"44\" end2=\"44\" changelist=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" />\r\n      </ranges>\r\n    </file>\r\n    <file path=\"$PROJECT_DIR$/SRC/src/Gestor.java\">\r\n      <ranges>\r\n        <range start1=\"0\" end1=\"0\" start2=\"0\" end2=\"2\" changelist=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" />\r\n        <range start1=\"1\" end1=\"2\" start2=\"3\" end2=\"3\" changelist=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" />\r\n        <range start1=\"3\" end1=\"3\" start2=\"4\" end2=\"5\" changelist=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" />\r\n        <range start1=\"4\" end1=\"5\" start2=\"6\" end2=\"7\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"14\" end1=\"24\" start2=\"16\" end2=\"32\" changelist=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" />\r\n        <range start1=\"25\" end1=\"37\" start2=\"33\" end2=\"45\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"38\" end1=\"40\" start2=\"46\" end2=\"56\" changelist=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" />\r\n        <range start1=\"41\" end1=\"42\" start2=\"57\" end2=\"58\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"48\" end1=\"48\" start2=\"64\" end2=\"65\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"52\" end1=\"54\" start2=\"69\" end2=\"71\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"55\" end1=\"66\" start2=\"72\" end2=\"83\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"67\" end1=\"69\" start2=\"84\" end2=\"86\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"70\" end1=\"71\" start2=\"87\" end2=\"88\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"72\" end1=\"73\" start2=\"89\" end2=\"90\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"74\" end1=\"76\" start2=\"91\" end2=\"94\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"77\" end1=\"78\" start2=\"95\" end2=\"96\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"79\" end1=\"81\" start2=\"97\" end2=\"100\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"82\" end1=\"83\" start2=\"101\" end2=\"102\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"84\" end1=\"85\" start2=\"103\" end2=\"104\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"86\" end1=\"87\" start2=\"105\" end2=\"106\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"91\" end1=\"92\" start2=\"110\" end2=\"121\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"93\" end1=\"96\" start2=\"122\" end2=\"125\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"97\" end1=\"100\" start2=\"126\" end2=\"129\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"101\" end1=\"104\" start2=\"130\" end2=\"133\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"105\" end1=\"108\" start2=\"134\" end2=\"137\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"109\" end1=\"112\" start2=\"138\" end2=\"141\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"113\" end1=\"116\" start2=\"142\" end2=\"145\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"117\" end1=\"120\" start2=\"146\" end2=\"149\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"121\" end1=\"124\" start2=\"150\" end2=\"153\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"125\" end1=\"125\" start2=\"154\" end2=\"157\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"126\" end1=\"126\" start2=\"158\" end2=\"165\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n      </ranges>\r\n    </file>\r\n    <file path=\"$PROJECT_DIR$/SRC/src/Preparacion.java\">\r\n      <ranges>\r\n        <range start1=\"0\" end1=\"4\" start2=\"0\" end2=\"0\" changelist=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" />\r\n        <range start1=\"5\" end1=\"6\" start2=\"1\" end2=\"2\" changelist=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" />\r\n        <range start1=\"29\" end1=\"29\" start2=\"25\" end2=\"28\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"58\" end1=\"58\" start2=\"57\" end2=\"58\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n      </ranges>\r\n    </file>\r\n    <file path=\"$PROJECT_DIR$/SRC/src/Entrega.java\">\r\n      <ranges>\r\n        <range start1=\"1\" end1=\"2\" start2=\"1\" end2=\"1\" changelist=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" />\r\n        <range start1=\"24\" end1=\"25\" start2=\"23\" end2=\"26\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"36\" end1=\"36\" start2=\"37\" end2=\"38\" changelist=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" />\r\n        <range start1=\"69\" end1=\"72\" start2=\"71\" end2=\"71\" changelist=\"c215d738-1ab5-4b7b-9635-b305a4c4b498\" />\r\n      </ranges>\r\n    </file>\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2wQK4c3Y9PxF61vEhe7imjsKzVK\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"branch-develop-1\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/Marcos/TP1 Concurrente\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"61b8e913-c95a-41f7-b4c0-0fcf8c4297fa\" name=\"Changes\" comment=\"\" />\r\n      <created>1745968167731</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1745968167731</updated>\r\n      <workItem from=\"1745968168994\" duration=\"373000\" />\r\n      <workItem from=\"1745968729439\" duration=\"35000\" />\r\n      <workItem from=\"1745968774934\" duration=\"2216000\" />\r\n      <workItem from=\"1746126695319\" duration=\"7074000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Rama main\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745968294384</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745968294384</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"creo mi rama\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745968406615</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745968406615</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"commit2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745970114779</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745970114779</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"commit nueva rama\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1746127236084</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1746127236084</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Rama main\" />\r\n    <MESSAGE value=\"creo mi rama\" />\r\n    <MESSAGE value=\"commit2\" />\r\n    <MESSAGE value=\"commit nueva rama\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"commit nueva rama\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 855ae8ae5ce7f6785d1e10d4550ef057081b466e)
++++ b/.idea/workspace.xml	(date 1746448018098)
+@@ -5,25 +5,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/SRC/src/Hilo_Escritor.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SRC/src/Casillero.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Casillero.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SRC/src/Entrega.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Entrega.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SRC/src/Gestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Gestor.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SRC/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SRC/src/Preparacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Preparacion.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SRC/src/Verificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Verificacion.java" afterDir="false" />
+     </list>
+     <list id="e0bd94e5-1cfd-4dc5-aa41-a0522b133f8d" name="Changes by 54353" comment="" />
+     <list id="baf49792-07d3-4184-8a85-de48f31817d4" name="Changes by Fede" comment="" />
+-    <list id="c215d738-1ab5-4b7b-9635-b305a4c4b498" name="Changes by leand" comment="">
+-      <change beforePath="$PROJECT_DIR$/SRC/src/Despacho.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Despacho.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SRC/src/Entrega.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Entrega.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SRC/src/Gestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Gestor.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SRC/src/Preparacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Preparacion.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SRC/src/Verificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/SRC/src/Verificacion.java" afterDir="false" />
+-    </list>
++    <list id="c215d738-1ab5-4b7b-9635-b305a4c4b498" name="Changes by leand" comment="" />
+     <list id="516c4607-d9e3-4271-9257-608f042844a4" name="Changes by Maria Pilar" comment="" />
+     <list id="49c0edc5-28fa-48e3-8246-79a36ec3bc55" name="Changes by Yo" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+@@ -55,76 +41,9 @@
+   <component name="GithubPullRequestsUISettings">{
+   &quot;selectedUrlAndAccountId&quot;: {
+     &quot;url&quot;: &quot;https://github.com/MMoran2001/TP1-Concurrente.git&quot;,
+-    &quot;accountId&quot;: &quot;32d0cd98-8ab5-4dbc-8b98-4be0efe1c610&quot;
++    &quot;accountId&quot;: &quot;e28a1f9d-5a5e-448e-9624-813a8ca379f0&quot;
+   }
+ }</component>
+-  <component name="LineStatusTrackerManager">
+-    <file path="$PROJECT_DIR$/SRC/src/Despacho.java">
+-      <ranges>
+-        <range start1="1" end1="2" start2="1" end2="1" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+-        <range start1="22" end1="22" start2="21" end2="24" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="42" end1="42" start2="44" end2="46" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-      </ranges>
+-    </file>
+-    <file path="$PROJECT_DIR$/SRC/src/Verificacion.java">
+-      <ranges>
+-        <range start1="1" end1="2" start2="1" end2="1" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+-        <range start1="19" end1="19" start2="18" end2="21" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="42" end1="51" start2="44" end2="44" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+-      </ranges>
+-    </file>
+-    <file path="$PROJECT_DIR$/SRC/src/Gestor.java">
+-      <ranges>
+-        <range start1="0" end1="0" start2="0" end2="2" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+-        <range start1="1" end1="2" start2="3" end2="3" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+-        <range start1="3" end1="3" start2="4" end2="5" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+-        <range start1="4" end1="5" start2="6" end2="7" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="14" end1="24" start2="16" end2="32" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+-        <range start1="25" end1="37" start2="33" end2="45" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="38" end1="40" start2="46" end2="56" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+-        <range start1="41" end1="42" start2="57" end2="58" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="48" end1="48" start2="64" end2="65" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="52" end1="54" start2="69" end2="71" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="55" end1="66" start2="72" end2="83" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="67" end1="69" start2="84" end2="86" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="70" end1="71" start2="87" end2="88" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="72" end1="73" start2="89" end2="90" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="74" end1="76" start2="91" end2="94" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="77" end1="78" start2="95" end2="96" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="79" end1="81" start2="97" end2="100" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="82" end1="83" start2="101" end2="102" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="84" end1="85" start2="103" end2="104" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="86" end1="87" start2="105" end2="106" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="91" end1="92" start2="110" end2="121" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="93" end1="96" start2="122" end2="125" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="97" end1="100" start2="126" end2="129" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="101" end1="104" start2="130" end2="133" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="105" end1="108" start2="134" end2="137" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="109" end1="112" start2="138" end2="141" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="113" end1="116" start2="142" end2="145" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="117" end1="120" start2="146" end2="149" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="121" end1="124" start2="150" end2="153" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="125" end1="125" start2="154" end2="157" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="126" end1="126" start2="158" end2="165" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-      </ranges>
+-    </file>
+-    <file path="$PROJECT_DIR$/SRC/src/Preparacion.java">
+-      <ranges>
+-        <range start1="0" end1="4" start2="0" end2="0" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+-        <range start1="5" end1="6" start2="1" end2="2" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+-        <range start1="29" end1="29" start2="25" end2="28" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="58" end1="58" start2="57" end2="58" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-      </ranges>
+-    </file>
+-    <file path="$PROJECT_DIR$/SRC/src/Entrega.java">
+-      <ranges>
+-        <range start1="1" end1="2" start2="1" end2="1" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+-        <range start1="24" end1="25" start2="23" end2="26" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="36" end1="36" start2="37" end2="38" changelist="61b8e913-c95a-41f7-b4c0-0fcf8c4297fa" />
+-        <range start1="69" end1="72" start2="71" end2="71" changelist="c215d738-1ab5-4b7b-9635-b305a4c4b498" />
+-      </ranges>
+-    </file>
+-  </component>
+   <component name="ProblemsViewState">
+     <option name="selectedTabId" value="CurrentFile" />
+   </component>
+@@ -136,23 +55,24 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "branch-develop-1",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Users/Marcos/TP1 Concurrente",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;#3 on branch-develop-1&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/Marcos/TP1 Concurrente&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+@@ -173,6 +93,9 @@
+       <workItem from="1745968729439" duration="35000" />
+       <workItem from="1745968774934" duration="2216000" />
+       <workItem from="1746126695319" duration="7074000" />
++      <workItem from="1746392013185" duration="7000" />
++      <workItem from="1746404230325" duration="22000" />
++      <workItem from="1746447872224" duration="142000" />
+     </task>
+     <task id="LOCAL-00001" summary="Rama main">
+       <option name="closed" value="true" />
