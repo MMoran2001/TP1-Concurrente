@@ -1,14 +1,14 @@
 import java.util.Random;
-import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Entrega extends Thread{
+public class Entrega extends Thread {
     private final Gestor gestor;
     private final int tiempoMin;
     private final int tiempoMax;
     private final Random random = new Random();
     private final AtomicInteger contador;
+
     public Entrega(int tiempoMin, int tiempoMax) {
         this.gestor = Gestor.getMiGestor();
         this.tiempoMin = tiempoMin;
@@ -18,39 +18,51 @@ public class Entrega extends Thread{
 
     @Override
     public void run() {
-
-            while (true) {
-
-                try {
-
-                    if(contador.get() >= gestor.getContador() ){
-                        break;
+        while (!gestor.isEntregaDone()) {
+            try {
+                synchronized (gestor.getMonitorEntrega()) {
+                    while (gestor.getPedEnTran().getContador() == 0 && !gestor.isDespachoDone()) {
+                        gestor.getMonitorEntrega().wait();
                     }
-                    int indice = pedidoAleatorio();                                                           //Tomo el pedido aleatorio
-                    if (indice != -1) {                                                                   //si el indice es menor a 0
-                        boolean EntregaExitosa = random.nextInt(100) < 90;                                    //Probabilidad del 90%
-                        if (EntregaExitosa) {
-                            gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");                //Elimino al registro de pedidos en Transito
-                            gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");
-                            contador.incrementAndGet();                                                          //Agrego al registro de pedidos entregados
-                            System.out.println("Entregado");                                                     //Para ver que ande
-                        } else {
-                            gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");               //Elimino al registro de pedidos en transito
-                            gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
-                            contador.incrementAndGet();                                                         //Agrego al registro de pedidos fallidos
-                            System.out.println("Fallido");                                                      //Para ver que ande
-                        }
-                    }
+                }
 
-                    DormirHilo();
-                } catch (Exception e) {
-                    Thread.currentThread().interrupt();                                                        //Si se da la excepcion salgo del bucle
+                if (gestor.getPedEnTran().getContador() <= 0 && gestor.isDespachoDone()) {
+                    gestor.markEntregaDone();
+                    System.out.println("FIN DE ENTREGA");
+                    synchronized (gestor.getMonitorVerificacion()) {
+                        gestor.getMonitorVerificacion().notify();
+                    }
                     break;
                 }
-            }
 
+                System.out.println("Quedan despachar " + (500 - gestor.getDespachados()));
+                boolean EntregaExitosa = random.nextInt(100) < 90;
+
+                synchronized (gestor.getPedEnTran()) {
+                    if (gestor.getPedEnTran().getContador() > 0) {
+                        gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");
+                        if (EntregaExitosa) {
+                            gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");
+                            if (gestor.incrementarEntregadosSiPosible()) {
+                                synchronized (gestor.getMonitorVerificacion()) {
+                                    gestor.getMonitorVerificacion().notify();
+                                }
+                            }
+                        } else {
+                            gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
+                            contador.incrementAndGet();
+                        }
+                    }
+                }
+                DormirHilo();
+            } catch (Exception e) {
+                Thread.currentThread().interrupt();
+                break;
+            }
+        }
     }
-    private void DormirHilo() {                                                                           //Metodo que usamos para simular que el hilo de duerma
+
+    private void DormirHilo() {
         try {
             int demora = ThreadLocalRandom.current().nextInt(tiempoMin, tiempoMax + 1);
             Thread.sleep(demora);
@@ -58,16 +70,6 @@ public class Entrega extends Thread{
             Thread.currentThread().interrupt();
         }
     }
-    private int pedidoAleatorio() {
-        synchronized (gestor.getPedEnTran()) {                                          //Accedo a la lista de pedidos en transito
-            if (gestor.getPedEnTran().getContador() <= 0) {                             //si el contador es menor a 0.
-                return -1;                                                              // No hay pedidos en tránsito
-            }
-            return random.nextInt(gestor.getPedEnTran().getContador());                 // Devuelve un índice aleatorio
-        }
-    }
-
-    public void despertarHilos(){
-        notifyAll();
-    }
 }
+
+

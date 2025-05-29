@@ -7,6 +7,15 @@ public class Casillero {
         contador = 0;
     }
 
+    public synchronized boolean ocuparSiVacio() {
+        if (estado == Estado_Casilleros.VACIO) {
+            estado = Estado_Casilleros.OCUPADO;
+            contador++;
+            return true;
+        }
+        return false;
+    }
+
     public void aumentarContador(){
         contador++;
     }
@@ -15,16 +24,12 @@ public class Casillero {
         return contador;
     }
 
-    public Estado_Casilleros cambiarEstado(Estado_Casilleros estado){
-        estado = this.estado;
-        return estado;
+    public void cambiarEstado(Estado_Casilleros estado){
+        this.estado= estado;
     }
 
     public Estado_Casilleros getEstado() {
         return estado;
     }
-
-
-
-
 }
+

@@ -8,16 +8,16 @@ public class Registro {
         tipoPedido = pedido;
     }
 
-    public void agregarPedido(){
+    public synchronized void agregarPedido(){
         contador++;
     }
 
-    public void eliminarPedido(){
+    public synchronized void eliminarPedido(){
         contador--;
     }
 
 
-    public int getContador(){
+    public synchronized int getContador(){
         return contador;
     }
 

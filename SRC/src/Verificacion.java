@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Verificacion extends Thread{
@@ -13,49 +12,52 @@ public class Verificacion extends Thread{
         this.tiempoMin = tiempoMin;
         this.tiempoMax = tiempoMax;
     }
+
     @Override
-    public void run(){
+    public void run() {
         while (true) {
-            try{
-                    if(gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() >= 500) {
-                        break;
+
+            try {
+                System.out.println("Verificando pedido " + gestor.getPedVerificado().getContador() + " quedan verificar " + (500 - (gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador())));
+                synchronized (gestor.getMonitorVerificacion()) {
+                    while (gestor.getPedEntregado().getContador() == 0 && !gestor.isEntregaDone()) {
+                        gestor.getMonitorVerificacion().wait();
                     }
-                    if(gestor.getPedEntregado().getContador() > 0){
+                    if (gestor.getPedEntregado().getContador() == 0 && gestor.isEntregaDone()) {
+                        gestor.markVerificacionDone();
+                    }
+                }
+
+                synchronized (gestor.getPedEntregado()) {
+                    if (gestor.getPedEntregado().getContador() > 0) {
                         boolean verificacionExitosa = random.nextInt(100) < 95;
-                            if(verificacionExitosa){
-                                gestor.modificarRegistro(gestor.getPedEntregado(),"ELIMINAR");
-                                gestor.modificarRegistro(gestor.getPedVerificado(),"AGREGAR");
-                                System.out.println("Pedido Verificado");
-                            }
-                            else{
-                                gestor.modificarRegistro(gestor.getPedEntregado(),"ELIMINAR");
-                                gestor.modificarRegistro(gestor.getPedFallido(),"AGREGAR");
-                                System.out.println("Pedido No Verificado");
-                            }
+                        gestor.modificarRegistro(gestor.getPedEntregado(), "ELIMINAR");
+                        if (verificacionExitosa) {
+                            gestor.modificarRegistro(gestor.getPedVerificado(), "AGREGAR");
+                        } else {
+                            gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
+                        }
                     }
-               DormirHilo();
-            } catch (Exception e) {
+                }
+                if ((gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() >= 500) && gestor.isVerificacionDone()) {
+                    System.out.println("FIN DE VERIFICACION");
+                    break;
+                }
+                DormirHilo();
+            } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 break;
             }
         }
     }
-    private int PedidoRandomEntregado() {
-        synchronized (gestor.getPedEntregado()) {                                          //Accedo a la lista de pedidos en transito
-            if (gestor.getPedEntregado().getContador() <= 0) {                             //si el contador es menor a 0.
-                return -1;                                                              // No hay pedidos en tránsito
-            }
-            return random.nextInt(gestor.getPedEntregado().getContador());
-        }
-    }
 
     private void DormirHilo() {
         try {
-             int demora = ThreadLocalRandom.current().nextInt(tiempoMin, tiempoMax + 1);
-              Thread.sleep(demora);
-            }catch (InterruptedException e) {
-              Thread.currentThread().interrupt();
-            }
+            int demora = ThreadLocalRandom.current().nextInt(tiempoMin, tiempoMax + 1);
+            Thread.sleep(demora);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 }
 
