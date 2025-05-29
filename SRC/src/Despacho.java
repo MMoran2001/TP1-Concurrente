@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Despacho extends Thread {
+public class Despacho implements Runnable {
 
     private final Gestor gestor;
     private final int tiempoMin;
@@ -18,13 +18,17 @@ public class Despacho extends Thread {
 
     @Override
     public void run() {
-        while (gestor.getDespachados() < 500) {
+        while (!gestor.isDespachoDone()) {
             try {
-                System.out.println("Despachando pedido " + gestor.getDespachados());
+
                 synchronized (gestor.getMonitorDespacho()) {
-                    while (gestor.getPedEnPrep().getContador() == 0 && !gestor.isPreparacionDone()) {
+                    while (gestor.getPedEnPrep().getListaPedidos().isEmpty() && !gestor.isPreparacionDone()) {
                         gestor.getMonitorDespacho().wait();
                     }
+                }
+                if(gestor.isPreparacionDone() && gestor.getPedEnPrep().getListaPedidos().isEmpty()) {
+                    gestor.markDespachoDone();
+                    break;
                 }
                 int[] pos = buscarCasilleroOcupado();
                 int i = pos[0];
@@ -33,30 +37,37 @@ public class Despacho extends Thread {
                 boolean verificacionExitosa = Random.nextInt(100) <= 85;
 
                 synchronized (gestor.getAlmacen()[i][j]) {
-                    if (verificacionExitosa) {
-                        gestor.getAlmacen()[i][j].cambiarEstado(Estado_Casilleros.VACIO);
+                    if(!gestor.getPedEnPrep().getListaPedidos().isEmpty() && gestor.getAlmacen()[i][j].getEstado()==Estado_Casilleros.OCUPADO) {
+                        System.out.println("Despachando pedido " + gestor.getDespachados() ) ;
+                        System.out.println("Quedan Despachar " + (gestor.getPreparados() - gestor.getDespachados()));
                         gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");
-                        gestor.modificarRegistro(gestor.getPedEnTran(), "AGREGAR");
-                    } else {
-                        gestor.getAlmacen()[i][j].cambiarEstado(Estado_Casilleros.FUERA_DE_SERVICIO);
-                        gestor.modificarRegistro(gestor.getPedEnPrep(), "ELIMINAR");
-                        gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
+                        if (verificacionExitosa) {
+                            gestor.getAlmacen()[i][j].cambiarEstado(Estado_Casilleros.VACIO);
+                            gestor.modificarRegistro(gestor.getPedEnTran(), "AGREGAR");
+                        } else {
+                            gestor.getAlmacen()[i][j].cambiarEstado(Estado_Casilleros.FUERA_DE_SERVICIO);
+                            gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
+                            System.out.println("La cantidad de pedidos fallidos en despacho " + gestor.getPedFallido().getContador());
+                        }
+                        gestor.addDespachados();
                     }
                 }
 
                 synchronized (gestor.getMonitorEntrega()) {
                     gestor.getMonitorEntrega().notify();
                 }
-                gestor.addDespachados();
+
                 DormirHilo();
 
             } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println("Error en el despacho");
                 Thread.currentThread().interrupt();
                 break;
             }
         }
         System.out.println("FIN DE DESPACHO");
-        gestor.markDespachoDone();
+
         synchronized (gestor.getMonitorEntrega()) {
             gestor.getMonitorEntrega().notifyAll();
         }

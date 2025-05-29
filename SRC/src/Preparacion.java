@@ -1,6 +1,6 @@
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Preparacion extends Thread {
+public class Preparacion implements Runnable {
     private final Gestor gestor;
     private final int tiempoMin;
     private final int tiempoMax;
@@ -13,20 +13,20 @@ public class Preparacion extends Thread {
 
     @Override
     public void run() {
-        while (gestor.getPreparados() < 500) {
+        while (!gestor.isPreparacionDone()) {
             try {
-                if (gestor.getPreparados() >= 500) {
-                    break;
-                }
-                System.out.println("Preparando pedido " + gestor.getPreparados());
+//                if (gestor.getPreparados() >= 500) {
+//                    gestor.markPreparacionDone();
+//                    break;
+//                }
                 PrepararPedido();
                 DormirProceso();
-                gestor.addPreparados();
 
                 synchronized (gestor.getMonitorDespacho()) {
                     gestor.getMonitorDespacho().notify();
                 }
-            } catch (InterruptedException e) {
+            } catch (Exception e) {
+                e.printStackTrace();
                 Thread.currentThread().interrupt();
                 break;
             }
@@ -45,17 +45,23 @@ public class Preparacion extends Thread {
 
     public void PrepararPedido() {
         boolean pedidoTomado = false;
-        while (!pedidoTomado) {
-            int[] pos = gestor.randomPos();
-            pedidoTomado = gestor.TomarPedido(pos[0], pos[1]);
-            if (pedidoTomado) {
-                try {
-                    DormirProceso();
-                } catch (InterruptedException e) {
-                    System.out.println("Me interrumpieron!");
+        if(gestor.getPreparados() < 500) {
+                int[] pos = gestor.randomPos();
+                pedidoTomado = gestor.TomarPedido(pos[0], pos[1]);
+                if (pedidoTomado) {
+                    System.out.println("Preparando pedido " + gestor.getPreparados());
+                    gestor.addPreparados();
+                    try {
+                        DormirProceso();
+                    } catch (InterruptedException e) {
+                        System.out.println("Me interrumpieron!");
+                    }
                 }
-            }
+        }else{
+            System.out.println("Se termino preparacion con: " + gestor.getPreparados() + " pedidos");
+            gestor.markPreparacionDone();
         }
+
     }
 }
 

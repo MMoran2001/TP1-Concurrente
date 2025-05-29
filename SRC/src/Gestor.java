@@ -56,10 +56,11 @@ public final class Gestor {
     public boolean TomarPedido(int i, int j) {
 
         synchronized (almacen[i][j]) {
-            if (almacen[i][j].getEstado() == Estado_Casilleros.VACIO) {
+            if ((almacen[i][j].getEstado() == Estado_Casilleros.VACIO)&& (getPreparados()<500)){
                 almacen[i][j].cambiarEstado(Estado_Casilleros.OCUPADO);
                 almacen[i][j].aumentarContador();
-                pedEnPrep.agregarPedido();
+                pedEnPrep.agregarPedido(new Pedido(Estado_Pedidos.EN_PREPARACION));
+                System.out.println("Contador de pedidos: " + pedEnPrep.getContador() + "Contador total de pedidos:" + getPreparados());
 
                 return true;
             }
@@ -71,7 +72,7 @@ public final class Gestor {
     public void modificarRegistro(Registro registro, String operacion) {
         switch (operacion) {
             case "AGREGAR":
-                registro.agregarPedido();
+                registro.agregarPedido(new Pedido(registro.getTipoPedido()));
                 break;
             case "ELIMINAR":
                 registro.eliminarPedido();
@@ -192,6 +193,7 @@ public final class Gestor {
     }
 
     public boolean isDespachoDone() {
+
         return despachoDone;
     }
 

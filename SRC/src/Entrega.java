@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Entrega extends Thread {
+public class Entrega implements Runnable {
     private final Gestor gestor;
     private final int tiempoMin;
     private final int tiempoMax;
@@ -21,12 +21,12 @@ public class Entrega extends Thread {
         while (!gestor.isEntregaDone()) {
             try {
                 synchronized (gestor.getMonitorEntrega()) {
-                    while (gestor.getPedEnTran().getContador() == 0 && !gestor.isDespachoDone()) {
+                    while (gestor.getPedEnTran().getListaPedidos().isEmpty() && !gestor.isDespachoDone()) {
                         gestor.getMonitorEntrega().wait();
                     }
                 }
 
-                if (gestor.getPedEnTran().getContador() <= 0 && gestor.isDespachoDone()) {
+                if (gestor.getPedEnTran().getListaPedidos().isEmpty() && gestor.isDespachoDone()) {
                     gestor.markEntregaDone();
                     System.out.println("FIN DE ENTREGA");
                     synchronized (gestor.getMonitorVerificacion()) {
@@ -35,11 +35,11 @@ public class Entrega extends Thread {
                     break;
                 }
 
-                System.out.println("Quedan despachar " + (500 - gestor.getDespachados()));
+
                 boolean EntregaExitosa = random.nextInt(100) < 90;
 
                 synchronized (gestor.getPedEnTran()) {
-                    if (gestor.getPedEnTran().getContador() > 0) {
+                    //if (!gestor.getPedEnTran().getListaPedidos().isEmpty()) {
                         gestor.modificarRegistro(gestor.getPedEnTran(), "ELIMINAR");
                         if (EntregaExitosa) {
                             gestor.modificarRegistro(gestor.getPedEntregado(), "AGREGAR");
@@ -51,10 +51,11 @@ public class Entrega extends Thread {
                             gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
                             contador.incrementAndGet();
                         }
-                    }
+                    //}
                 }
                 DormirHilo();
             } catch (Exception e) {
+                e.printStackTrace();
                 Thread.currentThread().interrupt();
                 break;
             }

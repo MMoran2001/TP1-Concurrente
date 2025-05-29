@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Verificacion extends Thread{
+public class Verificacion implements Runnable {
     private final Gestor gestor;
     private final int tiempoMin;
     private final int tiempoMax;
@@ -15,21 +15,26 @@ public class Verificacion extends Thread{
 
     @Override
     public void run() {
-        while (true) {
+        while (!gestor.isVerificacionDone()) {
 
             try {
                 System.out.println("Verificando pedido " + gestor.getPedVerificado().getContador() + " quedan verificar " + (500 - (gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador())));
                 synchronized (gestor.getMonitorVerificacion()) {
-                    while (gestor.getPedEntregado().getContador() == 0 && !gestor.isEntregaDone()) {
+                    while (gestor.getPedEntregado().getListaPedidos().isEmpty() && !gestor.isEntregaDone()) {
                         gestor.getMonitorVerificacion().wait();
                     }
-                    if (gestor.getPedEntregado().getContador() == 0 && gestor.isEntregaDone()) {
+                    if (gestor.getPedEntregado().getListaPedidos().isEmpty() && gestor.isEntregaDone()) {
+                        System.out.println("Cantidad de pedidos en preparacion cuando ya termino verificacion:" + gestor.getPedEnPrep().getContador());
                         gestor.markVerificacionDone();
                     }
                 }
-
+                if ((gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() >= 500) && gestor.isVerificacionDone()) {
+                    System.out.println("FIN DE VERIFICACION");
+                    break;
+                }
                 synchronized (gestor.getPedEntregado()) {
-                    if (gestor.getPedEntregado().getContador() > 0) {
+                    System.out.println("estoy laburando");
+                    if (!(gestor.getPedEntregado().getListaPedidos().isEmpty())) {
                         boolean verificacionExitosa = random.nextInt(100) < 95;
                         gestor.modificarRegistro(gestor.getPedEntregado(), "ELIMINAR");
                         if (verificacionExitosa) {
@@ -37,18 +42,22 @@ public class Verificacion extends Thread{
                         } else {
                             gestor.modificarRegistro(gestor.getPedFallido(), "AGREGAR");
                         }
+                        System.out.println("La cantidad de pedidos verificados es:" + gestor.getPedVerificado().getContador());
+                        System.out.println("La cantidad de pedidos fallidos es:" + gestor.getPedFallido().getContador());
+                    }else{
+                        //gestor.markVerificacionDone();
+                        //break;
                     }
                 }
-                if ((gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() >= 500) && gestor.isVerificacionDone()) {
-                    System.out.println("FIN DE VERIFICACION");
-                    break;
-                }
+
                 DormirHilo();
-            } catch (InterruptedException e) {
+            } catch (Exception e) {
+                e.printStackTrace();
                 Thread.currentThread().interrupt();
                 break;
             }
         }
+        System.out.println("FIN DE VERIFICACION");
     }
 
     private void DormirHilo() {
@@ -60,4 +69,4 @@ public class Verificacion extends Thread{
         }
     }
 }
-
+//((gestor.getPedVerificado().getContador() + gestor.getPedFallido().getContador() < 500))&&
