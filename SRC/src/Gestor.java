@@ -61,7 +61,6 @@ public final class Gestor {
                 almacen[i][j].aumentarContador();
                 pedEnPrep.agregarPedido(new Pedido(Estado_Pedidos.EN_PREPARACION));
                 System.out.println("Contador de pedidos: " + pedEnPrep.getContador() + "Contador total de pedidos:" + getPreparados());
-
                 return true;
             }
         }

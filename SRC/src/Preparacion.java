@@ -44,10 +44,10 @@ public class Preparacion implements Runnable {
     }
 
     public void PrepararPedido() {
-        boolean pedidoTomado = false;
+
         if(gestor.getPreparados() < 500) {
                 int[] pos = gestor.randomPos();
-                pedidoTomado = gestor.TomarPedido(pos[0], pos[1]);
+                boolean pedidoTomado = gestor.TomarPedido(pos[0], pos[1]);
                 if (pedidoTomado) {
                     System.out.println("Preparando pedido " + gestor.getPreparados());
                     gestor.addPreparados();

@@ -24,7 +24,7 @@ public class Verificacion implements Runnable {
                         gestor.getMonitorVerificacion().wait();
                     }
                     if (gestor.getPedEntregado().getListaPedidos().isEmpty() && gestor.isEntregaDone()) {
-                        System.out.println("Cantidad de pedidos en preparacion cuando ya termino verificacion:" + gestor.getPedEnPrep().getContador());
+                        System.out.println("Cantidad de pedidos en preparacion cuando ya termino verificacion:" + gestor.getPedEnPrep().getContador() + " o:?+" + gestor.getPedEnPrep().getListaPedidos().size());
                         gestor.markVerificacionDone();
                     }
                 }

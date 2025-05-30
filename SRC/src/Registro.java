@@ -15,7 +15,7 @@ public class Registro{
         tipoPedido = pedido;
         pedidos = new ArrayList<>();
     }
-    public void agregarPedido(Pedido pedido) {
+    public synchronized void agregarPedido(Pedido pedido) {
         if (pedido.getTipoPedido() == tipoPedido) {
             pedidos.add(pedido);
             contador.incrementAndGet();
