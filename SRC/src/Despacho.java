@@ -8,9 +8,9 @@ public class Despacho extends Thread {
     private final int tiempoMax;
     private final Random Random = new Random();
 
-    public Despacho(int var1, int var2) {
-        this.tiempoMin = var1;
-        this.tiempoMax = var2;
+    public Despacho(int tiempoMin, int tiempoMax) {
+        this.tiempoMin = tiempoMin;
+        this.tiempoMax = tiempoMax;
     }
 
     public void run() {
@@ -22,23 +22,21 @@ public class Despacho extends Thread {
                         if (this.gestor.getPedEnPrep().getContador() != 0 || this.gestor.isPreparacionDone()) {
                             break;
                         }
-
                         this.gestor.getMonitorDespacho().wait();
                     }
                 }
 
-                if (this.gestor.incrementarDespachadosSiPosible()) {
-                    int[] var1 = this.buscarCasilleroOcupado();
-                    int var2 = var1[0];
-                    int var3 = var1[1];
-                    boolean var4 = this.Random.nextInt(100) <= 85;
-                    synchronized(this.gestor.getAlmacen()[var2][var3]) {
-                        if (var4) {
-                            this.gestor.getAlmacen()[var2][var3].cambiarEstado(Estado_Casilleros.VACIO);
+                int resultado = this.gestor.procesarPedido("DESPACHADO");
+                if (resultado != -1) {
+                    int[] pos = this.buscarCasilleroOcupado();
+                    boolean exitoso = this.Random.nextInt(100) <= 85;
+                    synchronized(this.gestor.getAlmacen()[pos[0]][pos[1]]) {
+                        if (exitoso) {
+                            this.gestor.getAlmacen()[pos[0]][pos[1]].cambiarEstado(Estado_Casilleros.VACIO);
                             this.gestor.modificarRegistro(this.gestor.getPedEnPrep(), "ELIMINAR");
                             this.gestor.modificarRegistro(this.gestor.getPedEnTran(), "AGREGAR");
                         } else {
-                            this.gestor.getAlmacen()[var2][var3].cambiarEstado(Estado_Casilleros.FUERA_DE_SERVICIO);
+                            this.gestor.getAlmacen()[pos[0]][pos[1]].cambiarEstado(Estado_Casilleros.FUERA_DE_SERVICIO);
                             this.gestor.modificarRegistro(this.gestor.getPedEnPrep(), "ELIMINAR");
                             this.gestor.modificarRegistro(this.gestor.getPedFallido(), "AGREGAR");
                         }
@@ -51,7 +49,7 @@ public class Despacho extends Thread {
                     this.DormirHilo();
                     continue;
                 }
-            } catch (Exception var13) {
+            } catch (Exception e) {
                 Thread.currentThread().interrupt();
             }
 
@@ -66,24 +64,23 @@ public class Despacho extends Thread {
 
     private void DormirHilo() {
         try {
-            int var1 = ThreadLocalRandom.current().nextInt(this.tiempoMin, this.tiempoMax + 1);
-            Thread.sleep((long)var1);
-        } catch (InterruptedException var2) {
+            int demora = ThreadLocalRandom.current().nextInt(this.tiempoMin, this.tiempoMax + 1);
+            Thread.sleep(demora);
+        } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
-
     }
 
     private int[] buscarCasilleroOcupado() {
-        Casillero[][] var1 = this.gestor.getAlmacen();
-        int[] var2 = this.gestor.randomPos();
+        Casillero[][] almacen = this.gestor.getAlmacen();
+        int[] pos = this.gestor.randomPos();
 
-        while(var1[var2[0]][var2[1]].getEstado() != Estado_Casilleros.OCUPADO) {
-            synchronized(var1[var2[0]][var2[1]]) {
-                var2 = this.gestor.randomPos();
+        while(almacen[pos[0]][pos[1]].getEstado() != Estado_Casilleros.OCUPADO) {
+            synchronized(almacen[pos[0]][pos[1]]) {
+                pos = this.gestor.randomPos();
             }
         }
 
-        return var2;
+        return pos;
     }
 }

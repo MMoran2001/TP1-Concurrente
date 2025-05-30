@@ -15,10 +15,11 @@ public class Preparacion extends Thread {
     public void run() {
         while (true) {
             try {
-                if (!gestor.incrementarPreparadosSiPosible()) {
+                int resultado = gestor.procesarPedido("PREPARADO");
+                if (resultado == -1) {
                     break;
                 }
-                System.out.println("Preparando pedido " + gestor.getPreparados());
+                System.out.println("Preparando pedido " + resultado);
                 PrepararPedido();
                 DormirProceso();
 

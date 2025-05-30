@@ -2,6 +2,9 @@ import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public final class Gestor {
+    private static final int MAX_PEDIDOS = 500;
+    private static final int FILAS_ALMACEN = 10;
+    private static final int COLUMNAS_ALMACEN = 20;
 
     private static Gestor miGestor;
     private static Casillero[][] almacen;
@@ -29,9 +32,9 @@ public final class Gestor {
     }
 
     private Gestor() {
-        almacen = new Casillero[10][20];
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 20; j++) {
+        almacen = new Casillero[FILAS_ALMACEN][COLUMNAS_ALMACEN];
+        for (int i = 0; i < FILAS_ALMACEN; i++) {
+            for (int j = 0; j < COLUMNAS_ALMACEN; j++) {
                 almacen[i][j] = new Casillero();
             }
         }
@@ -72,44 +75,28 @@ public final class Gestor {
             default:
                 System.out.println("Operacion no valida");
                 break;
-
         }
     }
 
-    public synchronized boolean incrementarPreparadosSiPosible() {
-        if (pedidosPreparados.get() < 500) {
-            pedidosPreparados.incrementAndGet();
+    private synchronized boolean incrementarContadorSiPosible(AtomicInteger contador) {
+        if (contador.get() < MAX_PEDIDOS) {
+            contador.incrementAndGet();
             return true;
         }
         return false;
     }
 
-    public synchronized boolean incrementarDespachadosSiPosible() {
-        if (pedidosDespachados.get() < 500) {
-            pedidosDespachados.incrementAndGet();
-            return true;
+    public synchronized int procesarPedido(String tipo) {
+        switch (tipo) {
+            case "PREPARADO":
+                return incrementarContadorSiPosible(pedidosPreparados) ? pedidosPreparados.get() : -1;
+            case "DESPACHADO":
+                return incrementarContadorSiPosible(pedidosDespachados) ? pedidosDespachados.get() : -1;
+            case "ENTREGADO":
+                return incrementarContadorSiPosible(pedidosEntregados) ? pedidosEntregados.get() : -1;
+            default:
+                return -1;
         }
-        return false;
-    }
-
-    public synchronized boolean incrementarEntregadosSiPosible() {
-        if (pedidosEntregados.get() < 500) {
-            pedidosEntregados.incrementAndGet();
-            return true;
-        }
-        return false;
-    }
-
-    public synchronized int addDespachados() {
-        return incrementarDespachadosSiPosible() ? pedidosDespachados.get() : -1;
-    }
-
-    public synchronized void addPreparados() {
-        incrementarPreparadosSiPosible();
-    }
-
-    public synchronized int addEntregados() {
-        return incrementarEntregadosSiPosible() ? pedidosEntregados.get() : -1;
     }
 
     public synchronized int getDespachados() {
@@ -129,7 +116,6 @@ public final class Gestor {
             preparacionDone = true;
             monitorDespacho.notifyAll();
         }
-
     }
 
     public void markDespachoDone() {
@@ -137,7 +123,6 @@ public final class Gestor {
             despachoDone = true;
             monitorEntrega.notifyAll();
         }
-
     }
 
     public void markEntregaDone() {
@@ -145,73 +130,33 @@ public final class Gestor {
             entregaDone = true;
             monitorVerificacion.notifyAll();
         }
-
     }
 
     public void markVerificacionDone() {
-
         verificacionDone = true;
-
     }
 
     public int[] randomPos() {
         Random random = new Random();
-        int i = random.nextInt(10);
-        int j = random.nextInt(20);
+        int i = random.nextInt(FILAS_ALMACEN);
+        int j = random.nextInt(COLUMNAS_ALMACEN);
         return new int[]{i, j};
     }
 
-    public Casillero[][] getAlmacen() {
-        return almacen;
-    }
-
-    public Registro getPedEnTran() {
-        return pedEnTran;
-    }
-
-    public Registro getPedEnPrep() {
-        return pedEnPrep;
-    }
-
-    public Registro getPedFallido() {
-        return pedFallido;
-    }
-
-    public Registro getPedEntregado() {
-        return pedEntregado;
-    }
-
-    public Registro getPedVerificado() {
-        return pedVerificado;
-    }
-
-    public Object getMonitorEntrega() {
-        return monitorEntrega;
-    }
-
-    public Object getMonitorDespacho() {
-        return monitorDespacho;
-    }
-
-    public Object getMonitorVerificacion() {
-        return monitorVerificacion;
-    }
-
-    public boolean isPreparacionDone() {
-        return preparacionDone;
-    }
-
-    public boolean isDespachoDone() {
-        return despachoDone;
-    }
-
-    public boolean isEntregaDone() {
-        return entregaDone;
-    }
-
-    public boolean isVerificacionDone() {
-        return verificacionDone;
-    }
+    // Getters
+    public Casillero[][] getAlmacen() { return almacen; }
+    public Registro getPedEnTran() { return pedEnTran; }
+    public Registro getPedEnPrep() { return pedEnPrep; }
+    public Registro getPedFallido() { return pedFallido; }
+    public Registro getPedEntregado() { return pedEntregado; }
+    public Registro getPedVerificado() { return pedVerificado; }
+    public Object getMonitorEntrega() { return monitorEntrega; }
+    public Object getMonitorDespacho() { return monitorDespacho; }
+    public Object getMonitorVerificacion() { return monitorVerificacion; }
+    public boolean isPreparacionDone() { return preparacionDone; }
+    public boolean isDespachoDone() { return despachoDone; }
+    public boolean isEntregaDone() { return entregaDone; }
+    public boolean isVerificacionDone() { return verificacionDone; }
 
     public String getCasilleroMasUsado() {
         int maxUso = -1;

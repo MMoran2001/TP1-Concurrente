@@ -1,0 +1,2823 @@
+2025-05-30 12:47:04.204
+Cantidad de pedidos verificados: 0
+Cantidad de pedidos fallidos: 0
+Total de pedidos procesados: 0
+
+2025-05-30 12:47:04.420
+Cantidad de pedidos verificados: 0
+Cantidad de pedidos fallidos: 1
+Total de pedidos procesados: 1
+
+2025-05-30 12:47:04.621
+Cantidad de pedidos verificados: 0
+Cantidad de pedidos fallidos: 2
+Total de pedidos procesados: 2
+
+2025-05-30 12:47:04.822
+Cantidad de pedidos verificados: 1
+Cantidad de pedidos fallidos: 2
+Total de pedidos procesados: 3
+
+2025-05-30 12:47:05.023
+Cantidad de pedidos verificados: 2
+Cantidad de pedidos fallidos: 2
+Total de pedidos procesados: 4
+
+2025-05-30 12:47:05.224
+Cantidad de pedidos verificados: 2
+Cantidad de pedidos fallidos: 2
+Total de pedidos procesados: 4
+
+2025-05-30 12:47:05.425
+Cantidad de pedidos verificados: 3
+Cantidad de pedidos fallidos: 2
+Total de pedidos procesados: 5
+
+2025-05-30 12:47:05.628
+Cantidad de pedidos verificados: 4
+Cantidad de pedidos fallidos: 2
+Total de pedidos procesados: 6
+
+2025-05-30 12:47:05.830
+Cantidad de pedidos verificados: 5
+Cantidad de pedidos fallidos: 2
+Total de pedidos procesados: 7
+
+2025-05-30 12:47:06.031
+Cantidad de pedidos verificados: 6
+Cantidad de pedidos fallidos: 2
+Total de pedidos procesados: 8
+
+2025-05-30 12:47:06.233
+Cantidad de pedidos verificados: 7
+Cantidad de pedidos fallidos: 2
+Total de pedidos procesados: 9
+
+2025-05-30 12:47:06.435
+Cantidad de pedidos verificados: 7
+Cantidad de pedidos fallidos: 3
+Total de pedidos procesados: 10
+
+2025-05-30 12:47:06.638
+Cantidad de pedidos verificados: 8
+Cantidad de pedidos fallidos: 3
+Total de pedidos procesados: 11
+
+2025-05-30 12:47:06.838
+Cantidad de pedidos verificados: 8
+Cantidad de pedidos fallidos: 4
+Total de pedidos procesados: 12
+
+2025-05-30 12:47:07.039
+Cantidad de pedidos verificados: 9
+Cantidad de pedidos fallidos: 4
+Total de pedidos procesados: 13
+
+2025-05-30 12:47:07.241
+Cantidad de pedidos verificados: 9
+Cantidad de pedidos fallidos: 4
+Total de pedidos procesados: 13
+
+2025-05-30 12:47:07.442
+Cantidad de pedidos verificados: 10
+Cantidad de pedidos fallidos: 4
+Total de pedidos procesados: 14
+
+2025-05-30 12:47:07.645
+Cantidad de pedidos verificados: 11
+Cantidad de pedidos fallidos: 5
+Total de pedidos procesados: 16
+
+2025-05-30 12:47:07.845
+Cantidad de pedidos verificados: 11
+Cantidad de pedidos fallidos: 6
+Total de pedidos procesados: 17
+
+2025-05-30 12:47:08.047
+Cantidad de pedidos verificados: 11
+Cantidad de pedidos fallidos: 6
+Total de pedidos procesados: 17
+
+2025-05-30 12:47:08.247
+Cantidad de pedidos verificados: 12
+Cantidad de pedidos fallidos: 6
+Total de pedidos procesados: 18
+
+2025-05-30 12:47:08.450
+Cantidad de pedidos verificados: 13
+Cantidad de pedidos fallidos: 7
+Total de pedidos procesados: 20
+
+2025-05-30 12:47:08.653
+Cantidad de pedidos verificados: 13
+Cantidad de pedidos fallidos: 7
+Total de pedidos procesados: 20
+
+2025-05-30 12:47:08.856
+Cantidad de pedidos verificados: 15
+Cantidad de pedidos fallidos: 7
+Total de pedidos procesados: 22
+
+2025-05-30 12:47:09.071
+Cantidad de pedidos verificados: 16
+Cantidad de pedidos fallidos: 7
+Total de pedidos procesados: 23
+
+2025-05-30 12:47:09.286
+Cantidad de pedidos verificados: 16
+Cantidad de pedidos fallidos: 7
+Total de pedidos procesados: 23
+
+2025-05-30 12:47:09.490
+Cantidad de pedidos verificados: 17
+Cantidad de pedidos fallidos: 8
+Total de pedidos procesados: 25
+
+2025-05-30 12:47:09.692
+Cantidad de pedidos verificados: 18
+Cantidad de pedidos fallidos: 8
+Total de pedidos procesados: 26
+
+2025-05-30 12:47:09.893
+Cantidad de pedidos verificados: 18
+Cantidad de pedidos fallidos: 9
+Total de pedidos procesados: 27
+
+2025-05-30 12:47:10.095
+Cantidad de pedidos verificados: 19
+Cantidad de pedidos fallidos: 9
+Total de pedidos procesados: 28
+
+2025-05-30 12:47:10.295
+Cantidad de pedidos verificados: 19
+Cantidad de pedidos fallidos: 9
+Total de pedidos procesados: 28
+
+2025-05-30 12:47:10.497
+Cantidad de pedidos verificados: 20
+Cantidad de pedidos fallidos: 9
+Total de pedidos procesados: 29
+
+2025-05-30 12:47:10.699
+Cantidad de pedidos verificados: 21
+Cantidad de pedidos fallidos: 9
+Total de pedidos procesados: 30
+
+2025-05-30 12:47:10.899
+Cantidad de pedidos verificados: 22
+Cantidad de pedidos fallidos: 9
+Total de pedidos procesados: 31
+
+2025-05-30 12:47:11.102
+Cantidad de pedidos verificados: 23
+Cantidad de pedidos fallidos: 9
+Total de pedidos procesados: 32
+
+2025-05-30 12:47:11.303
+Cantidad de pedidos verificados: 24
+Cantidad de pedidos fallidos: 9
+Total de pedidos procesados: 33
+
+2025-05-30 12:47:11.504
+Cantidad de pedidos verificados: 24
+Cantidad de pedidos fallidos: 10
+Total de pedidos procesados: 34
+
+2025-05-30 12:47:11.706
+Cantidad de pedidos verificados: 25
+Cantidad de pedidos fallidos: 10
+Total de pedidos procesados: 35
+
+2025-05-30 12:47:11.907
+Cantidad de pedidos verificados: 26
+Cantidad de pedidos fallidos: 10
+Total de pedidos procesados: 36
+
+2025-05-30 12:47:12.109
+Cantidad de pedidos verificados: 27
+Cantidad de pedidos fallidos: 10
+Total de pedidos procesados: 37
+
+2025-05-30 12:47:12.319
+Cantidad de pedidos verificados: 28
+Cantidad de pedidos fallidos: 10
+Total de pedidos procesados: 38
+
+2025-05-30 12:47:12.533
+Cantidad de pedidos verificados: 28
+Cantidad de pedidos fallidos: 10
+Total de pedidos procesados: 38
+
+2025-05-30 12:47:12.734
+Cantidad de pedidos verificados: 29
+Cantidad de pedidos fallidos: 10
+Total de pedidos procesados: 39
+
+2025-05-30 12:47:12.936
+Cantidad de pedidos verificados: 30
+Cantidad de pedidos fallidos: 10
+Total de pedidos procesados: 40
+
+2025-05-30 12:47:13.137
+Cantidad de pedidos verificados: 31
+Cantidad de pedidos fallidos: 10
+Total de pedidos procesados: 41
+
+2025-05-30 12:47:13.340
+Cantidad de pedidos verificados: 31
+Cantidad de pedidos fallidos: 11
+Total de pedidos procesados: 42
+
+2025-05-30 12:47:13.541
+Cantidad de pedidos verificados: 32
+Cantidad de pedidos fallidos: 11
+Total de pedidos procesados: 43
+
+2025-05-30 12:47:13.743
+Cantidad de pedidos verificados: 32
+Cantidad de pedidos fallidos: 11
+Total de pedidos procesados: 43
+
+2025-05-30 12:47:13.946
+Cantidad de pedidos verificados: 34
+Cantidad de pedidos fallidos: 11
+Total de pedidos procesados: 45
+
+2025-05-30 12:47:14.147
+Cantidad de pedidos verificados: 34
+Cantidad de pedidos fallidos: 11
+Total de pedidos procesados: 45
+
+2025-05-30 12:47:14.348
+Cantidad de pedidos verificados: 35
+Cantidad de pedidos fallidos: 11
+Total de pedidos procesados: 46
+
+2025-05-30 12:47:14.549
+Cantidad de pedidos verificados: 36
+Cantidad de pedidos fallidos: 11
+Total de pedidos procesados: 47
+
+2025-05-30 12:47:14.763
+Cantidad de pedidos verificados: 37
+Cantidad de pedidos fallidos: 11
+Total de pedidos procesados: 48
+
+2025-05-30 12:47:14.965
+Cantidad de pedidos verificados: 38
+Cantidad de pedidos fallidos: 11
+Total de pedidos procesados: 49
+
+2025-05-30 12:47:15.166
+Cantidad de pedidos verificados: 39
+Cantidad de pedidos fallidos: 11
+Total de pedidos procesados: 50
+
+2025-05-30 12:47:15.368
+Cantidad de pedidos verificados: 40
+Cantidad de pedidos fallidos: 11
+Total de pedidos procesados: 51
+
+2025-05-30 12:47:15.571
+Cantidad de pedidos verificados: 40
+Cantidad de pedidos fallidos: 12
+Total de pedidos procesados: 52
+
+2025-05-30 12:47:15.772
+Cantidad de pedidos verificados: 41
+Cantidad de pedidos fallidos: 12
+Total de pedidos procesados: 53
+
+2025-05-30 12:47:15.975
+Cantidad de pedidos verificados: 42
+Cantidad de pedidos fallidos: 12
+Total de pedidos procesados: 54
+
+2025-05-30 12:47:16.176
+Cantidad de pedidos verificados: 42
+Cantidad de pedidos fallidos: 12
+Total de pedidos procesados: 54
+
+2025-05-30 12:47:16.377
+Cantidad de pedidos verificados: 43
+Cantidad de pedidos fallidos: 12
+Total de pedidos procesados: 55
+
+2025-05-30 12:47:16.579
+Cantidad de pedidos verificados: 44
+Cantidad de pedidos fallidos: 12
+Total de pedidos procesados: 56
+
+2025-05-30 12:47:16.783
+Cantidad de pedidos verificados: 45
+Cantidad de pedidos fallidos: 12
+Total de pedidos procesados: 57
+
+2025-05-30 12:47:16.985
+Cantidad de pedidos verificados: 46
+Cantidad de pedidos fallidos: 12
+Total de pedidos procesados: 58
+
+2025-05-30 12:47:17.186
+Cantidad de pedidos verificados: 47
+Cantidad de pedidos fallidos: 12
+Total de pedidos procesados: 59
+
+2025-05-30 12:47:17.388
+Cantidad de pedidos verificados: 47
+Cantidad de pedidos fallidos: 13
+Total de pedidos procesados: 60
+
+2025-05-30 12:47:17.590
+Cantidad de pedidos verificados: 48
+Cantidad de pedidos fallidos: 13
+Total de pedidos procesados: 61
+
+2025-05-30 12:47:17.790
+Cantidad de pedidos verificados: 48
+Cantidad de pedidos fallidos: 13
+Total de pedidos procesados: 61
+
+2025-05-30 12:47:18.013
+Cantidad de pedidos verificados: 49
+Cantidad de pedidos fallidos: 13
+Total de pedidos procesados: 62
+
+2025-05-30 12:47:18.215
+Cantidad de pedidos verificados: 50
+Cantidad de pedidos fallidos: 13
+Total de pedidos procesados: 63
+
+2025-05-30 12:47:18.416
+Cantidad de pedidos verificados: 51
+Cantidad de pedidos fallidos: 13
+Total de pedidos procesados: 64
+
+2025-05-30 12:47:18.617
+Cantidad de pedidos verificados: 52
+Cantidad de pedidos fallidos: 13
+Total de pedidos procesados: 65
+
+2025-05-30 12:47:18.819
+Cantidad de pedidos verificados: 53
+Cantidad de pedidos fallidos: 13
+Total de pedidos procesados: 66
+
+2025-05-30 12:47:19.026
+Cantidad de pedidos verificados: 53
+Cantidad de pedidos fallidos: 13
+Total de pedidos procesados: 66
+
+2025-05-30 12:47:19.228
+Cantidad de pedidos verificados: 54
+Cantidad de pedidos fallidos: 13
+Total de pedidos procesados: 67
+
+2025-05-30 12:47:19.430
+Cantidad de pedidos verificados: 55
+Cantidad de pedidos fallidos: 13
+Total de pedidos procesados: 68
+
+2025-05-30 12:47:19.631
+Cantidad de pedidos verificados: 56
+Cantidad de pedidos fallidos: 13
+Total de pedidos procesados: 69
+
+2025-05-30 12:47:19.833
+Cantidad de pedidos verificados: 56
+Cantidad de pedidos fallidos: 14
+Total de pedidos procesados: 70
+
+2025-05-30 12:47:20.034
+Cantidad de pedidos verificados: 57
+Cantidad de pedidos fallidos: 14
+Total de pedidos procesados: 71
+
+2025-05-30 12:47:20.235
+Cantidad de pedidos verificados: 58
+Cantidad de pedidos fallidos: 14
+Total de pedidos procesados: 72
+
+2025-05-30 12:47:20.447
+Cantidad de pedidos verificados: 58
+Cantidad de pedidos fallidos: 14
+Total de pedidos procesados: 72
+
+2025-05-30 12:47:20.659
+Cantidad de pedidos verificados: 59
+Cantidad de pedidos fallidos: 14
+Total de pedidos procesados: 73
+
+2025-05-30 12:47:20.861
+Cantidad de pedidos verificados: 59
+Cantidad de pedidos fallidos: 15
+Total de pedidos procesados: 74
+
+2025-05-30 12:47:21.062
+Cantidad de pedidos verificados: 60
+Cantidad de pedidos fallidos: 15
+Total de pedidos procesados: 75
+
+2025-05-30 12:47:21.265
+Cantidad de pedidos verificados: 60
+Cantidad de pedidos fallidos: 16
+Total de pedidos procesados: 76
+
+2025-05-30 12:47:21.467
+Cantidad de pedidos verificados: 61
+Cantidad de pedidos fallidos: 16
+Total de pedidos procesados: 77
+
+2025-05-30 12:47:21.668
+Cantidad de pedidos verificados: 62
+Cantidad de pedidos fallidos: 16
+Total de pedidos procesados: 78
+
+2025-05-30 12:47:21.869
+Cantidad de pedidos verificados: 63
+Cantidad de pedidos fallidos: 16
+Total de pedidos procesados: 79
+
+2025-05-30 12:47:22.070
+Cantidad de pedidos verificados: 64
+Cantidad de pedidos fallidos: 16
+Total de pedidos procesados: 80
+
+2025-05-30 12:47:22.272
+Cantidad de pedidos verificados: 64
+Cantidad de pedidos fallidos: 16
+Total de pedidos procesados: 80
+
+2025-05-30 12:47:22.475
+Cantidad de pedidos verificados: 64
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 82
+
+2025-05-30 12:47:22.676
+Cantidad de pedidos verificados: 65
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 83
+
+2025-05-30 12:47:22.876
+Cantidad de pedidos verificados: 65
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 83
+
+2025-05-30 12:47:23.079
+Cantidad de pedidos verificados: 66
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 84
+
+2025-05-30 12:47:23.281
+Cantidad de pedidos verificados: 67
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 85
+
+2025-05-30 12:47:23.482
+Cantidad de pedidos verificados: 68
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 86
+
+2025-05-30 12:47:23.682
+Cantidad de pedidos verificados: 68
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 86
+
+2025-05-30 12:47:23.883
+Cantidad de pedidos verificados: 69
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 87
+
+2025-05-30 12:47:24.086
+Cantidad de pedidos verificados: 70
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 88
+
+2025-05-30 12:47:24.287
+Cantidad de pedidos verificados: 71
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 89
+
+2025-05-30 12:47:24.489
+Cantidad de pedidos verificados: 71
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 89
+
+2025-05-30 12:47:24.691
+Cantidad de pedidos verificados: 72
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 90
+
+2025-05-30 12:47:24.891
+Cantidad de pedidos verificados: 73
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 91
+
+2025-05-30 12:47:25.092
+Cantidad de pedidos verificados: 74
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 92
+
+2025-05-30 12:47:25.293
+Cantidad de pedidos verificados: 75
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 93
+
+2025-05-30 12:47:25.494
+Cantidad de pedidos verificados: 76
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 94
+
+2025-05-30 12:47:25.695
+Cantidad de pedidos verificados: 76
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 94
+
+2025-05-30 12:47:25.896
+Cantidad de pedidos verificados: 77
+Cantidad de pedidos fallidos: 18
+Total de pedidos procesados: 95
+
+2025-05-30 12:47:26.097
+Cantidad de pedidos verificados: 78
+Cantidad de pedidos fallidos: 19
+Total de pedidos procesados: 97
+
+2025-05-30 12:47:26.298
+Cantidad de pedidos verificados: 79
+Cantidad de pedidos fallidos: 19
+Total de pedidos procesados: 98
+
+2025-05-30 12:47:26.499
+Cantidad de pedidos verificados: 80
+Cantidad de pedidos fallidos: 19
+Total de pedidos procesados: 99
+
+2025-05-30 12:47:26.704
+Cantidad de pedidos verificados: 80
+Cantidad de pedidos fallidos: 20
+Total de pedidos procesados: 100
+
+2025-05-30 12:47:26.907
+Cantidad de pedidos verificados: 80
+Cantidad de pedidos fallidos: 21
+Total de pedidos procesados: 101
+
+2025-05-30 12:47:27.108
+Cantidad de pedidos verificados: 81
+Cantidad de pedidos fallidos: 21
+Total de pedidos procesados: 102
+
+2025-05-30 12:47:27.311
+Cantidad de pedidos verificados: 82
+Cantidad de pedidos fallidos: 21
+Total de pedidos procesados: 103
+
+2025-05-30 12:47:27.511
+Cantidad de pedidos verificados: 83
+Cantidad de pedidos fallidos: 21
+Total de pedidos procesados: 104
+
+2025-05-30 12:47:27.712
+Cantidad de pedidos verificados: 83
+Cantidad de pedidos fallidos: 22
+Total de pedidos procesados: 105
+
+2025-05-30 12:47:27.913
+Cantidad de pedidos verificados: 83
+Cantidad de pedidos fallidos: 22
+Total de pedidos procesados: 105
+
+2025-05-30 12:47:28.115
+Cantidad de pedidos verificados: 84
+Cantidad de pedidos fallidos: 22
+Total de pedidos procesados: 106
+
+2025-05-30 12:47:28.316
+Cantidad de pedidos verificados: 84
+Cantidad de pedidos fallidos: 23
+Total de pedidos procesados: 107
+
+2025-05-30 12:47:28.516
+Cantidad de pedidos verificados: 84
+Cantidad de pedidos fallidos: 24
+Total de pedidos procesados: 108
+
+2025-05-30 12:47:28.732
+Cantidad de pedidos verificados: 85
+Cantidad de pedidos fallidos: 25
+Total de pedidos procesados: 110
+
+2025-05-30 12:47:28.935
+Cantidad de pedidos verificados: 85
+Cantidad de pedidos fallidos: 25
+Total de pedidos procesados: 110
+
+2025-05-30 12:47:29.137
+Cantidad de pedidos verificados: 86
+Cantidad de pedidos fallidos: 25
+Total de pedidos procesados: 111
+
+2025-05-30 12:47:29.338
+Cantidad de pedidos verificados: 87
+Cantidad de pedidos fallidos: 25
+Total de pedidos procesados: 112
+
+2025-05-30 12:47:29.540
+Cantidad de pedidos verificados: 88
+Cantidad de pedidos fallidos: 25
+Total de pedidos procesados: 113
+
+2025-05-30 12:47:29.741
+Cantidad de pedidos verificados: 88
+Cantidad de pedidos fallidos: 25
+Total de pedidos procesados: 113
+
+2025-05-30 12:47:29.943
+Cantidad de pedidos verificados: 89
+Cantidad de pedidos fallidos: 25
+Total de pedidos procesados: 114
+
+2025-05-30 12:47:30.145
+Cantidad de pedidos verificados: 89
+Cantidad de pedidos fallidos: 26
+Total de pedidos procesados: 115
+
+2025-05-30 12:47:30.347
+Cantidad de pedidos verificados: 90
+Cantidad de pedidos fallidos: 26
+Total de pedidos procesados: 116
+
+2025-05-30 12:47:30.554
+Cantidad de pedidos verificados: 91
+Cantidad de pedidos fallidos: 26
+Total de pedidos procesados: 117
+
+2025-05-30 12:47:30.755
+Cantidad de pedidos verificados: 92
+Cantidad de pedidos fallidos: 26
+Total de pedidos procesados: 118
+
+2025-05-30 12:47:30.956
+Cantidad de pedidos verificados: 93
+Cantidad de pedidos fallidos: 26
+Total de pedidos procesados: 119
+
+2025-05-30 12:47:31.157
+Cantidad de pedidos verificados: 93
+Cantidad de pedidos fallidos: 26
+Total de pedidos procesados: 119
+
+2025-05-30 12:47:31.358
+Cantidad de pedidos verificados: 94
+Cantidad de pedidos fallidos: 26
+Total de pedidos procesados: 120
+
+2025-05-30 12:47:31.559
+Cantidad de pedidos verificados: 95
+Cantidad de pedidos fallidos: 26
+Total de pedidos procesados: 121
+
+2025-05-30 12:47:31.760
+Cantidad de pedidos verificados: 96
+Cantidad de pedidos fallidos: 26
+Total de pedidos procesados: 122
+
+2025-05-30 12:47:31.963
+Cantidad de pedidos verificados: 96
+Cantidad de pedidos fallidos: 26
+Total de pedidos procesados: 122
+
+2025-05-30 12:47:32.165
+Cantidad de pedidos verificados: 96
+Cantidad de pedidos fallidos: 27
+Total de pedidos procesados: 123
+
+2025-05-30 12:47:32.368
+Cantidad de pedidos verificados: 97
+Cantidad de pedidos fallidos: 27
+Total de pedidos procesados: 124
+
+2025-05-30 12:47:32.569
+Cantidad de pedidos verificados: 97
+Cantidad de pedidos fallidos: 28
+Total de pedidos procesados: 125
+
+2025-05-30 12:47:32.769
+Cantidad de pedidos verificados: 97
+Cantidad de pedidos fallidos: 29
+Total de pedidos procesados: 126
+
+2025-05-30 12:47:32.971
+Cantidad de pedidos verificados: 98
+Cantidad de pedidos fallidos: 29
+Total de pedidos procesados: 127
+
+2025-05-30 12:47:33.172
+Cantidad de pedidos verificados: 98
+Cantidad de pedidos fallidos: 29
+Total de pedidos procesados: 127
+
+2025-05-30 12:47:33.373
+Cantidad de pedidos verificados: 99
+Cantidad de pedidos fallidos: 29
+Total de pedidos procesados: 128
+
+2025-05-30 12:47:33.574
+Cantidad de pedidos verificados: 100
+Cantidad de pedidos fallidos: 29
+Total de pedidos procesados: 129
+
+2025-05-30 12:47:33.777
+Cantidad de pedidos verificados: 100
+Cantidad de pedidos fallidos: 30
+Total de pedidos procesados: 130
+
+2025-05-30 12:47:33.982
+Cantidad de pedidos verificados: 101
+Cantidad de pedidos fallidos: 30
+Total de pedidos procesados: 131
+
+2025-05-30 12:47:34.187
+Cantidad de pedidos verificados: 101
+Cantidad de pedidos fallidos: 30
+Total de pedidos procesados: 131
+
+2025-05-30 12:47:34.390
+Cantidad de pedidos verificados: 102
+Cantidad de pedidos fallidos: 30
+Total de pedidos procesados: 132
+
+2025-05-30 12:47:34.592
+Cantidad de pedidos verificados: 103
+Cantidad de pedidos fallidos: 30
+Total de pedidos procesados: 133
+
+2025-05-30 12:47:34.793
+Cantidad de pedidos verificados: 103
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 134
+
+2025-05-30 12:47:34.995
+Cantidad de pedidos verificados: 104
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 135
+
+2025-05-30 12:47:35.196
+Cantidad de pedidos verificados: 104
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 135
+
+2025-05-30 12:47:35.397
+Cantidad de pedidos verificados: 105
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 136
+
+2025-05-30 12:47:35.601
+Cantidad de pedidos verificados: 106
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 137
+
+2025-05-30 12:47:35.803
+Cantidad de pedidos verificados: 107
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 138
+
+2025-05-30 12:47:36.004
+Cantidad de pedidos verificados: 108
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 139
+
+2025-05-30 12:47:36.206
+Cantidad de pedidos verificados: 108
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 139
+
+2025-05-30 12:47:36.408
+Cantidad de pedidos verificados: 109
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 140
+
+2025-05-30 12:47:36.609
+Cantidad de pedidos verificados: 110
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 141
+
+2025-05-30 12:47:36.815
+Cantidad de pedidos verificados: 111
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 142
+
+2025-05-30 12:47:37.030
+Cantidad de pedidos verificados: 111
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 142
+
+2025-05-30 12:47:37.233
+Cantidad de pedidos verificados: 112
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 143
+
+2025-05-30 12:47:37.437
+Cantidad de pedidos verificados: 113
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 144
+
+2025-05-30 12:47:37.639
+Cantidad de pedidos verificados: 114
+Cantidad de pedidos fallidos: 31
+Total de pedidos procesados: 145
+
+2025-05-30 12:47:37.840
+Cantidad de pedidos verificados: 114
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 146
+
+2025-05-30 12:47:38.047
+Cantidad de pedidos verificados: 115
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 147
+
+2025-05-30 12:47:38.253
+Cantidad de pedidos verificados: 115
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 147
+
+2025-05-30 12:47:38.456
+Cantidad de pedidos verificados: 116
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 148
+
+2025-05-30 12:47:38.658
+Cantidad de pedidos verificados: 117
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 149
+
+2025-05-30 12:47:38.860
+Cantidad de pedidos verificados: 118
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 150
+
+2025-05-30 12:47:39.061
+Cantidad de pedidos verificados: 118
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 150
+
+2025-05-30 12:47:39.261
+Cantidad de pedidos verificados: 119
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 151
+
+2025-05-30 12:47:39.472
+Cantidad de pedidos verificados: 120
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 152
+
+2025-05-30 12:47:39.682
+Cantidad de pedidos verificados: 121
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 153
+
+2025-05-30 12:47:39.883
+Cantidad de pedidos verificados: 122
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 154
+
+2025-05-30 12:47:40.092
+Cantidad de pedidos verificados: 123
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 155
+
+2025-05-30 12:47:40.293
+Cantidad de pedidos verificados: 124
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 156
+
+2025-05-30 12:47:40.494
+Cantidad de pedidos verificados: 125
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 157
+
+2025-05-30 12:47:40.694
+Cantidad de pedidos verificados: 126
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 158
+
+2025-05-30 12:47:40.895
+Cantidad de pedidos verificados: 127
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 159
+
+2025-05-30 12:47:41.117
+Cantidad de pedidos verificados: 127
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 159
+
+2025-05-30 12:47:41.321
+Cantidad de pedidos verificados: 128
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 160
+
+2025-05-30 12:47:41.522
+Cantidad de pedidos verificados: 129
+Cantidad de pedidos fallidos: 32
+Total de pedidos procesados: 161
+
+2025-05-30 12:47:41.737
+Cantidad de pedidos verificados: 129
+Cantidad de pedidos fallidos: 33
+Total de pedidos procesados: 162
+
+2025-05-30 12:47:41.938
+Cantidad de pedidos verificados: 130
+Cantidad de pedidos fallidos: 33
+Total de pedidos procesados: 163
+
+2025-05-30 12:47:42.139
+Cantidad de pedidos verificados: 131
+Cantidad de pedidos fallidos: 33
+Total de pedidos procesados: 164
+
+2025-05-30 12:47:42.340
+Cantidad de pedidos verificados: 132
+Cantidad de pedidos fallidos: 33
+Total de pedidos procesados: 165
+
+2025-05-30 12:47:42.541
+Cantidad de pedidos verificados: 132
+Cantidad de pedidos fallidos: 34
+Total de pedidos procesados: 166
+
+2025-05-30 12:47:42.741
+Cantidad de pedidos verificados: 133
+Cantidad de pedidos fallidos: 34
+Total de pedidos procesados: 167
+
+2025-05-30 12:47:42.942
+Cantidad de pedidos verificados: 134
+Cantidad de pedidos fallidos: 35
+Total de pedidos procesados: 169
+
+2025-05-30 12:47:43.145
+Cantidad de pedidos verificados: 134
+Cantidad de pedidos fallidos: 35
+Total de pedidos procesados: 169
+
+2025-05-30 12:47:43.347
+Cantidad de pedidos verificados: 135
+Cantidad de pedidos fallidos: 35
+Total de pedidos procesados: 170
+
+2025-05-30 12:47:43.548
+Cantidad de pedidos verificados: 136
+Cantidad de pedidos fallidos: 35
+Total de pedidos procesados: 171
+
+2025-05-30 12:47:43.748
+Cantidad de pedidos verificados: 137
+Cantidad de pedidos fallidos: 35
+Total de pedidos procesados: 172
+
+2025-05-30 12:47:43.950
+Cantidad de pedidos verificados: 138
+Cantidad de pedidos fallidos: 35
+Total de pedidos procesados: 173
+
+2025-05-30 12:47:44.151
+Cantidad de pedidos verificados: 138
+Cantidad de pedidos fallidos: 36
+Total de pedidos procesados: 174
+
+2025-05-30 12:47:44.356
+Cantidad de pedidos verificados: 138
+Cantidad de pedidos fallidos: 36
+Total de pedidos procesados: 174
+
+2025-05-30 12:47:44.558
+Cantidad de pedidos verificados: 139
+Cantidad de pedidos fallidos: 36
+Total de pedidos procesados: 175
+
+2025-05-30 12:47:44.760
+Cantidad de pedidos verificados: 140
+Cantidad de pedidos fallidos: 36
+Total de pedidos procesados: 176
+
+2025-05-30 12:47:44.961
+Cantidad de pedidos verificados: 141
+Cantidad de pedidos fallidos: 36
+Total de pedidos procesados: 177
+
+2025-05-30 12:47:45.163
+Cantidad de pedidos verificados: 142
+Cantidad de pedidos fallidos: 36
+Total de pedidos procesados: 178
+
+2025-05-30 12:47:45.364
+Cantidad de pedidos verificados: 142
+Cantidad de pedidos fallidos: 37
+Total de pedidos procesados: 179
+
+2025-05-30 12:47:45.564
+Cantidad de pedidos verificados: 143
+Cantidad de pedidos fallidos: 37
+Total de pedidos procesados: 180
+
+2025-05-30 12:47:45.767
+Cantidad de pedidos verificados: 144
+Cantidad de pedidos fallidos: 37
+Total de pedidos procesados: 181
+
+2025-05-30 12:47:45.969
+Cantidad de pedidos verificados: 144
+Cantidad de pedidos fallidos: 38
+Total de pedidos procesados: 182
+
+2025-05-30 12:47:46.180
+Cantidad de pedidos verificados: 145
+Cantidad de pedidos fallidos: 38
+Total de pedidos procesados: 183
+
+2025-05-30 12:47:46.380
+Cantidad de pedidos verificados: 146
+Cantidad de pedidos fallidos: 38
+Total de pedidos procesados: 184
+
+2025-05-30 12:47:46.604
+Cantidad de pedidos verificados: 146
+Cantidad de pedidos fallidos: 39
+Total de pedidos procesados: 185
+
+2025-05-30 12:47:46.805
+Cantidad de pedidos verificados: 146
+Cantidad de pedidos fallidos: 40
+Total de pedidos procesados: 186
+
+2025-05-30 12:47:47.007
+Cantidad de pedidos verificados: 147
+Cantidad de pedidos fallidos: 40
+Total de pedidos procesados: 187
+
+2025-05-30 12:47:47.208
+Cantidad de pedidos verificados: 147
+Cantidad de pedidos fallidos: 42
+Total de pedidos procesados: 189
+
+2025-05-30 12:47:47.410
+Cantidad de pedidos verificados: 147
+Cantidad de pedidos fallidos: 43
+Total de pedidos procesados: 190
+
+2025-05-30 12:47:47.611
+Cantidad de pedidos verificados: 148
+Cantidad de pedidos fallidos: 43
+Total de pedidos procesados: 191
+
+2025-05-30 12:47:47.812
+Cantidad de pedidos verificados: 148
+Cantidad de pedidos fallidos: 44
+Total de pedidos procesados: 192
+
+2025-05-30 12:47:48.025
+Cantidad de pedidos verificados: 149
+Cantidad de pedidos fallidos: 44
+Total de pedidos procesados: 193
+
+2025-05-30 12:47:48.227
+Cantidad de pedidos verificados: 150
+Cantidad de pedidos fallidos: 44
+Total de pedidos procesados: 194
+
+2025-05-30 12:47:48.430
+Cantidad de pedidos verificados: 151
+Cantidad de pedidos fallidos: 44
+Total de pedidos procesados: 195
+
+2025-05-30 12:47:48.630
+Cantidad de pedidos verificados: 151
+Cantidad de pedidos fallidos: 44
+Total de pedidos procesados: 195
+
+2025-05-30 12:47:48.833
+Cantidad de pedidos verificados: 152
+Cantidad de pedidos fallidos: 44
+Total de pedidos procesados: 196
+
+2025-05-30 12:47:49.035
+Cantidad de pedidos verificados: 153
+Cantidad de pedidos fallidos: 45
+Total de pedidos procesados: 198
+
+2025-05-30 12:47:49.237
+Cantidad de pedidos verificados: 153
+Cantidad de pedidos fallidos: 45
+Total de pedidos procesados: 198
+
+2025-05-30 12:47:49.438
+Cantidad de pedidos verificados: 154
+Cantidad de pedidos fallidos: 46
+Total de pedidos procesados: 200
+
+2025-05-30 12:47:49.640
+Cantidad de pedidos verificados: 154
+Cantidad de pedidos fallidos: 46
+Total de pedidos procesados: 200
+
+2025-05-30 12:47:49.841
+Cantidad de pedidos verificados: 155
+Cantidad de pedidos fallidos: 46
+Total de pedidos procesados: 201
+
+2025-05-30 12:47:50.043
+Cantidad de pedidos verificados: 156
+Cantidad de pedidos fallidos: 46
+Total de pedidos procesados: 202
+
+2025-05-30 12:47:50.244
+Cantidad de pedidos verificados: 156
+Cantidad de pedidos fallidos: 47
+Total de pedidos procesados: 203
+
+2025-05-30 12:47:50.446
+Cantidad de pedidos verificados: 157
+Cantidad de pedidos fallidos: 47
+Total de pedidos procesados: 204
+
+2025-05-30 12:47:50.647
+Cantidad de pedidos verificados: 157
+Cantidad de pedidos fallidos: 48
+Total de pedidos procesados: 205
+
+2025-05-30 12:47:50.848
+Cantidad de pedidos verificados: 158
+Cantidad de pedidos fallidos: 48
+Total de pedidos procesados: 206
+
+2025-05-30 12:47:51.050
+Cantidad de pedidos verificados: 159
+Cantidad de pedidos fallidos: 48
+Total de pedidos procesados: 207
+
+2025-05-30 12:47:51.264
+Cantidad de pedidos verificados: 160
+Cantidad de pedidos fallidos: 48
+Total de pedidos procesados: 208
+
+2025-05-30 12:47:51.465
+Cantidad de pedidos verificados: 160
+Cantidad de pedidos fallidos: 48
+Total de pedidos procesados: 208
+
+2025-05-30 12:47:51.666
+Cantidad de pedidos verificados: 161
+Cantidad de pedidos fallidos: 48
+Total de pedidos procesados: 209
+
+2025-05-30 12:47:51.867
+Cantidad de pedidos verificados: 161
+Cantidad de pedidos fallidos: 49
+Total de pedidos procesados: 210
+
+2025-05-30 12:47:52.068
+Cantidad de pedidos verificados: 162
+Cantidad de pedidos fallidos: 49
+Total de pedidos procesados: 211
+
+2025-05-30 12:47:52.268
+Cantidad de pedidos verificados: 163
+Cantidad de pedidos fallidos: 49
+Total de pedidos procesados: 212
+
+2025-05-30 12:47:52.470
+Cantidad de pedidos verificados: 163
+Cantidad de pedidos fallidos: 49
+Total de pedidos procesados: 212
+
+2025-05-30 12:47:52.683
+Cantidad de pedidos verificados: 164
+Cantidad de pedidos fallidos: 49
+Total de pedidos procesados: 213
+
+2025-05-30 12:47:52.884
+Cantidad de pedidos verificados: 165
+Cantidad de pedidos fallidos: 49
+Total de pedidos procesados: 214
+
+2025-05-30 12:47:53.087
+Cantidad de pedidos verificados: 166
+Cantidad de pedidos fallidos: 49
+Total de pedidos procesados: 215
+
+2025-05-30 12:47:53.287
+Cantidad de pedidos verificados: 167
+Cantidad de pedidos fallidos: 49
+Total de pedidos procesados: 216
+
+2025-05-30 12:47:53.489
+Cantidad de pedidos verificados: 167
+Cantidad de pedidos fallidos: 50
+Total de pedidos procesados: 217
+
+2025-05-30 12:47:53.691
+Cantidad de pedidos verificados: 168
+Cantidad de pedidos fallidos: 50
+Total de pedidos procesados: 218
+
+2025-05-30 12:47:53.892
+Cantidad de pedidos verificados: 169
+Cantidad de pedidos fallidos: 50
+Total de pedidos procesados: 219
+
+2025-05-30 12:47:54.095
+Cantidad de pedidos verificados: 169
+Cantidad de pedidos fallidos: 51
+Total de pedidos procesados: 220
+
+2025-05-30 12:47:54.296
+Cantidad de pedidos verificados: 169
+Cantidad de pedidos fallidos: 51
+Total de pedidos procesados: 220
+
+2025-05-30 12:47:54.497
+Cantidad de pedidos verificados: 170
+Cantidad de pedidos fallidos: 51
+Total de pedidos procesados: 221
+
+2025-05-30 12:47:54.699
+Cantidad de pedidos verificados: 171
+Cantidad de pedidos fallidos: 51
+Total de pedidos procesados: 222
+
+2025-05-30 12:47:54.899
+Cantidad de pedidos verificados: 171
+Cantidad de pedidos fallidos: 51
+Total de pedidos procesados: 222
+
+2025-05-30 12:47:55.100
+Cantidad de pedidos verificados: 172
+Cantidad de pedidos fallidos: 51
+Total de pedidos procesados: 223
+
+2025-05-30 12:47:55.301
+Cantidad de pedidos verificados: 173
+Cantidad de pedidos fallidos: 51
+Total de pedidos procesados: 224
+
+2025-05-30 12:47:55.507
+Cantidad de pedidos verificados: 174
+Cantidad de pedidos fallidos: 51
+Total de pedidos procesados: 225
+
+2025-05-30 12:47:55.709
+Cantidad de pedidos verificados: 174
+Cantidad de pedidos fallidos: 52
+Total de pedidos procesados: 226
+
+2025-05-30 12:47:55.910
+Cantidad de pedidos verificados: 175
+Cantidad de pedidos fallidos: 52
+Total de pedidos procesados: 227
+
+2025-05-30 12:47:56.113
+Cantidad de pedidos verificados: 176
+Cantidad de pedidos fallidos: 52
+Total de pedidos procesados: 228
+
+2025-05-30 12:47:56.325
+Cantidad de pedidos verificados: 177
+Cantidad de pedidos fallidos: 52
+Total de pedidos procesados: 229
+
+2025-05-30 12:47:56.526
+Cantidad de pedidos verificados: 177
+Cantidad de pedidos fallidos: 52
+Total de pedidos procesados: 229
+
+2025-05-30 12:47:56.727
+Cantidad de pedidos verificados: 178
+Cantidad de pedidos fallidos: 52
+Total de pedidos procesados: 230
+
+2025-05-30 12:47:56.929
+Cantidad de pedidos verificados: 178
+Cantidad de pedidos fallidos: 53
+Total de pedidos procesados: 231
+
+2025-05-30 12:47:57.131
+Cantidad de pedidos verificados: 179
+Cantidad de pedidos fallidos: 53
+Total de pedidos procesados: 232
+
+2025-05-30 12:47:57.333
+Cantidad de pedidos verificados: 179
+Cantidad de pedidos fallidos: 54
+Total de pedidos procesados: 233
+
+2025-05-30 12:47:57.535
+Cantidad de pedidos verificados: 180
+Cantidad de pedidos fallidos: 54
+Total de pedidos procesados: 234
+
+2025-05-30 12:47:57.741
+Cantidad de pedidos verificados: 181
+Cantidad de pedidos fallidos: 54
+Total de pedidos procesados: 235
+
+2025-05-30 12:47:57.942
+Cantidad de pedidos verificados: 182
+Cantidad de pedidos fallidos: 54
+Total de pedidos procesados: 236
+
+2025-05-30 12:47:58.143
+Cantidad de pedidos verificados: 182
+Cantidad de pedidos fallidos: 54
+Total de pedidos procesados: 236
+
+2025-05-30 12:47:58.347
+Cantidad de pedidos verificados: 183
+Cantidad de pedidos fallidos: 54
+Total de pedidos procesados: 237
+
+2025-05-30 12:47:58.549
+Cantidad de pedidos verificados: 184
+Cantidad de pedidos fallidos: 54
+Total de pedidos procesados: 238
+
+2025-05-30 12:47:58.752
+Cantidad de pedidos verificados: 185
+Cantidad de pedidos fallidos: 54
+Total de pedidos procesados: 239
+
+2025-05-30 12:47:58.967
+Cantidad de pedidos verificados: 186
+Cantidad de pedidos fallidos: 54
+Total de pedidos procesados: 240
+
+2025-05-30 12:47:59.169
+Cantidad de pedidos verificados: 186
+Cantidad de pedidos fallidos: 55
+Total de pedidos procesados: 241
+
+2025-05-30 12:47:59.370
+Cantidad de pedidos verificados: 187
+Cantidad de pedidos fallidos: 55
+Total de pedidos procesados: 242
+
+2025-05-30 12:47:59.572
+Cantidad de pedidos verificados: 188
+Cantidad de pedidos fallidos: 55
+Total de pedidos procesados: 243
+
+2025-05-30 12:47:59.773
+Cantidad de pedidos verificados: 188
+Cantidad de pedidos fallidos: 55
+Total de pedidos procesados: 243
+
+2025-05-30 12:47:59.974
+Cantidad de pedidos verificados: 189
+Cantidad de pedidos fallidos: 55
+Total de pedidos procesados: 244
+
+2025-05-30 12:48:00.175
+Cantidad de pedidos verificados: 190
+Cantidad de pedidos fallidos: 55
+Total de pedidos procesados: 245
+
+2025-05-30 12:48:00.376
+Cantidad de pedidos verificados: 191
+Cantidad de pedidos fallidos: 55
+Total de pedidos procesados: 246
+
+2025-05-30 12:48:00.577
+Cantidad de pedidos verificados: 192
+Cantidad de pedidos fallidos: 55
+Total de pedidos procesados: 247
+
+2025-05-30 12:48:00.790
+Cantidad de pedidos verificados: 193
+Cantidad de pedidos fallidos: 55
+Total de pedidos procesados: 248
+
+2025-05-30 12:48:00.993
+Cantidad de pedidos verificados: 194
+Cantidad de pedidos fallidos: 55
+Total de pedidos procesados: 249
+
+2025-05-30 12:48:01.203
+Cantidad de pedidos verificados: 194
+Cantidad de pedidos fallidos: 56
+Total de pedidos procesados: 250
+
+2025-05-30 12:48:01.405
+Cantidad de pedidos verificados: 194
+Cantidad de pedidos fallidos: 57
+Total de pedidos procesados: 251
+
+2025-05-30 12:48:01.607
+Cantidad de pedidos verificados: 195
+Cantidad de pedidos fallidos: 57
+Total de pedidos procesados: 252
+
+2025-05-30 12:48:01.816
+Cantidad de pedidos verificados: 196
+Cantidad de pedidos fallidos: 57
+Total de pedidos procesados: 253
+
+2025-05-30 12:48:02.018
+Cantidad de pedidos verificados: 197
+Cantidad de pedidos fallidos: 57
+Total de pedidos procesados: 254
+
+2025-05-30 12:48:02.220
+Cantidad de pedidos verificados: 198
+Cantidad de pedidos fallidos: 57
+Total de pedidos procesados: 255
+
+2025-05-30 12:48:02.421
+Cantidad de pedidos verificados: 199
+Cantidad de pedidos fallidos: 57
+Total de pedidos procesados: 256
+
+2025-05-30 12:48:02.622
+Cantidad de pedidos verificados: 199
+Cantidad de pedidos fallidos: 57
+Total de pedidos procesados: 256
+
+2025-05-30 12:48:02.823
+Cantidad de pedidos verificados: 199
+Cantidad de pedidos fallidos: 58
+Total de pedidos procesados: 257
+
+2025-05-30 12:48:03.024
+Cantidad de pedidos verificados: 200
+Cantidad de pedidos fallidos: 58
+Total de pedidos procesados: 258
+
+2025-05-30 12:48:03.225
+Cantidad de pedidos verificados: 201
+Cantidad de pedidos fallidos: 58
+Total de pedidos procesados: 259
+
+2025-05-30 12:48:03.427
+Cantidad de pedidos verificados: 201
+Cantidad de pedidos fallidos: 60
+Total de pedidos procesados: 261
+
+2025-05-30 12:48:03.629
+Cantidad de pedidos verificados: 202
+Cantidad de pedidos fallidos: 60
+Total de pedidos procesados: 262
+
+2025-05-30 12:48:03.830
+Cantidad de pedidos verificados: 202
+Cantidad de pedidos fallidos: 60
+Total de pedidos procesados: 262
+
+2025-05-30 12:48:04.031
+Cantidad de pedidos verificados: 202
+Cantidad de pedidos fallidos: 61
+Total de pedidos procesados: 263
+
+2025-05-30 12:48:04.233
+Cantidad de pedidos verificados: 203
+Cantidad de pedidos fallidos: 61
+Total de pedidos procesados: 264
+
+2025-05-30 12:48:04.434
+Cantidad de pedidos verificados: 203
+Cantidad de pedidos fallidos: 61
+Total de pedidos procesados: 264
+
+2025-05-30 12:48:04.649
+Cantidad de pedidos verificados: 204
+Cantidad de pedidos fallidos: 61
+Total de pedidos procesados: 265
+
+2025-05-30 12:48:04.871
+Cantidad de pedidos verificados: 204
+Cantidad de pedidos fallidos: 62
+Total de pedidos procesados: 266
+
+2025-05-30 12:48:05.072
+Cantidad de pedidos verificados: 205
+Cantidad de pedidos fallidos: 62
+Total de pedidos procesados: 267
+
+2025-05-30 12:48:05.273
+Cantidad de pedidos verificados: 206
+Cantidad de pedidos fallidos: 62
+Total de pedidos procesados: 268
+
+2025-05-30 12:48:05.475
+Cantidad de pedidos verificados: 207
+Cantidad de pedidos fallidos: 62
+Total de pedidos procesados: 269
+
+2025-05-30 12:48:05.676
+Cantidad de pedidos verificados: 207
+Cantidad de pedidos fallidos: 63
+Total de pedidos procesados: 270
+
+2025-05-30 12:48:05.878
+Cantidad de pedidos verificados: 208
+Cantidad de pedidos fallidos: 63
+Total de pedidos procesados: 271
+
+2025-05-30 12:48:06.080
+Cantidad de pedidos verificados: 209
+Cantidad de pedidos fallidos: 63
+Total de pedidos procesados: 272
+
+2025-05-30 12:48:06.281
+Cantidad de pedidos verificados: 209
+Cantidad de pedidos fallidos: 64
+Total de pedidos procesados: 273
+
+2025-05-30 12:48:06.482
+Cantidad de pedidos verificados: 210
+Cantidad de pedidos fallidos: 64
+Total de pedidos procesados: 274
+
+2025-05-30 12:48:06.685
+Cantidad de pedidos verificados: 210
+Cantidad de pedidos fallidos: 64
+Total de pedidos procesados: 274
+
+2025-05-30 12:48:06.886
+Cantidad de pedidos verificados: 211
+Cantidad de pedidos fallidos: 64
+Total de pedidos procesados: 275
+
+2025-05-30 12:48:07.087
+Cantidad de pedidos verificados: 212
+Cantidad de pedidos fallidos: 64
+Total de pedidos procesados: 276
+
+2025-05-30 12:48:07.287
+Cantidad de pedidos verificados: 213
+Cantidad de pedidos fallidos: 65
+Total de pedidos procesados: 278
+
+2025-05-30 12:48:07.488
+Cantidad de pedidos verificados: 213
+Cantidad de pedidos fallidos: 65
+Total de pedidos procesados: 278
+
+2025-05-30 12:48:07.689
+Cantidad de pedidos verificados: 214
+Cantidad de pedidos fallidos: 65
+Total de pedidos procesados: 279
+
+2025-05-30 12:48:07.890
+Cantidad de pedidos verificados: 215
+Cantidad de pedidos fallidos: 65
+Total de pedidos procesados: 280
+
+2025-05-30 12:48:08.091
+Cantidad de pedidos verificados: 216
+Cantidad de pedidos fallidos: 65
+Total de pedidos procesados: 281
+
+2025-05-30 12:48:08.293
+Cantidad de pedidos verificados: 216
+Cantidad de pedidos fallidos: 65
+Total de pedidos procesados: 281
+
+2025-05-30 12:48:08.496
+Cantidad de pedidos verificados: 216
+Cantidad de pedidos fallidos: 66
+Total de pedidos procesados: 282
+
+2025-05-30 12:48:08.699
+Cantidad de pedidos verificados: 217
+Cantidad de pedidos fallidos: 66
+Total de pedidos procesados: 283
+
+2025-05-30 12:48:08.901
+Cantidad de pedidos verificados: 218
+Cantidad de pedidos fallidos: 66
+Total de pedidos procesados: 284
+
+2025-05-30 12:48:09.101
+Cantidad de pedidos verificados: 218
+Cantidad de pedidos fallidos: 67
+Total de pedidos procesados: 285
+
+2025-05-30 12:48:09.302
+Cantidad de pedidos verificados: 219
+Cantidad de pedidos fallidos: 67
+Total de pedidos procesados: 286
+
+2025-05-30 12:48:09.505
+Cantidad de pedidos verificados: 220
+Cantidad de pedidos fallidos: 67
+Total de pedidos procesados: 287
+
+2025-05-30 12:48:09.712
+Cantidad de pedidos verificados: 221
+Cantidad de pedidos fallidos: 67
+Total de pedidos procesados: 288
+
+2025-05-30 12:48:09.913
+Cantidad de pedidos verificados: 222
+Cantidad de pedidos fallidos: 67
+Total de pedidos procesados: 289
+
+2025-05-30 12:48:10.115
+Cantidad de pedidos verificados: 223
+Cantidad de pedidos fallidos: 67
+Total de pedidos procesados: 290
+
+2025-05-30 12:48:10.318
+Cantidad de pedidos verificados: 223
+Cantidad de pedidos fallidos: 67
+Total de pedidos procesados: 290
+
+2025-05-30 12:48:10.519
+Cantidad de pedidos verificados: 224
+Cantidad de pedidos fallidos: 67
+Total de pedidos procesados: 291
+
+2025-05-30 12:48:10.721
+Cantidad de pedidos verificados: 224
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 292
+
+2025-05-30 12:48:10.924
+Cantidad de pedidos verificados: 225
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 293
+
+2025-05-30 12:48:11.125
+Cantidad de pedidos verificados: 226
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 294
+
+2025-05-30 12:48:11.326
+Cantidad de pedidos verificados: 227
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 295
+
+2025-05-30 12:48:11.535
+Cantidad de pedidos verificados: 227
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 295
+
+2025-05-30 12:48:11.746
+Cantidad de pedidos verificados: 228
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 296
+
+2025-05-30 12:48:11.948
+Cantidad de pedidos verificados: 229
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 297
+
+2025-05-30 12:48:12.149
+Cantidad de pedidos verificados: 230
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 298
+
+2025-05-30 12:48:12.352
+Cantidad de pedidos verificados: 230
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 298
+
+2025-05-30 12:48:12.566
+Cantidad de pedidos verificados: 231
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 299
+
+2025-05-30 12:48:12.767
+Cantidad de pedidos verificados: 232
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 300
+
+2025-05-30 12:48:12.968
+Cantidad de pedidos verificados: 232
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 300
+
+2025-05-30 12:48:13.169
+Cantidad de pedidos verificados: 233
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 301
+
+2025-05-30 12:48:13.371
+Cantidad de pedidos verificados: 234
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 302
+
+2025-05-30 12:48:13.575
+Cantidad de pedidos verificados: 235
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 303
+
+2025-05-30 12:48:13.783
+Cantidad de pedidos verificados: 236
+Cantidad de pedidos fallidos: 68
+Total de pedidos procesados: 304
+
+2025-05-30 12:48:13.984
+Cantidad de pedidos verificados: 236
+Cantidad de pedidos fallidos: 69
+Total de pedidos procesados: 305
+
+2025-05-30 12:48:14.184
+Cantidad de pedidos verificados: 237
+Cantidad de pedidos fallidos: 69
+Total de pedidos procesados: 306
+
+2025-05-30 12:48:14.386
+Cantidad de pedidos verificados: 238
+Cantidad de pedidos fallidos: 69
+Total de pedidos procesados: 307
+
+2025-05-30 12:48:14.587
+Cantidad de pedidos verificados: 238
+Cantidad de pedidos fallidos: 69
+Total de pedidos procesados: 307
+
+2025-05-30 12:48:14.789
+Cantidad de pedidos verificados: 238
+Cantidad de pedidos fallidos: 70
+Total de pedidos procesados: 308
+
+2025-05-30 12:48:14.991
+Cantidad de pedidos verificados: 239
+Cantidad de pedidos fallidos: 70
+Total de pedidos procesados: 309
+
+2025-05-30 12:48:15.194
+Cantidad de pedidos verificados: 239
+Cantidad de pedidos fallidos: 71
+Total de pedidos procesados: 310
+
+2025-05-30 12:48:15.396
+Cantidad de pedidos verificados: 240
+Cantidad de pedidos fallidos: 71
+Total de pedidos procesados: 311
+
+2025-05-30 12:48:15.598
+Cantidad de pedidos verificados: 241
+Cantidad de pedidos fallidos: 71
+Total de pedidos procesados: 312
+
+2025-05-30 12:48:15.799
+Cantidad de pedidos verificados: 242
+Cantidad de pedidos fallidos: 71
+Total de pedidos procesados: 313
+
+2025-05-30 12:48:16.001
+Cantidad de pedidos verificados: 242
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 314
+
+2025-05-30 12:48:16.203
+Cantidad de pedidos verificados: 243
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 315
+
+2025-05-30 12:48:16.404
+Cantidad de pedidos verificados: 244
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 316
+
+2025-05-30 12:48:16.605
+Cantidad de pedidos verificados: 244
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 316
+
+2025-05-30 12:48:16.807
+Cantidad de pedidos verificados: 245
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 317
+
+2025-05-30 12:48:17.010
+Cantidad de pedidos verificados: 246
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 318
+
+2025-05-30 12:48:17.212
+Cantidad de pedidos verificados: 246
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 318
+
+2025-05-30 12:48:17.415
+Cantidad de pedidos verificados: 247
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 319
+
+2025-05-30 12:48:17.616
+Cantidad de pedidos verificados: 248
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 320
+
+2025-05-30 12:48:17.822
+Cantidad de pedidos verificados: 249
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 321
+
+2025-05-30 12:48:18.027
+Cantidad de pedidos verificados: 250
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 322
+
+2025-05-30 12:48:18.228
+Cantidad de pedidos verificados: 250
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 322
+
+2025-05-30 12:48:18.429
+Cantidad de pedidos verificados: 251
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 323
+
+2025-05-30 12:48:18.631
+Cantidad de pedidos verificados: 252
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 324
+
+2025-05-30 12:48:18.834
+Cantidad de pedidos verificados: 253
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 325
+
+2025-05-30 12:48:19.035
+Cantidad de pedidos verificados: 254
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 326
+
+2025-05-30 12:48:19.235
+Cantidad de pedidos verificados: 254
+Cantidad de pedidos fallidos: 72
+Total de pedidos procesados: 326
+
+2025-05-30 12:48:19.444
+Cantidad de pedidos verificados: 255
+Cantidad de pedidos fallidos: 73
+Total de pedidos procesados: 328
+
+2025-05-30 12:48:19.645
+Cantidad de pedidos verificados: 255
+Cantidad de pedidos fallidos: 74
+Total de pedidos procesados: 329
+
+2025-05-30 12:48:19.846
+Cantidad de pedidos verificados: 256
+Cantidad de pedidos fallidos: 74
+Total de pedidos procesados: 330
+
+2025-05-30 12:48:20.046
+Cantidad de pedidos verificados: 257
+Cantidad de pedidos fallidos: 74
+Total de pedidos procesados: 331
+
+2025-05-30 12:48:20.247
+Cantidad de pedidos verificados: 258
+Cantidad de pedidos fallidos: 74
+Total de pedidos procesados: 332
+
+2025-05-30 12:48:20.449
+Cantidad de pedidos verificados: 258
+Cantidad de pedidos fallidos: 74
+Total de pedidos procesados: 332
+
+2025-05-30 12:48:20.650
+Cantidad de pedidos verificados: 259
+Cantidad de pedidos fallidos: 74
+Total de pedidos procesados: 333
+
+2025-05-30 12:48:20.850
+Cantidad de pedidos verificados: 259
+Cantidad de pedidos fallidos: 75
+Total de pedidos procesados: 334
+
+2025-05-30 12:48:21.051
+Cantidad de pedidos verificados: 259
+Cantidad de pedidos fallidos: 76
+Total de pedidos procesados: 335
+
+2025-05-30 12:48:21.253
+Cantidad de pedidos verificados: 260
+Cantidad de pedidos fallidos: 77
+Total de pedidos procesados: 337
+
+2025-05-30 12:48:21.453
+Cantidad de pedidos verificados: 260
+Cantidad de pedidos fallidos: 77
+Total de pedidos procesados: 337
+
+2025-05-30 12:48:21.654
+Cantidad de pedidos verificados: 261
+Cantidad de pedidos fallidos: 77
+Total de pedidos procesados: 338
+
+2025-05-30 12:48:21.860
+Cantidad de pedidos verificados: 261
+Cantidad de pedidos fallidos: 78
+Total de pedidos procesados: 339
+
+2025-05-30 12:48:22.068
+Cantidad de pedidos verificados: 261
+Cantidad de pedidos fallidos: 79
+Total de pedidos procesados: 340
+
+2025-05-30 12:48:22.269
+Cantidad de pedidos verificados: 262
+Cantidad de pedidos fallidos: 79
+Total de pedidos procesados: 341
+
+2025-05-30 12:48:22.470
+Cantidad de pedidos verificados: 262
+Cantidad de pedidos fallidos: 79
+Total de pedidos procesados: 341
+
+2025-05-30 12:48:22.671
+Cantidad de pedidos verificados: 263
+Cantidad de pedidos fallidos: 79
+Total de pedidos procesados: 342
+
+2025-05-30 12:48:22.871
+Cantidad de pedidos verificados: 263
+Cantidad de pedidos fallidos: 80
+Total de pedidos procesados: 343
+
+2025-05-30 12:48:23.076
+Cantidad de pedidos verificados: 263
+Cantidad de pedidos fallidos: 81
+Total de pedidos procesados: 344
+
+2025-05-30 12:48:23.278
+Cantidad de pedidos verificados: 264
+Cantidad de pedidos fallidos: 81
+Total de pedidos procesados: 345
+
+2025-05-30 12:48:23.480
+Cantidad de pedidos verificados: 265
+Cantidad de pedidos fallidos: 81
+Total de pedidos procesados: 346
+
+2025-05-30 12:48:23.681
+Cantidad de pedidos verificados: 266
+Cantidad de pedidos fallidos: 81
+Total de pedidos procesados: 347
+
+2025-05-30 12:48:23.883
+Cantidad de pedidos verificados: 266
+Cantidad de pedidos fallidos: 82
+Total de pedidos procesados: 348
+
+2025-05-30 12:48:24.085
+Cantidad de pedidos verificados: 267
+Cantidad de pedidos fallidos: 82
+Total de pedidos procesados: 349
+
+2025-05-30 12:48:24.287
+Cantidad de pedidos verificados: 268
+Cantidad de pedidos fallidos: 82
+Total de pedidos procesados: 350
+
+2025-05-30 12:48:24.489
+Cantidad de pedidos verificados: 269
+Cantidad de pedidos fallidos: 82
+Total de pedidos procesados: 351
+
+2025-05-30 12:48:24.691
+Cantidad de pedidos verificados: 269
+Cantidad de pedidos fallidos: 82
+Total de pedidos procesados: 351
+
+2025-05-30 12:48:24.892
+Cantidad de pedidos verificados: 269
+Cantidad de pedidos fallidos: 83
+Total de pedidos procesados: 352
+
+2025-05-30 12:48:25.095
+Cantidad de pedidos verificados: 270
+Cantidad de pedidos fallidos: 83
+Total de pedidos procesados: 353
+
+2025-05-30 12:48:25.295
+Cantidad de pedidos verificados: 270
+Cantidad de pedidos fallidos: 84
+Total de pedidos procesados: 354
+
+2025-05-30 12:48:25.499
+Cantidad de pedidos verificados: 271
+Cantidad de pedidos fallidos: 84
+Total de pedidos procesados: 355
+
+2025-05-30 12:48:25.700
+Cantidad de pedidos verificados: 272
+Cantidad de pedidos fallidos: 84
+Total de pedidos procesados: 356
+
+2025-05-30 12:48:25.902
+Cantidad de pedidos verificados: 273
+Cantidad de pedidos fallidos: 84
+Total de pedidos procesados: 357
+
+2025-05-30 12:48:26.109
+Cantidad de pedidos verificados: 274
+Cantidad de pedidos fallidos: 84
+Total de pedidos procesados: 358
+
+2025-05-30 12:48:26.310
+Cantidad de pedidos verificados: 274
+Cantidad de pedidos fallidos: 84
+Total de pedidos procesados: 358
+
+2025-05-30 12:48:26.511
+Cantidad de pedidos verificados: 275
+Cantidad de pedidos fallidos: 84
+Total de pedidos procesados: 359
+
+2025-05-30 12:48:26.712
+Cantidad de pedidos verificados: 275
+Cantidad de pedidos fallidos: 85
+Total de pedidos procesados: 360
+
+2025-05-30 12:48:26.913
+Cantidad de pedidos verificados: 276
+Cantidad de pedidos fallidos: 85
+Total de pedidos procesados: 361
+
+2025-05-30 12:48:27.115
+Cantidad de pedidos verificados: 277
+Cantidad de pedidos fallidos: 85
+Total de pedidos procesados: 362
+
+2025-05-30 12:48:27.317
+Cantidad de pedidos verificados: 278
+Cantidad de pedidos fallidos: 85
+Total de pedidos procesados: 363
+
+2025-05-30 12:48:27.517
+Cantidad de pedidos verificados: 279
+Cantidad de pedidos fallidos: 85
+Total de pedidos procesados: 364
+
+2025-05-30 12:48:27.720
+Cantidad de pedidos verificados: 279
+Cantidad de pedidos fallidos: 85
+Total de pedidos procesados: 364
+
+2025-05-30 12:48:27.922
+Cantidad de pedidos verificados: 280
+Cantidad de pedidos fallidos: 85
+Total de pedidos procesados: 365
+
+2025-05-30 12:48:28.123
+Cantidad de pedidos verificados: 280
+Cantidad de pedidos fallidos: 86
+Total de pedidos procesados: 366
+
+2025-05-30 12:48:28.324
+Cantidad de pedidos verificados: 281
+Cantidad de pedidos fallidos: 87
+Total de pedidos procesados: 368
+
+2025-05-30 12:48:28.562
+Cantidad de pedidos verificados: 282
+Cantidad de pedidos fallidos: 87
+Total de pedidos procesados: 369
+
+2025-05-30 12:48:28.765
+Cantidad de pedidos verificados: 282
+Cantidad de pedidos fallidos: 88
+Total de pedidos procesados: 370
+
+2025-05-30 12:48:28.967
+Cantidad de pedidos verificados: 282
+Cantidad de pedidos fallidos: 89
+Total de pedidos procesados: 371
+
+2025-05-30 12:48:29.169
+Cantidad de pedidos verificados: 283
+Cantidad de pedidos fallidos: 89
+Total de pedidos procesados: 372
+
+2025-05-30 12:48:29.370
+Cantidad de pedidos verificados: 283
+Cantidad de pedidos fallidos: 89
+Total de pedidos procesados: 372
+
+2025-05-30 12:48:29.571
+Cantidad de pedidos verificados: 284
+Cantidad de pedidos fallidos: 90
+Total de pedidos procesados: 374
+
+2025-05-30 12:48:29.772
+Cantidad de pedidos verificados: 284
+Cantidad de pedidos fallidos: 91
+Total de pedidos procesados: 375
+
+2025-05-30 12:48:29.973
+Cantidad de pedidos verificados: 284
+Cantidad de pedidos fallidos: 92
+Total de pedidos procesados: 376
+
+2025-05-30 12:48:30.186
+Cantidad de pedidos verificados: 285
+Cantidad de pedidos fallidos: 93
+Total de pedidos procesados: 378
+
+2025-05-30 12:48:30.387
+Cantidad de pedidos verificados: 285
+Cantidad de pedidos fallidos: 93
+Total de pedidos procesados: 378
+
+2025-05-30 12:48:30.590
+Cantidad de pedidos verificados: 286
+Cantidad de pedidos fallidos: 93
+Total de pedidos procesados: 379
+
+2025-05-30 12:48:30.793
+Cantidad de pedidos verificados: 287
+Cantidad de pedidos fallidos: 93
+Total de pedidos procesados: 380
+
+2025-05-30 12:48:30.993
+Cantidad de pedidos verificados: 288
+Cantidad de pedidos fallidos: 93
+Total de pedidos procesados: 381
+
+2025-05-30 12:48:31.195
+Cantidad de pedidos verificados: 289
+Cantidad de pedidos fallidos: 93
+Total de pedidos procesados: 382
+
+2025-05-30 12:48:31.405
+Cantidad de pedidos verificados: 290
+Cantidad de pedidos fallidos: 93
+Total de pedidos procesados: 383
+
+2025-05-30 12:48:31.630
+Cantidad de pedidos verificados: 291
+Cantidad de pedidos fallidos: 93
+Total de pedidos procesados: 384
+
+2025-05-30 12:48:31.831
+Cantidad de pedidos verificados: 292
+Cantidad de pedidos fallidos: 93
+Total de pedidos procesados: 385
+
+2025-05-30 12:48:32.032
+Cantidad de pedidos verificados: 293
+Cantidad de pedidos fallidos: 93
+Total de pedidos procesados: 386
+
+2025-05-30 12:48:32.233
+Cantidad de pedidos verificados: 293
+Cantidad de pedidos fallidos: 93
+Total de pedidos procesados: 386
+
+2025-05-30 12:48:32.434
+Cantidad de pedidos verificados: 293
+Cantidad de pedidos fallidos: 94
+Total de pedidos procesados: 387
+
+2025-05-30 12:48:32.635
+Cantidad de pedidos verificados: 294
+Cantidad de pedidos fallidos: 94
+Total de pedidos procesados: 388
+
+2025-05-30 12:48:32.841
+Cantidad de pedidos verificados: 295
+Cantidad de pedidos fallidos: 94
+Total de pedidos procesados: 389
+
+2025-05-30 12:48:33.042
+Cantidad de pedidos verificados: 295
+Cantidad de pedidos fallidos: 94
+Total de pedidos procesados: 389
+
+2025-05-30 12:48:33.248
+Cantidad de pedidos verificados: 296
+Cantidad de pedidos fallidos: 94
+Total de pedidos procesados: 390
+
+2025-05-30 12:48:33.450
+Cantidad de pedidos verificados: 297
+Cantidad de pedidos fallidos: 94
+Total de pedidos procesados: 391
+
+2025-05-30 12:48:33.650
+Cantidad de pedidos verificados: 297
+Cantidad de pedidos fallidos: 94
+Total de pedidos procesados: 391
+
+2025-05-30 12:48:33.851
+Cantidad de pedidos verificados: 298
+Cantidad de pedidos fallidos: 94
+Total de pedidos procesados: 392
+
+2025-05-30 12:48:34.053
+Cantidad de pedidos verificados: 298
+Cantidad de pedidos fallidos: 95
+Total de pedidos procesados: 393
+
+2025-05-30 12:48:34.254
+Cantidad de pedidos verificados: 299
+Cantidad de pedidos fallidos: 95
+Total de pedidos procesados: 394
+
+2025-05-30 12:48:34.454
+Cantidad de pedidos verificados: 300
+Cantidad de pedidos fallidos: 95
+Total de pedidos procesados: 395
+
+2025-05-30 12:48:34.655
+Cantidad de pedidos verificados: 301
+Cantidad de pedidos fallidos: 95
+Total de pedidos procesados: 396
+
+2025-05-30 12:48:34.855
+Cantidad de pedidos verificados: 302
+Cantidad de pedidos fallidos: 95
+Total de pedidos procesados: 397
+
+2025-05-30 12:48:35.059
+Cantidad de pedidos verificados: 303
+Cantidad de pedidos fallidos: 95
+Total de pedidos procesados: 398
+
+2025-05-30 12:48:35.261
+Cantidad de pedidos verificados: 303
+Cantidad de pedidos fallidos: 95
+Total de pedidos procesados: 398
+
+2025-05-30 12:48:35.463
+Cantidad de pedidos verificados: 304
+Cantidad de pedidos fallidos: 95
+Total de pedidos procesados: 399
+
+2025-05-30 12:48:35.666
+Cantidad de pedidos verificados: 305
+Cantidad de pedidos fallidos: 95
+Total de pedidos procesados: 400
+
+2025-05-30 12:48:35.866
+Cantidad de pedidos verificados: 306
+Cantidad de pedidos fallidos: 95
+Total de pedidos procesados: 401
+
+2025-05-30 12:48:36.067
+Cantidad de pedidos verificados: 306
+Cantidad de pedidos fallidos: 96
+Total de pedidos procesados: 402
+
+2025-05-30 12:48:36.269
+Cantidad de pedidos verificados: 307
+Cantidad de pedidos fallidos: 96
+Total de pedidos procesados: 403
+
+2025-05-30 12:48:36.470
+Cantidad de pedidos verificados: 308
+Cantidad de pedidos fallidos: 96
+Total de pedidos procesados: 404
+
+2025-05-30 12:48:36.672
+Cantidad de pedidos verificados: 308
+Cantidad de pedidos fallidos: 96
+Total de pedidos procesados: 404
+
+2025-05-30 12:48:36.874
+Cantidad de pedidos verificados: 309
+Cantidad de pedidos fallidos: 96
+Total de pedidos procesados: 405
+
+2025-05-30 12:48:37.075
+Cantidad de pedidos verificados: 310
+Cantidad de pedidos fallidos: 96
+Total de pedidos procesados: 406
+
+2025-05-30 12:48:37.276
+Cantidad de pedidos verificados: 310
+Cantidad de pedidos fallidos: 98
+Total de pedidos procesados: 408
+
+2025-05-30 12:48:37.479
+Cantidad de pedidos verificados: 311
+Cantidad de pedidos fallidos: 98
+Total de pedidos procesados: 409
+
+2025-05-30 12:48:37.679
+Cantidad de pedidos verificados: 311
+Cantidad de pedidos fallidos: 98
+Total de pedidos procesados: 409
+
+2025-05-30 12:48:37.882
+Cantidad de pedidos verificados: 311
+Cantidad de pedidos fallidos: 99
+Total de pedidos procesados: 410
+
+2025-05-30 12:48:38.083
+Cantidad de pedidos verificados: 312
+Cantidad de pedidos fallidos: 99
+Total de pedidos procesados: 411
+
+2025-05-30 12:48:38.283
+Cantidad de pedidos verificados: 313
+Cantidad de pedidos fallidos: 99
+Total de pedidos procesados: 412
+
+2025-05-30 12:48:38.484
+Cantidad de pedidos verificados: 314
+Cantidad de pedidos fallidos: 99
+Total de pedidos procesados: 413
+
+2025-05-30 12:48:38.688
+Cantidad de pedidos verificados: 314
+Cantidad de pedidos fallidos: 99
+Total de pedidos procesados: 413
+
+2025-05-30 12:48:38.891
+Cantidad de pedidos verificados: 315
+Cantidad de pedidos fallidos: 99
+Total de pedidos procesados: 414
+
+2025-05-30 12:48:39.091
+Cantidad de pedidos verificados: 316
+Cantidad de pedidos fallidos: 99
+Total de pedidos procesados: 415
+
+2025-05-30 12:48:39.293
+Cantidad de pedidos verificados: 317
+Cantidad de pedidos fallidos: 99
+Total de pedidos procesados: 416
+
+2025-05-30 12:48:39.494
+Cantidad de pedidos verificados: 317
+Cantidad de pedidos fallidos: 99
+Total de pedidos procesados: 416
+
+2025-05-30 12:48:39.696
+Cantidad de pedidos verificados: 318
+Cantidad de pedidos fallidos: 99
+Total de pedidos procesados: 417
+
+2025-05-30 12:48:39.898
+Cantidad de pedidos verificados: 319
+Cantidad de pedidos fallidos: 99
+Total de pedidos procesados: 418
+
+2025-05-30 12:48:40.127
+Cantidad de pedidos verificados: 320
+Cantidad de pedidos fallidos: 99
+Total de pedidos procesados: 419
+
+2025-05-30 12:48:40.328
+Cantidad de pedidos verificados: 321
+Cantidad de pedidos fallidos: 100
+Total de pedidos procesados: 421
+
+2025-05-30 12:48:40.528
+Cantidad de pedidos verificados: 321
+Cantidad de pedidos fallidos: 100
+Total de pedidos procesados: 421
+
+2025-05-30 12:48:40.731
+Cantidad de pedidos verificados: 321
+Cantidad de pedidos fallidos: 101
+Total de pedidos procesados: 422
+
+2025-05-30 12:48:40.933
+Cantidad de pedidos verificados: 322
+Cantidad de pedidos fallidos: 101
+Total de pedidos procesados: 423
+
+2025-05-30 12:48:41.141
+Cantidad de pedidos verificados: 322
+Cantidad de pedidos fallidos: 102
+Total de pedidos procesados: 424
+
+2025-05-30 12:48:41.342
+Cantidad de pedidos verificados: 323
+Cantidad de pedidos fallidos: 102
+Total de pedidos procesados: 425
+
+2025-05-30 12:48:41.544
+Cantidad de pedidos verificados: 323
+Cantidad de pedidos fallidos: 103
+Total de pedidos procesados: 426
+
+2025-05-30 12:48:41.745
+Cantidad de pedidos verificados: 324
+Cantidad de pedidos fallidos: 103
+Total de pedidos procesados: 427
+
+2025-05-30 12:48:41.946
+Cantidad de pedidos verificados: 325
+Cantidad de pedidos fallidos: 103
+Total de pedidos procesados: 428
+
+2025-05-30 12:48:42.147
+Cantidad de pedidos verificados: 326
+Cantidad de pedidos fallidos: 103
+Total de pedidos procesados: 429
+
+2025-05-30 12:48:42.348
+Cantidad de pedidos verificados: 327
+Cantidad de pedidos fallidos: 103
+Total de pedidos procesados: 430
+
+2025-05-30 12:48:42.549
+Cantidad de pedidos verificados: 328
+Cantidad de pedidos fallidos: 103
+Total de pedidos procesados: 431
+
+2025-05-30 12:48:42.751
+Cantidad de pedidos verificados: 329
+Cantidad de pedidos fallidos: 103
+Total de pedidos procesados: 432
+
+2025-05-30 12:48:42.953
+Cantidad de pedidos verificados: 330
+Cantidad de pedidos fallidos: 103
+Total de pedidos procesados: 433
+
+2025-05-30 12:48:43.155
+Cantidad de pedidos verificados: 331
+Cantidad de pedidos fallidos: 103
+Total de pedidos procesados: 434
+
+2025-05-30 12:48:43.356
+Cantidad de pedidos verificados: 331
+Cantidad de pedidos fallidos: 103
+Total de pedidos procesados: 434
+
+2025-05-30 12:48:43.556
+Cantidad de pedidos verificados: 332
+Cantidad de pedidos fallidos: 103
+Total de pedidos procesados: 435
+
+2025-05-30 12:48:43.759
+Cantidad de pedidos verificados: 332
+Cantidad de pedidos fallidos: 104
+Total de pedidos procesados: 436
+
+2025-05-30 12:48:43.960
+Cantidad de pedidos verificados: 333
+Cantidad de pedidos fallidos: 105
+Total de pedidos procesados: 438
+
+2025-05-30 12:48:44.161
+Cantidad de pedidos verificados: 333
+Cantidad de pedidos fallidos: 105
+Total de pedidos procesados: 438
+
+2025-05-30 12:48:44.361
+Cantidad de pedidos verificados: 334
+Cantidad de pedidos fallidos: 105
+Total de pedidos procesados: 439
+
+2025-05-30 12:48:44.562
+Cantidad de pedidos verificados: 335
+Cantidad de pedidos fallidos: 105
+Total de pedidos procesados: 440
+
+2025-05-30 12:48:44.764
+Cantidad de pedidos verificados: 336
+Cantidad de pedidos fallidos: 105
+Total de pedidos procesados: 441
+
+2025-05-30 12:48:44.969
+Cantidad de pedidos verificados: 336
+Cantidad de pedidos fallidos: 105
+Total de pedidos procesados: 441
+
+2025-05-30 12:48:45.183
+Cantidad de pedidos verificados: 337
+Cantidad de pedidos fallidos: 105
+Total de pedidos procesados: 442
+
+2025-05-30 12:48:45.385
+Cantidad de pedidos verificados: 338
+Cantidad de pedidos fallidos: 105
+Total de pedidos procesados: 443
+
+2025-05-30 12:48:45.591
+Cantidad de pedidos verificados: 338
+Cantidad de pedidos fallidos: 106
+Total de pedidos procesados: 444
+
+2025-05-30 12:48:45.792
+Cantidad de pedidos verificados: 339
+Cantidad de pedidos fallidos: 106
+Total de pedidos procesados: 445
+
+2025-05-30 12:48:45.993
+Cantidad de pedidos verificados: 340
+Cantidad de pedidos fallidos: 106
+Total de pedidos procesados: 446
+
+2025-05-30 12:48:46.194
+Cantidad de pedidos verificados: 340
+Cantidad de pedidos fallidos: 107
+Total de pedidos procesados: 447
+
+2025-05-30 12:48:46.395
+Cantidad de pedidos verificados: 341
+Cantidad de pedidos fallidos: 107
+Total de pedidos procesados: 448
+
+2025-05-30 12:48:46.597
+Cantidad de pedidos verificados: 342
+Cantidad de pedidos fallidos: 107
+Total de pedidos procesados: 449
+
+2025-05-30 12:48:46.812
+Cantidad de pedidos verificados: 342
+Cantidad de pedidos fallidos: 107
+Total de pedidos procesados: 449
+
+2025-05-30 12:48:47.022
+Cantidad de pedidos verificados: 342
+Cantidad de pedidos fallidos: 109
+Total de pedidos procesados: 451
+
+2025-05-30 12:48:47.223
+Cantidad de pedidos verificados: 343
+Cantidad de pedidos fallidos: 109
+Total de pedidos procesados: 452
+
+2025-05-30 12:48:47.425
+Cantidad de pedidos verificados: 343
+Cantidad de pedidos fallidos: 109
+Total de pedidos procesados: 452
+
+2025-05-30 12:48:47.629
+Cantidad de pedidos verificados: 344
+Cantidad de pedidos fallidos: 109
+Total de pedidos procesados: 453
+
+2025-05-30 12:48:47.830
+Cantidad de pedidos verificados: 345
+Cantidad de pedidos fallidos: 109
+Total de pedidos procesados: 454
+
+2025-05-30 12:48:48.031
+Cantidad de pedidos verificados: 346
+Cantidad de pedidos fallidos: 109
+Total de pedidos procesados: 455
+
+2025-05-30 12:48:48.233
+Cantidad de pedidos verificados: 347
+Cantidad de pedidos fallidos: 109
+Total de pedidos procesados: 456
+
+2025-05-30 12:48:48.434
+Cantidad de pedidos verificados: 348
+Cantidad de pedidos fallidos: 109
+Total de pedidos procesados: 457
+
+2025-05-30 12:48:48.636
+Cantidad de pedidos verificados: 349
+Cantidad de pedidos fallidos: 109
+Total de pedidos procesados: 458
+
+2025-05-30 12:48:48.846
+Cantidad de pedidos verificados: 349
+Cantidad de pedidos fallidos: 110
+Total de pedidos procesados: 459
+
+2025-05-30 12:48:49.048
+Cantidad de pedidos verificados: 349
+Cantidad de pedidos fallidos: 111
+Total de pedidos procesados: 460
+
+2025-05-30 12:48:49.249
+Cantidad de pedidos verificados: 349
+Cantidad de pedidos fallidos: 112
+Total de pedidos procesados: 461
+
+2025-05-30 12:48:49.450
+Cantidad de pedidos verificados: 350
+Cantidad de pedidos fallidos: 112
+Total de pedidos procesados: 462
+
+2025-05-30 12:48:49.664
+Cantidad de pedidos verificados: 351
+Cantidad de pedidos fallidos: 112
+Total de pedidos procesados: 463
+
+2025-05-30 12:48:49.867
+Cantidad de pedidos verificados: 351
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 464
+
+2025-05-30 12:48:50.069
+Cantidad de pedidos verificados: 352
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 465
+
+2025-05-30 12:48:50.270
+Cantidad de pedidos verificados: 353
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 466
+
+2025-05-30 12:48:50.483
+Cantidad de pedidos verificados: 354
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 467
+
+2025-05-30 12:48:50.684
+Cantidad de pedidos verificados: 354
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 467
+
+2025-05-30 12:48:50.885
+Cantidad de pedidos verificados: 355
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 468
+
+2025-05-30 12:48:51.085
+Cantidad de pedidos verificados: 356
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 469
+
+2025-05-30 12:48:51.297
+Cantidad de pedidos verificados: 357
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 470
+
+2025-05-30 12:48:51.500
+Cantidad de pedidos verificados: 358
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 471
+
+2025-05-30 12:48:51.700
+Cantidad de pedidos verificados: 358
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 471
+
+2025-05-30 12:48:51.901
+Cantidad de pedidos verificados: 359
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 472
+
+2025-05-30 12:48:52.102
+Cantidad de pedidos verificados: 360
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 473
+
+2025-05-30 12:48:52.304
+Cantidad de pedidos verificados: 361
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 474
+
+2025-05-30 12:48:52.512
+Cantidad de pedidos verificados: 362
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 475
+
+2025-05-30 12:48:52.713
+Cantidad de pedidos verificados: 362
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 475
+
+2025-05-30 12:48:52.914
+Cantidad de pedidos verificados: 363
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 476
+
+2025-05-30 12:48:53.115
+Cantidad de pedidos verificados: 364
+Cantidad de pedidos fallidos: 113
+Total de pedidos procesados: 477
+
+2025-05-30 12:48:53.316
+Cantidad de pedidos verificados: 364
+Cantidad de pedidos fallidos: 114
+Total de pedidos procesados: 478
+
+2025-05-30 12:48:53.522
+Cantidad de pedidos verificados: 364
+Cantidad de pedidos fallidos: 115
+Total de pedidos procesados: 479
+
+2025-05-30 12:48:53.723
+Cantidad de pedidos verificados: 365
+Cantidad de pedidos fallidos: 115
+Total de pedidos procesados: 480
+
+2025-05-30 12:48:53.924
+Cantidad de pedidos verificados: 365
+Cantidad de pedidos fallidos: 115
+Total de pedidos procesados: 480
+
+2025-05-30 12:48:54.126
+Cantidad de pedidos verificados: 366
+Cantidad de pedidos fallidos: 115
+Total de pedidos procesados: 481
+
+2025-05-30 12:48:54.327
+Cantidad de pedidos verificados: 366
+Cantidad de pedidos fallidos: 116
+Total de pedidos procesados: 482
+
+2025-05-30 12:48:54.536
+Cantidad de pedidos verificados: 367
+Cantidad de pedidos fallidos: 116
+Total de pedidos procesados: 483
+
+2025-05-30 12:48:54.738
+Cantidad de pedidos verificados: 368
+Cantidad de pedidos fallidos: 116
+Total de pedidos procesados: 484
+
+2025-05-30 12:48:54.941
+Cantidad de pedidos verificados: 368
+Cantidad de pedidos fallidos: 117
+Total de pedidos procesados: 485
+
+2025-05-30 12:48:55.142
+Cantidad de pedidos verificados: 369
+Cantidad de pedidos fallidos: 117
+Total de pedidos procesados: 486
+
+2025-05-30 12:48:55.343
+Cantidad de pedidos verificados: 370
+Cantidad de pedidos fallidos: 117
+Total de pedidos procesados: 487
+
+2025-05-30 12:48:55.544
+Cantidad de pedidos verificados: 371
+Cantidad de pedidos fallidos: 117
+Total de pedidos procesados: 488
+
+2025-05-30 12:48:55.746
+Cantidad de pedidos verificados: 372
+Cantidad de pedidos fallidos: 117
+Total de pedidos procesados: 489
+
+2025-05-30 12:48:55.948
+Cantidad de pedidos verificados: 373
+Cantidad de pedidos fallidos: 117
+Total de pedidos procesados: 490
+
+2025-05-30 12:48:56.150
+Cantidad de pedidos verificados: 374
+Cantidad de pedidos fallidos: 117
+Total de pedidos procesados: 491
+
+2025-05-30 12:48:56.352
+Cantidad de pedidos verificados: 374
+Cantidad de pedidos fallidos: 118
+Total de pedidos procesados: 492
+
+2025-05-30 12:48:56.560
+Cantidad de pedidos verificados: 374
+Cantidad de pedidos fallidos: 119
+Total de pedidos procesados: 493
+
+2025-05-30 12:48:56.773
+Cantidad de pedidos verificados: 375
+Cantidad de pedidos fallidos: 119
+Total de pedidos procesados: 494
+
+2025-05-30 12:48:56.975
+Cantidad de pedidos verificados: 376
+Cantidad de pedidos fallidos: 119
+Total de pedidos procesados: 495
+
+2025-05-30 12:48:57.176
+Cantidad de pedidos verificados: 376
+Cantidad de pedidos fallidos: 119
+Total de pedidos procesados: 495
+
+2025-05-30 12:48:57.379
+Cantidad de pedidos verificados: 377
+Cantidad de pedidos fallidos: 119
+Total de pedidos procesados: 496
+
+2025-05-30 12:48:57.580
+Cantidad de pedidos verificados: 377
+Cantidad de pedidos fallidos: 120
+Total de pedidos procesados: 497
+
+2025-05-30 12:48:57.781
+Cantidad de pedidos verificados: 378
+Cantidad de pedidos fallidos: 120
+Total de pedidos procesados: 498
+
+2025-05-30 12:48:57.983
+Cantidad de pedidos verificados: 379
+Cantidad de pedidos fallidos: 120
+Total de pedidos procesados: 499
+
+2025-05-30 12:48:58.186
+Cantidad de pedidos verificados: 380
+Cantidad de pedidos fallidos: 120
+Total de pedidos procesados: 500
+
+
+FIN DE EJECUCIÓN 
+Tiempo total de ejecución: 114060 ms
+Total final de pedidos verificados: 380
+Total final de pedidos fallidos: 120
+Total final de pedidos procesados: 500
+
+Casillero más usado: [1][8] con 8 usos.
